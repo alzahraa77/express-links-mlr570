@@ -20,7 +20,11 @@ The motivating idea: one added link lets a distant sensor's signal skip a bottle
 
 ![Bottleneck motivation](docs/bottleneck_motivation.png)
 
-These are small illustrative graphs, not data. Their TikZ sources are in [`docs/source/`](docs/source/).
+The two Stage 2 selectors step by step (Fig. 5 in the report). Both use the same eligible pairs, ridge screen and final ranking; they differ only in the shortlist step in the dashed box:
+
+![The two Stage 2 selectors](docs/selector_pipeline.png)
+
+The first three figures use small illustrative graphs, not data. All TikZ sources are in [`docs/source/`](docs/source/).
 
 The project ran in two stages:
 - **Stage 1** (Google Colab) tested the method from our proposal: a greedy selector that scores each candidate link by lead–lag correlation × the drop in total effective resistance.
@@ -34,7 +38,7 @@ Both stages use the METR-LA and PEMS-BAY benchmarks and Graph WaveNet with its l
 
 ```
 report/                          final report (PDF) and its LaTeX source
-docs/                            framework, selector and motivation figures (PNG, PDF, TikZ source)
+docs/                            framework, selector, motivation and Stage 2 selector figures (PNG, PDF, TikZ source)
 report_figures/                  scripts + data that redraw every plot and appendix table in the report
 stage1_leadlag_selector/         Stage 1: Colab notebooks, shared modules, results
 stage2_predictive_selection/     Stage 2: GPU code, Slurm scripts, logs and results
@@ -66,7 +70,7 @@ The Stage 1 notebooks download the same speed files into the team's Drive folder
 
 | Report item | Code | Saved results |
 |---|---|---|
-| Figs. 1–3 (motivation, framework overview, selector illustration) | `docs/source/*.tex` (TikZ) | illustrations, no data |
+| Figs. 1–3 and 5 (motivation, framework overview, selector illustration, the two Stage 2 selectors) | `docs/source/*.tex` (TikZ) | illustrations, no data |
 | Table I (related methods), Table II (notation), Table III (protocol summary) | — | text tables |
 | Stage 1: Algorithm 1, Fig. 4 (worked example), Fig. 6, Table IV, Fig. 7 | `stage1_leadlag_selector/notebooks/05_*`, `07_*`–`09_*` | `stage1_leadlag_selector/results/scores.csv`, `versions_summary_*.csv` |
 | Stage 1 jam warnings: Table XII (Appendix B) | `stage1_leadlag_selector/code/metrics.py` | `report_figures/data/original_study.csv` |
