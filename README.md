@@ -42,10 +42,10 @@ docs/                            framework, selector, motivation and Stage 2 sel
 report_figures/                  scripts + data that redraw every plot and appendix table in the report
 stage1_leadlag_selector/         Stage 1: Colab notebooks, shared modules, results
 stage2_predictive_selection/     Stage 2: GPU code, Slurm scripts, logs and results
-  01_baseline_graph_wavenet/       E1 baseline reproduction
-  02_pilot/                        E2 seed-0 pilot and the frozen METR-LA graphs
-  03_main_code/                    E3–E7: replication, diagnostics, DCRNN/DCGRU, tuning (keep in one folder)
-  04_five_donor_diagnostic/        E5 five-donor diagnostic
+  01_baseline_graph_wavenet/       baseline reproduction
+  02_pilot/                        seed-0 pilot and the frozen METR-LA graphs
+  03_main_code/                    six-way replication, diagnostics, DCRNN/DCGRU, tuning (keep in one folder)
+  04_five_donor_diagnostic/        five-donor diagnostic
   05_analysis_snippets/            short analysis scripts used during the pilot
   logs/                            every Slurm log
   results/                         every result table, JSON and audit file
@@ -74,12 +74,12 @@ The Stage 1 notebooks download the same speed files into the team's Drive folder
 | Table I (related methods), Table II (notation), Table III (protocol summary) | — | text tables |
 | Stage 1: Algorithm 1, Fig. 4 (worked example), Fig. 6, Table IV, Fig. 7 | `stage1_leadlag_selector/notebooks/05_*`, `07_*`–`09_*` | `stage1_leadlag_selector/results/scores.csv`, `versions_summary_*.csv` |
 | Stage 1 jam warnings: Table XII (Appendix B) | `stage1_leadlag_selector/code/metrics.py` | `report_figures/data/original_study.csv` |
-| E1 baseline reproduction: Table V | `stage2_predictive_selection/01_baseline_graph_wavenet/` | job logs; `report_figures/data/baseline*.csv` |
-| E2 seed-0 pilot | `02_pilot/express_links_step2_pilot.py` | `02_pilot/reference_graphs_METR-LA/` |
-| E3 six-way comparison: Algorithm 2, Fig. 5, Table VI, Figs. 8–10; Appendix A (Table XI, Fig. 15) | `03_main_code/run_replication.py`, `collect_replication.py` | `results/pilot_output/full/comparison.csv`, `results/pilot_output/graphs/` |
-| E4–E5 week-swap and five-donor diagnostics: Table VII, Fig. 11 | `03_main_code/oversquash_test.py`, `04_five_donor_diagnostic/run_diagnostic.py` | `results/diagnostic_output/oversquash/`, `results/diagnostic/` |
-| E6 DCRNN and DCGRU: Table VIII, Fig. 12, Table XIII (Appendix B) | `03_main_code/run_dcrnn.py`, `run_other_model.py` | `results/other_model_output/` |
-| E7 tuning: Tables IX–X, Figs. 13–14 | `03_main_code/tune_forecast_only.py` | `results/tuning_output/METR-LA/decisions/final_result.json` |
+| Baseline reproduction: Table V | `stage2_predictive_selection/01_baseline_graph_wavenet/` | job logs; `report_figures/data/baseline*.csv` |
+| Seed-0 pilot | `02_pilot/express_links_step2_pilot.py` | `02_pilot/reference_graphs_METR-LA/` |
+| Six-way comparison: Algorithm 2, Fig. 5, Table VI, Figs. 8–10; Appendix A (Table XI, Fig. 15) | `03_main_code/run_replication.py`, `collect_replication.py` | `results/pilot_output/full/comparison.csv`, `results/pilot_output/graphs/` |
+| Week-swap and five-donor diagnostics: Table VII, Fig. 11 | `03_main_code/oversquash_test.py`, `04_five_donor_diagnostic/run_diagnostic.py` | `results/diagnostic_output/oversquash/`, `results/diagnostic/` |
+| DCRNN and DCGRU: Table VIII, Fig. 12, Table XIII (Appendix B) | `03_main_code/run_dcrnn.py`, `run_other_model.py` | `results/other_model_output/` |
+| Tuning: Tables IX–X, Figs. 13–14 | `03_main_code/tune_forecast_only.py` | `results/tuning_output/METR-LA/decisions/final_result.json` |
 
 All figure and table numbers refer to `report/Express_Links_Final_Report.pdf`.
 
@@ -115,13 +115,13 @@ Notebooks 08 and 09 also trained a synthetic toy city and a simulated Sharjah ne
 
 | Step | How it was run |
 |---|---|
-| E1 baseline | `python -u express_links_step1.py --download-only`, then `bash submit_all.sh` |
-| E2 pilot | `sbatch run_pilot.sbatch` |
-| E3 six-way comparison | `sbatch prepare_replication.sbatch`, `sbatch reuse_metr_seed0.sbatch`, `bash submit_workers.sh <reuse job id>`, then `python collect_replication.py --project-dir /shared/$USER/express_links_replication` |
-| E4 week-swap diagnostic and DCGRU | `bash submit_diagnostics.sh` |
-| E5 five-donor diagnostic | `sbatch run_diagnostic.sbatch` |
-| E6 DCRNN | `bash setup_dcrnn.sh` (once), `bash submit_dcrnn.sh`, then `python run_dcrnn.py --collect` |
-| E7 tuning | `bash submit_tuning.sh grid`, then `weights`, `inner`, `alloc`, `confirm` and `final`, each after the previous decide log says "Decision saved" |
+| Baseline | `python -u express_links_step1.py --download-only`, then `bash submit_all.sh` |
+| Pilot | `sbatch run_pilot.sbatch` |
+| Six-way comparison | `sbatch prepare_replication.sbatch`, `sbatch reuse_metr_seed0.sbatch`, `bash submit_workers.sh <reuse job id>`, then `python collect_replication.py --project-dir /shared/$USER/express_links_replication` |
+| Week-swap diagnostic and DCGRU | `bash submit_diagnostics.sh` |
+| Five-donor diagnostic | `sbatch run_diagnostic.sbatch` |
+| DCRNN | `bash setup_dcrnn.sh` (once), `bash submit_dcrnn.sh`, then `python run_dcrnn.py --collect` |
+| Tuning | `bash submit_tuning.sh grid`, then `weights`, `inner`, `alloc`, `confirm` and `final`, each after the previous decide log says "Decision saved" |
 
 ### Rules written before the results
 

@@ -14,6 +14,7 @@
 - Figs. 1-5 captions shortened to one sentence; their explanations moved into the text. Added why DCRNN was run on METR-LA only.
 - Wording fixes: abstract Stage 1 description, resistance sentence in the conclusion, "regularized ridge objective" for the Forecast-only shortlist, "shared evaluation roads", and a conditional wording for the rewiring survey.
 - Added GitHub link (abstract and new Data Availability section), a paper-organization paragraph, Limitations and Future Work split into two subsections with bold topics.
+- Removed the E1-E7 experiment codes from headings and Table III (repo README too).
 - Changes are in blue bold in the marked PDF (build marked.tex). No numbers changed and no experiments were run.
 
 # Introduction, related work and methodology revision

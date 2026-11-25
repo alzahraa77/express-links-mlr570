@@ -49,7 +49,7 @@
 
 
 \begin{abstract}
-We study how adding sensor links affects hour-ahead forecasts of low traffic speeds on METR-LA and PEMS-BAY. \prev{Across 42 Graph WaveNet runs, we evaluated a greedy selector that scores each candidate link by multiplying its lead--lag correlation by its reduction in total effective resistance.} The selector lowered overall 60-minute mean absolute error (MAE) by 0.014 mph on METR-LA and 0.013 mph on PEMS-BAY. We then compared six graphs in 36 runs. \prev{Two of them chose links with the same simple linear (ridge) forecast of each road: Express Links first shortlisted poorly connected sources, while Forecast-only shortlisted the sources that most improved that forecast. Forecast-only gave} the lowest mean MAE on low-speed readings at the shared evaluation roads. It reduced MAE from 7.969 to 7.695 mph on METR-LA and from 5.223 to 5.127 mph on PEMS-BAY. On METR-LA it beat matched random links on all three seeds with both Graph WaveNet and DCRNN. A global virtual node gave the lowest network-wide 60-minute MAE in the six-way comparison. A five-seed test favored the original Forecast-only configuration over the tuned version on the primary metric. \prev{Neither of our two tests of whether the models actually used the added source roads met its decision rule,} so the contribution of over-squashing to these forecasting gains remains uncertain. \rev{The code, results and decision records are available at \url{https://github.com/alzahraa77/express-links-mlr570}.}
+We study how adding sensor links affects hour-ahead forecasts of low traffic speeds on METR-LA and PEMS-BAY. \prev{Across 42 Graph WaveNet runs, we evaluated a greedy selector that scores each candidate link by multiplying its lead--lag correlation by its reduction in total effective resistance.} The selector lowered overall 60-minute mean absolute error (MAE) by 0.014 mph on METR-LA and 0.013 mph on PEMS-BAY. We then compared six graphs in 36 runs. \prev{Two of them chose links with the same simple linear (ridge) forecast of each road: Express Links first shortlisted poorly connected sources, while Forecast-only shortlisted the sources that most improved that forecast. Forecast-only gave} the lowest mean MAE on low-speed readings at the shared evaluation roads. It reduced MAE from 7.969 to 7.695 mph on METR-LA and from 5.223 to 5.127 mph on PEMS-BAY. On METR-LA it beat matched random links on all three seeds with both Graph WaveNet and DCRNN. A global virtual node gave the lowest network-wide 60-minute MAE in the six-way comparison. A five-seed test favored the original Forecast-only configuration over the tuned version on the primary metric. \prev{Neither of our two tests of whether the models actually used the added source roads met its decision rule,} so the contribution of over-squashing to these forecasting gains remains uncertain. \prev{The code, results and decision records are available at \url{https://github.com/alzahraa77/express-links-mlr570}.}
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -373,13 +373,13 @@ The search had three stages. The grid crossed minimum distance (3, 2 or 1 hops; 
 Experiment & Dataset & Model & Graphs & Seeds & Primary metric & Decision rule \\
 \midrule
 Stage 1 Lead--lag rewiring & METR-LA, PEMS-BAY & GWN & seven graphs & 0--2 & 60-min MAE and jam warnings & comparative evaluation \\
-E1 Baseline reproduction & METR-LA, PEMS-BAY & GWN & road graph (paper split, strict split), full model & 0 & 12-horizon mean MAE vs. published & none \\
-E2 Pilot & METR-LA & GWN & original, EL, FO, GTR, random, VN & 0 & exploratory & primary metric for E3 fixed after E2 \\
-E3 Six-way replication & METR-LA, PEMS-BAY & GWN & original, EL, FO, GTR, random, VN & 0--2 & low-speed MAE at the 25 EL target roads & EL beats original and random on seeds 1 and 2 (pre-registered) \\
-E4 Week-swap diagnostic (D1) & METR-LA & GWN (saved) & original, EL, random & 0--2 & added use of sources & $A-B>0$, interval excludes 0, $\ge$2/3 seeds (pre-registered) \\
-E5 Five-donor diagnostic (D2) & METR-LA & GWN (saved) & original, EL, random & 0--2 & added reliance on EL sources, low-speed & lower 95\% bound $>{+}0.01$\ms{} vs. both, $\ge$2/3 seeds (pre-registered) \\
-E6 Architecture transfer & METR-LA & DCRNN & original, EL, FO, random (frozen links) & 0--2 & as E3 & FO below random on $\ge$2/3 seeds and mean below original (pre-registered) \\
-E7 FO tuning & METR-LA & GWN & FO variants, original, random & val.\ 0--1; final 0--4 & Band~1 MAE, all roads & Sec.~\ref{sec:tuning-method} (pre-registered, test plan locked) \\
+\rev{Baseline reproduction} & METR-LA, PEMS-BAY & GWN & road graph (paper split, strict split), full model & 0 & 12-horizon mean MAE vs. published & none \\
+\rev{Pilot} & METR-LA & GWN & original, EL, FO, GTR, random, VN & 0 & exploratory & \rev{primary metric for the six-way comparison fixed after the pilot} \\
+\rev{Six-way replication} & METR-LA, PEMS-BAY & GWN & original, EL, FO, GTR, random, VN & 0--2 & low-speed MAE at the 25 EL target roads & EL beats original and random on seeds 1 and 2 (pre-registered) \\
+\rev{Week-swap diagnostic (D1)} & METR-LA & GWN (saved) & original, EL, random & 0--2 & added use of sources & $A-B>0$, interval excludes 0, $\ge$2/3 seeds (pre-registered) \\
+\rev{Five-donor diagnostic (D2)} & METR-LA & GWN (saved) & original, EL, random & 0--2 & added reliance on EL sources, low-speed & lower 95\% bound $>{+}0.01$\ms{} vs. both, $\ge$2/3 seeds (pre-registered) \\
+\rev{Architecture transfer} & METR-LA & DCRNN & original, EL, FO, random (frozen links) & 0--2 & \rev{as six-way} & FO below random on $\ge$2/3 seeds and mean below original (pre-registered) \\
+\rev{FO tuning} & METR-LA & GWN & FO variants, original, random & val.\ 0--1; final 0--4 & Band~1 MAE, all roads & Sec.~\ref{sec:tuning-method} (pre-registered, test plan locked) \\
 \bottomrule
 \end{tabular}
 \end{table*}
@@ -436,7 +436,7 @@ Virtual node & \best{3.548} (0.020) & \best{3.058} (0.007) & \best{1.951} (0.012
 
 \prev{Finally, we reran the METR-LA seed-0 models with causal input filling instead of zeros. The 60-minute MAEs were 3.520, 3.521 and 3.496\ms{} for the original, random and greedy graphs, so the greedy graph's advantage over random was 0.025\ms{}. Differences this small, together with the weak jam-warning results, motivated the regression-based follow-up in Stage~2.}
 
-\subsection{E1: Baseline reproduction}
+\subsection{\protect\rev{Baseline reproduction}}
 \prev{Before testing any added links, we checked that our Graph WaveNet baseline matched the published results. Table~\ref{tab:baseline} gives MAE, RMSE and MAPE averaged over the 12 horizons, and MAE at 15, 30 and 60 minutes. Published values come from the Graph WaveNet paper, and bold marks the best of our runs in each column. With the fixed road graph, our 12-horizon mean MAE was 3.070 against the published 3.08 on METR-LA, and 1.592 against 1.59 on PEMS-BAY. The full model with adaptive adjacency was slightly worse than published (3.071 against 3.04, and 1.589 against 1.58), with a larger gap at longer horizons. It reached a lower validation MAE, but we used the fixed graph in the follow-up so that we controlled exactly which links the model received. Our strict, causally filled baseline had the lowest mean MAE of our METR-LA runs and was about 0.003\ms{} above the fixed-graph run on PEMS-BAY.}
 
 \begin{table}[!t]
@@ -468,10 +468,10 @@ Ours, strict (baseline) & 1.595 / 3.558 / 3.57 & 1.319 & 1.657 & \best{1.973} \\
 
 \prev{The size of the error at low speeds is the main reason this study focuses on them. On METR-LA, the baseline's 60-minute MAE was 7.612\ms{} in Band~1, against 2.699, 1.919 and 1.563\ms{} in the three faster bands. A model that looks accurate overall can still be far off exactly when traffic slows down.}
 
-\subsection{E2: Seed-0 pilot}
+\subsection{\protect\rev{Seed-0 pilot}}
 \prev{The METR-LA pilot trained each of the six graphs once, with seed 0. On the 30{,}331 low-speed readings at the 25 Express Links destinations, Forecast-only had the lowest 60-minute MAE (7.456\ms{}, against 7.603 for Express Links and 7.926 for the original graph). The virtual node was best overall (3.516\ms{}) but worse on those slow readings (8.174\ms{}). Rerunning the baseline with seed 0 gave an overall MAE of 3.553 instead of 3.556 and a best epoch of 91 instead of 80, a reminder of how much training noise there is. The pilot also showed how concentrated the Express Links graph was: just three source roads supplied all 25 links, and one of them supplied 18. Based on the pilot, we chose the target-road metric and fixed the decision rule before the replication.}
 
-\subsection{E3: Six-way replication}
+\subsection{\protect\rev{Six-way replication}}
 \prev{We then trained the six graphs on both datasets with three seeds each, for 36 runs under the strict protocol. All graphs were scored on the same 25 roads per dataset, with 30{,}331 low-speed readings on METR-LA and 77{,}284 on PEMS-BAY. Table~\ref{tab:sixway} gives four views of the 60-minute error: low-speed and all readings at the 25 target roads, and low-speed and all readings across the whole network. Each cell shows the mean over seeds, the seed standard deviation in parentheses, the change from the original graph, and in brackets the number of seeds on which the graph beat the original. Bold marks the best mean per dataset and column.}
 
 \begin{table*}[!t]
@@ -536,7 +536,7 @@ Dataset & Graph & Low-speed, 25 target roads (primary) & All readings, 25 target
 \label{fig:linkprops}
 \end{figure}
 
-\subsection{E4 and E5: Over-squashing diagnostics}
+\subsection{\protect\rev{Over-squashing diagnostics}}
 \prev{The two diagnostics ask whether the trained models actually used the selected source roads more, as over-squashing relief would predict. Table~\ref{tab:diag} lists each rule and its outcome. The week-swap test (D1) found that Express Links increased source use beyond random, with an interval above zero, on only one of three seeds. We also asked whether the original Graph WaveNet used weakly connected sources less than better-connected ones. Across 9{,}626 matched pairs, none of the three seeds met the rule, and the same-target and low-speed versions of the check agreed. One caveat applies to the primary D1 test: the links in the two graphs came from different pair sets with different resistance distributions, so the choice of random control affects how the result can be read.}
 
 \begin{table}[!t]
@@ -573,7 +573,7 @@ Gate (both lower bounds $>{+}0.01$) & not passed; follow-up not run \\
 \label{fig:mechanism}
 \end{figure*}
 
-\subsection{E6: Transfer to DCRNN}
+\subsection{\protect\rev{Transfer to DCRNN}}
 \prev{The DCRNN baseline behaved as expected. With the original graph, its three runs averaged 2.685, 3.073 and 3.529\ms{} at 15, 30 and 60 minutes, close to the published DCRNN values of 2.77, 3.15 and 3.60\ms{} \cite{li2018dcrnn,wu2019graphwavenet}. We then trained DCRNN on four of the frozen METR-LA graphs, which were also used with Graph WaveNet in Table~\ref{tab:sixway}. Table~\ref{tab:dcrnn} gives the 60-minute MAE at the shared 25 roads and across all roads, for low-speed and all readings.}
 
 \begin{table}[!t]
@@ -607,7 +607,7 @@ Matched random & 8.270 & 3.102 & \best{7.714} & \best{3.513} \\
 
 \prev{\textit{Supplementary check with DCGRU.} Before we switched to the published DCRNN code, our diagnostic script had also trained a simpler DCRNN-style model that we wrote ourselves (DCGRU) on the same frozen graphs, seeds and test readings. We did not look at these results until after the switch, and the plan we wrote at the switch committed us to reporting them as a supplementary check. Forecast-only again had the lowest low-speed MAE at the shared roads (8.157\ms{}, against 8.348 for the original graph) and beat matched random links on all three seeds ($-0.253$, $-0.783$ and $-0.048$\ms{}), so the transfer rule held. Ridge-based Express Links beat random on two seeds, but its mean (8.497\ms{}) was above the original graph's, so it failed the rule. Random links did not help DCGRU (8.519\ms{}). Forecast-only also had the lowest Band~1 error across all roads (7.773 against 7.935\ms{}), while overall 60-minute MAE varied by less than 0.02\ms{} across the four graphs. Table~\ref{tab:second_models} in Appendix~\ref{app:other} lists the full DCRNN and DCGRU results.}
 
-\subsection{E7: Tuning Forecast-only}\label{sec:tuning}
+\subsection{\protect\rev{Tuning Forecast-only}}\label{sec:tuning}
 \prev{\textit{Grid.} We first varied the link budget and the minimum hop distance at the original link weight, using validation data and seeds 0 and 1. Fig.~\ref{fig:grid} shows each set-up as the change in 60-minute MAE from current Forecast-only (the boxed cell: at least 3 hops, 25 links). Panel (a) gives Band~1 error over all roads, which is the tuning metric, and panel (b) gives overall error. All twelve set-ups passed the overall-error limit. Only one improved on current Forecast-only in Band~1: allowing one-hop links at 25 links gave $-0.011$\ms{}, short of the 0.02\ms{} threshold. Larger budgets generally reduced overall error, by up to 0.049\ms{} at 100 links and three hops, but raised Band~1 error by 0.06 to 0.26\ms{}. With only 10 links, Band~1 error was worse at every distance. The original graph was 0.136\ms{} worse than current Forecast-only on this metric.}
 
 \begin{figure*}[!t]
@@ -695,18 +695,18 @@ Random, matched to tuned & 7.6300 & 3.5487 & 8.1391 \\
 
 \section{Limitations and Future Work}\label{sec:limitations}
 \subsection{Limitations}
-\rev{\textbf{Data and seeds.} We tested on two highway datasets, and the architecture transfer and the input-replacement diagnostics were limited to METR-LA. Most comparisons used three training seeds, so the mean errors rest on a small sample of training runs, and the seed spread was often as large as the differences between graphs. The half-weight configuration led after two validation seeds, then lost that lead at five seeds and on test. The day-bootstrap intervals describe variation across test days for the fitted models; they do not include variation from retraining.}
+\prev{\textbf{Data and seeds.} We tested on two highway datasets, and the architecture transfer and the input-replacement diagnostics were limited to METR-LA. Most comparisons used three training seeds, so the mean errors rest on a small sample of training runs, and the seed spread was often as large as the differences between graphs. The half-weight configuration led after two validation seeds, then lost that lead at five seeds and on test. The day-bootstrap intervals describe variation across test days for the fitted models; they do not include variation from retraining.}
 
-\rev{\textbf{Test-split reuse.} The METR-LA test split had already been used earlier in the project, so the tuning test is a single planned look at data we had seen before rather than a fully independent test.}
+\prev{\textbf{Test-split reuse.} The METR-LA test split had already been used earlier in the project, so the tuning test is a single planned look at data we had seen before rather than a fully independent test.}
 
-\rev{\textbf{Destination mismatch.} We scored all methods on the same readings, but the selectors did not always add links to the same destinations. We also chose the evaluation metric after the pilot and based it on the roads that received an Express Links edge, so the shared evaluation roads favour that selector's destinations.}
+\prev{\textbf{Destination mismatch.} We scored all methods on the same readings, but the selectors did not always add links to the same destinations. We also chose the evaluation metric after the pilot and based it on the roads that received an Express Links edge, so the shared evaluation roads favour that selector's destinations.}
 
 \subsection{Future research directions}
-\rev{\textbf{Fixed-destination test.} A follow-up could fix the destinations, draw several random graphs and match the controls on hop distance. This would show how much the choice of source contributes on its own.}
+\prev{\textbf{Fixed-destination test.} A follow-up could fix the destinations, draw several random graphs and match the controls on hop distance. This would show how much the choice of source contributes on its own.}
 
-\rev{\textbf{Bottleneck benchmark.} METR-LA has only 9 sensors behind its screened bottleneck and PEMS-BAY has none. A direct test of the over-squashing mechanism needs a held-out benchmark with verified bottleneck coverage, such as a region of LargeST \cite{liu2023largest}.}
+\prev{\textbf{Bottleneck benchmark.} METR-LA has only 9 sensors behind its screened bottleneck and PEMS-BAY has none. A direct test of the over-squashing mechanism needs a held-out benchmark with verified bottleneck coverage, such as a region of LargeST \cite{liu2023largest}.}
 
-\rev{\textbf{More seeds and models.} Running five or more seeds for every comparison, and repeating the transfer test with DCRNN and other forecasters on PEMS-BAY, would show whether the low-speed gains of Forecast-only hold beyond METR-LA and Graph WaveNet.}
+\prev{\textbf{More seeds and models.} Running five or more seeds for every comparison, and repeating the transfer test with DCRNN and other forecasters on PEMS-BAY, would show whether the low-speed gains of Forecast-only hold beyond METR-LA and Graph WaveNet.}
 
 \section{Conclusion}\label{sec:conclusion}
 \prev{We asked which 25 extra sensor links help a graph forecaster predict slow traffic an hour ahead, and whether links chosen to relieve over-squashing do better than links chosen for their forecasting value. We tested this in two stages on METR-LA and PEMS-BAY, with Graph WaveNet as the main forecaster and DCRNN as a second architecture.}
@@ -720,7 +720,7 @@ Random, matched to tuned & 7.6300 & 3.5487 & 8.1391 \\
 \prev{Taken together, the results suggest that a few links chosen for their measured forecasting value help most where errors are largest, on slow traffic at the shared evaluation roads, while their effect on overall error is small. Reporting errors by speed band, and comparing against matched random links over several seeds, was necessary to see this. This is in line with recent studies that find rewiring for over-squashing gives smaller and less consistent gains on real data than theory suggests. Whether relieving over-squashing adds anything beyond forecasting value remains open, and a test on a network with clear bottlenecks would be the natural next step.}
 
 \section*{Data Availability}
-\rev{The code, run-level results, frozen link graphs, decision records and figure scripts for this study are available at \url{https://github.com/alzahraa77/express-links-mlr570}. The repository README links each table and figure in this report to the script and saved record behind it. METR-LA and PEMS-BAY are public benchmarks \cite{li2018dcrnn}; the scripts download them automatically. Appendices~\ref{app:horizon} and~\ref{app:other} give the results by forecast horizon, the jam-warning scores and the supplementary model comparisons.}
+\prev{The code, run-level results, frozen link graphs, decision records and figure scripts for this study are available at \url{https://github.com/alzahraa77/express-links-mlr570}. The repository README links each table and figure in this report to the script and saved record behind it. METR-LA and PEMS-BAY are public benchmarks \cite{li2018dcrnn}; the scripts download them automatically. Appendices~\ref{app:horizon} and~\ref{app:other} give the results by forecast horizon, the jam-warning scores and the supplementary model comparisons.}
 
 \bibliographystyle{IEEEtran}
 \bibliography{refs}
