@@ -1,0 +1,58 @@
+{
+  "final": "fo_h1_b25_w0.5",
+  "current": "fo_h3_b25_w1",
+  "comparisons": [
+    "original",
+    "fo_h3_b25_w1",
+    "fo_h1_b25_w0.5",
+    "random_fo_h1_b25_w0.5"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "graph_sha256": {
+    "original": "d17f1885980935364f2ee1f3409f1083ed264e711a07a9e22aa14fdd7d945cce",
+    "fo_h3_b25_w1": "64bf5f3111a0d3f49b77edfa6268b21a95184c7aeafbfaed7fc809e0349e2105",
+    "fo_h1_b25_w0.5": "ac4baa1f0270e74a96f3ef03a207a33f47960e0c6abc6b25dc89600f8eede93f",
+    "random_fo_h1_b25_w0.5": "af6f35a601aac8bd57f6b521a9f35e9a97af318c71c9a08afff9c89c4f67d9b9"
+  },
+  "checkpoint_sha256": {
+    "original/seed_0": "17ec09085a5960e23b295ee5ae72ad83313f9188bc3281f06ad141e0126ba31b",
+    "original/seed_1": "69682c2880e5c27e7e5662284a9dd9b88b6849bc119194ee181cab24b2504240",
+    "original/seed_2": "aa4f79094a497c6d741e07282b634a76535723ebfdacd7d2e655fadb97e4e8de",
+    "original/seed_3": "1431c514a4a77fac1a010f8f234b8f9f898093291dca614ca8de41dc9468bd49",
+    "original/seed_4": "68150a0bf5515642d0ccf6e83baf1fc6ade17d10a4e1263a09208494bb7fb431",
+    "fo_h3_b25_w1/seed_0": "063801dedc788507e6184279a0660fb32bbb3ca4265966e24c777f71f24fc827",
+    "fo_h3_b25_w1/seed_1": "86cf9d46402531297b3d40cc6c519799e040cbe736e7ca418ed6e96c2c603246",
+    "fo_h3_b25_w1/seed_2": "f5141e8e8b2a1ced793c5f47eb8b9dc7334ca6895967b4b08a45c821e0ab0e12",
+    "fo_h3_b25_w1/seed_3": "bd74e8607dc605c30e779a98c493fe5112aa8d51970241b877d59f6bcbb5e4e2",
+    "fo_h3_b25_w1/seed_4": "ae3b7d1d28213c8edf60d4f4a289709d42af0aca473368195f0221d05b61f96d",
+    "fo_h1_b25_w0.5/seed_0": "7301c4a2b8330bb834f431abffa67a601cf522d3cd0b153ef7916a44bf17184d",
+    "fo_h1_b25_w0.5/seed_1": "4fd8c143b3677a1b9610d4af23a5d729c7432e3dd2804b28e5f58a0d6736f906",
+    "fo_h1_b25_w0.5/seed_2": "fceb202473ec26b2029371969f1d7b87904bd77612ef48159ae92c7e695b6d61",
+    "fo_h1_b25_w0.5/seed_3": "502e6343fc29a0a0fbb065903f5eee66a512703be4fd3d2684838d4df086f8cb",
+    "fo_h1_b25_w0.5/seed_4": "030c1b9a3127c6423d04046ea687ca58e5d4c67adf2bc17e7519dddb4036c292",
+    "random_fo_h1_b25_w0.5/seed_0": "2a7e4673e93cc4365af28af031f1aa158c0defa4c4adbc3723ca4259c6d6377f",
+    "random_fo_h1_b25_w0.5/seed_1": "cb039ae95c7dd98c13a5efea3e5940224d97b7124e0e29ee711b213b7b58c648",
+    "random_fo_h1_b25_w0.5/seed_2": "6315ab4d066ecd67c0896185170735ec7cf87df3e949e6a1b70638c127c0726c",
+    "random_fo_h1_b25_w0.5/seed_3": "70acea3b9db5061023e81204b473ef3b51d718158daee19870d5b654a84a9b16",
+    "random_fo_h1_b25_w0.5/seed_4": "7b6eab6f08f787037170e8c7b9f59cc6b6f2977da5a82edabe250e82e75867e5"
+  },
+  "metric": "band1_mae60 (60 min, all roads)",
+  "overall_limit_mph": 0.01,
+  "interval": "paired 95% day-block bootstrap",
+  "boot_draws": 10000,
+  "boot_seed": 20261123,
+  "rule": "tuned set-up passes if the upper 95% bound of (final - current Forecast-only) and of (final - matched random) on band-1 MAE are both below 0, and mean overall MAE over seeds is at most 0.01 mph above current Forecast-only. If no tuned set-up won on validation, the result is 'no tuned improvement' and current Forecast-only vs its matched random is reported as a separate yes/no (upper bound below 0).",
+  "decisions": {
+    "grid": "bd1018e1728ab78020e31d2b590fe039301547bc33170e745613eaa901437a7e",
+    "weights": "d5572e79ac8d83bf0ebb97115912f4239d862fcb88186333912e09f4050ca2e7",
+    "inner": "d3745794d420bc7580c7293445f4d2ef5ac0a4029b26e30d10275e50f20d501a",
+    "alloc": "4d754146b2c869a915302b201cc934a63804ebae89acf1f36dcea6cffc6f0467",
+    "confirm": "03eec5df1a93170061bac504a39f9d10a634070f4a375cd5e41c9693a296ef5a"
+  }
+}

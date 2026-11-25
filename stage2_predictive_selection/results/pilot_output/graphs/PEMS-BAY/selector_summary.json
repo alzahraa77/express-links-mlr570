@@ -1,0 +1,33 @@
+{
+  "inner_split": {
+    "fit_last_target": "2017-04-12 08:55:00",
+    "ranking_first_target": "2017-04-12 09:55:00",
+    "ranking_last_target": "2017-05-07 17:00:00",
+    "test_labels_used": false,
+    "fit_origins": 29138,
+    "ranking_origins": 7286
+  },
+  "arc_budget": 25,
+  "link_weight": 0.5604726672172546,
+  "min_hops": 3,
+  "shortlist": 16,
+  "positive_targets": {
+    "express_links": 318,
+    "forecast_only": 311
+  },
+  "eligible_directed_pairs": 90400,
+  "original_graph_sha256": "5a731ba370b4809b6208fc8a11dc01e9894a4183d6ddfb5dd05a98fa2791891c",
+  "source_speed_sha256": "ea11b805760d136ed4905916b764dd8ca4f33034121d5d57d2e88b9012af24b8",
+  "gtr_selection_seconds": 0.03194010300001082,
+  "shared_graph_preparation_seconds": 0.4762746239999842,
+  "joint_forecast_screening_seconds": 43.35627945499999,
+  "total_selector_seconds": 44.07922058999998,
+  "added_arcs": {
+    "express_links": 25,
+    "forecast_only": 25,
+    "gtr": 25,
+    "random_matched": 25,
+    "original": 0,
+    "virtual_node": 650
+  }
+}

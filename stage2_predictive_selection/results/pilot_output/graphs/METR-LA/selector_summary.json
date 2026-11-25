@@ -1,0 +1,33 @@
+{
+  "inner_split": {
+    "fit_last_target": "2012-05-06 15:15:00",
+    "ranking_first_target": "2012-05-06 16:15:00",
+    "ranking_last_target": "2012-05-23 07:05:00",
+    "test_labels_used": false,
+    "fit_origins": 19169,
+    "ranking_origins": 4787
+  },
+  "arc_budget": 25,
+  "link_weight": 0.3202519416809082,
+  "min_hops": 3,
+  "shortlist": 16,
+  "positive_targets": {
+    "express_links": 206,
+    "forecast_only": 205
+  },
+  "eligible_directed_pairs": 34836,
+  "original_graph_sha256": "d17f1885980935364f2ee1f3409f1083ed264e711a07a9e22aa14fdd7d945cce",
+  "source_speed_sha256": "e00a068ca5ec0abcf225b5a044bf962cc1c32c4fef31bad8187c04f342ef0990",
+  "gtr_selection_seconds": 0.01683468300001323,
+  "shared_graph_preparation_seconds": 0.014410263999991457,
+  "joint_forecast_screening_seconds": 9.49034754400003,
+  "total_selector_seconds": 9.698425106999991,
+  "added_arcs": {
+    "express_links": 25,
+    "forecast_only": 25,
+    "gtr": 25,
+    "random_matched": 25,
+    "original": 0,
+    "virtual_node": 414
+  }
+}

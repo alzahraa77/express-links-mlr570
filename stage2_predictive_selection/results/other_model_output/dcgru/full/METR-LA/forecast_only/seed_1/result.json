@@ -1,0 +1,19 @@
+{
+  "model": "dcgru",
+  "best_epoch": 40,
+  "best_validation_MAE": 2.8929353052715086,
+  "test_origins": 6843,
+  "smoke": false,
+  "added_arcs": 25,
+  "mae60": 3.642290037069457,
+  "band1_mae60": 7.763298247182829,
+  "band1_n60": 333768,
+  "express_target_mae60": 3.267611311015701,
+  "target_low_mae60": 7.8971644235661085,
+  "target_low_n60": 30331,
+  "target_sensor_n": 25,
+  "low_speed_cutoff": 57.22222137451172,
+  "evaluation_sha256": "f48157ee238663f838dad34d396bfafb0d6116c42da43e559d0ae1aacb87f7c3",
+  "mae_mean_12": 3.13275279316693,
+  "median_train_epoch_seconds": 28.530927645999327
+}

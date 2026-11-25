@@ -1,0 +1,24 @@
+ADDENDUM 2 to PREREGISTERED_DIAGNOSTIC.txt
+Written 21 Nov 2026, before any DCRNN result was produced.
+
+Second model changed from the home-made DCGRU to the published DCRNN.
+Reason: a model taken from a trusted, citable source is a stronger test of whether the
+forecast-only effect belongs to Graph WaveNet or to the link-selection method.
+
+Model: DCRNN (Li et al., ICLR 2018), PyTorch code linked from the official repository
+(github.com/chnsh/DCRNN_PyTorch, commit d92490b808ba5c5be2f23d427d96e9a56b066d7f), used
+unchanged with the settings in its own config files. Data pipeline, frozen link graphs,
+batching, checkpoint selection and evaluation are the same as for Graph WaveNet
+(see README_dcrnn.md). METR-LA; original, express_links, forecast_only, random_matched;
+seeds 0, 1, 2.
+
+The decision rule from Addendum 1, section 2 is applied unchanged:
+- The forecast-gain effect is NOT specific to Graph WaveNet if, with DCRNN, forecast_only is
+  lower than random_matched on target_low_mae60 on at least 2 of 3 seeds AND its 3-seed mean
+  is lower than original's.
+- The same test is applied to express_links and reported alongside.
+- If neither holds, the effect is reported as specific to Graph WaveNet (or not robust).
+
+DCGRU results: had not been looked at when this addendum was written.
+If they finish, they are reported as a supplementary check with a simplified model.
+Note added 24 Nov 2026: the DCGRU jobs (61264-61266) were submitted automatically by submit_diagnostics.sh and finished, but their results had not been looked at when switching to DCRNN. They are reported as a supplementary check.

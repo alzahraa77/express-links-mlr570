@@ -1,0 +1,91 @@
+PRE-REGISTRATION: tuning the Forecast-only link selector
+Written 23 Nov 2026, before any tuning result. METR-LA, Graph WaveNet.
+Revised 23 Nov 2026 (before any grid result was seen): inner-model preprocessing,
+locked test plan, explicit fallback, narrower test-data wording.
+The rules below are applied by tune_forecast_only.py exactly as written.
+
+Question
+Can the Forecast-only selector give larger gains on low-speed 60-minute forecasts if we
+change how close the linked roads may be, how many links are added, how strongly they
+are weighted, and which roads receive them?
+
+Fixed throughout
+- Data, strict split, gap-filling, scaler, batching and Graph WaveNet training: as in the
+  replication (run_replication.py, unchanged). 100 epochs, best-validation checkpoint.
+- Candidate links and scores: run_replication.predictive_scores, unchanged (16-link
+  shortlist per road by fit-block gain, ranked by held-out gain on the last 20% of
+  training). Only links with positive held-out gain are used. No self-links, no link
+  that already exists in that direction.
+- Low-speed cutoff: the Band 1 cutoff derived from training data.
+- Weight 1x = median weight of the original road graph (0.3203 on METR-LA).
+- The current Forecast-only (3 hops, 25 links, 1x weight) must be rebuilt exactly; the
+  code stops if its graph differs from the frozen replication graph.
+
+Metrics (60 minutes ahead)
+- Main: low-speed MAE across all roads (Band 1).
+- Also reported: overall MAE across all roads; low-speed MAE on the original 25 target roads.
+
+Stage 1 - grid (validation only, seeds 0 and 1, averaged before ranking)
+Minimum hops 3, 2, 1 x 10, 25, 50, 100 links, one link per road, 1x weight.
+Hops 1 allows a reverse link to a directly connected road as well as longer links.
+The original graph is trained as a reference only.
+Eligible: mean validation overall MAE at most 0.01 mph above current Forecast-only.
+The two eligible set-ups with the lowest mean validation Band 1 MAE go to the weight test.
+
+Stage 1b - weights (validation only, seeds 0 and 1)
+0.5x and 2x weight on those two set-ups.
+Winner: among all eligible grid and weight set-ups, the lowest mean validation Band 1 MAE.
+It must beat current Forecast-only by at least 0.02 mph; otherwise the winner is the
+current Forecast-only. Both thresholds are applied to unrounded means.
+
+Stage 3 - allocation (validation only, seeds 0 and 1)
+Same hops, budget and weight as the winner; up to 3 links per road in both versions.
+- Standard: links taken in order of held-out gain.
+- Error-based: roads ranked by the original model's low-speed 60-minute MAE on the last
+  20% of training (the selector's own inner holdout), averaged over seeds 0-2 of an
+  original-graph model trained only on the first 80% of training. Its preprocessing
+  (gap-fill medians, input scaler, low-speed cutoff) is fitted on the first 80% only,
+  so the ranking period never informs it. Its checkpoint is chosen on the inner holdout;
+  outer validation and test are not used. Outer validation judges the allocation.
+  Roads with fewer than 30 low-speed readings or fewer than 3 days in that holdout are
+  ranked last. Hardest roads first, each gets its best positive-gain links, up to 3,
+  until the budget is used.
+Error-based is adopted if its mean validation Band 1 MAE is at least 0.02 mph lower than
+both the winner and standard allocation, and its overall MAE passes the 0.01 limit.
+Otherwise the final set-up is the Stage 1 winner.
+
+Stage 2 - confirmation (test split opened once, after all decisions above are saved)
+Seeds 0-4 of: original graph, current Forecast-only, the final set-up, and links
+randomly matched to the final set-up (same target roads, random eligible sources under
+the same hop limit, fixed random seed 0). Finished replication runs of the same graph
+and seed are reused instead of retrained.
+Reported: mean of seeds, per-seed differences, and paired 95% intervals from a
+day-block bootstrap over test days (10,000 draws, seed 20261123), for all three metrics.
+
+Test plan lock
+Before any test prediction, `final` saves the final set-up, the comparison set-ups, their
+graph fingerprints, the checkpoint fingerprints of every seed, the seeds, the thresholds,
+this rule and fingerprints of all stage decisions. An interrupted run resumes only if all of
+these still match; otherwise it refuses to score. The verdict is saved with the results.
+
+Test criterion (decides whether to carry the settings to DCRNN on PEMS-BAY)
+If a tuned set-up won on validation, it passes if, on test Band 1 MAE pooled over seeds
+0-4, the upper end of the paired 95% interval is below 0 both against current
+Forecast-only and against its matched random links, and mean overall test MAE is at most
+0.01 mph above current Forecast-only.
+If no tuned set-up won on validation, the result is recorded as "no tuned improvement".
+Whether current Forecast-only beats its own matched random links (upper end of the paired
+95% interval below 0) is reported as a separate yes/no.
+
+Test data
+No test predictions or forecast scores are made before `final`. The shared data audit,
+which runs in every stage, counts missing values and speed bands in all splits, including
+test; it does not use any model.
+
+Caveat
+The METR-LA test split was used in earlier experiments, so this is a single pre-planned
+look at a split already seen. The PEMS-BAY run with DCRNN, with links recomputed from
+PEMS-BAY training data and the same settings, is a cross-dataset and cross-model
+transfer check; PEMS-BAY also appeared in earlier experiments.
+
+LargeST-GLA stays a separate experiment for the over-squashing question.

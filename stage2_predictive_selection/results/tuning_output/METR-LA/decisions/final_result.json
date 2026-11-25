@@ -1,0 +1,74 @@
+{
+  "result": "FAIL",
+  "tuned_improvement": true,
+  "beats_current_forecast_only": false,
+  "beats_matched_random": true,
+  "overall_gap_mph": -0.010488621842502877,
+  "overall_within_limit": true,
+  "final": "fo_h1_b25_w0.5",
+  "intervals": {
+    "original | band1 (all roads, low speed)": {
+      "point": -0.08088621578087174,
+      "ci95": [
+        -0.11120307616252502,
+        -0.052638148392555185
+      ]
+    },
+    "original | overall (all roads)": {
+      "point": -0.0038492306371406995,
+      "ci95": [
+        -0.014390943757666518,
+        0.007061983680921887
+      ]
+    },
+    "original | 25 roads, low speed": {
+      "point": -0.12996452004292225,
+      "ci95": [
+        -0.18954034081796417,
+        -0.07991277106608988
+      ]
+    },
+    "fo_h3_b25_w1 | band1 (all roads, low speed)": {
+      "point": 0.04311806603407906,
+      "ci95": [
+        0.021108832182903985,
+        0.06809608558653035
+      ]
+    },
+    "fo_h3_b25_w1 | overall (all roads)": {
+      "point": -0.010488635698928727,
+      "ci95": [
+        -0.020512181223257653,
+        0.0006253908598226606
+      ]
+    },
+    "fo_h3_b25_w1 | 25 roads, low speed": {
+      "point": -0.014504302287289612,
+      "ci95": [
+        -0.08528448987286047,
+        0.05294951517706174
+      ]
+    },
+    "random_fo_h1_b25_w0.5 | band1 (all roads, low speed)": {
+      "point": -0.10143837279936962,
+      "ci95": [
+        -0.1293332858631202,
+        -0.07464949856021041
+      ]
+    },
+    "random_fo_h1_b25_w0.5 | overall (all roads)": {
+      "point": -0.0017232272516905598,
+      "ci95": [
+        -0.012781162149142442,
+        0.009369695043927739
+      ]
+    },
+    "random_fo_h1_b25_w0.5 | 25 roads, low speed": {
+      "point": -0.27789405847153076,
+      "ci95": [
+        -0.3808671461333359,
+        -0.18213033735233686
+      ]
+    }
+  }
+}

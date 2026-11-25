@@ -1,0 +1,53 @@
+{
+  "model": "dcrnn",
+  "code_repository": "https://github.com/chnsh/DCRNN_PyTorch",
+  "code_commit": "d92490b808ba5c5be2f23d427d96e9a56b066d7f",
+  "settings_file": "dcrnn_la.yaml",
+  "model_settings": {
+    "cl_decay_steps": 2000,
+    "filter_type": "dual_random_walk",
+    "horizon": 12,
+    "input_dim": 2,
+    "l1_decay": 0,
+    "max_diffusion_step": 2,
+    "num_nodes": 207,
+    "num_rnn_layers": 2,
+    "output_dim": 1,
+    "rnn_units": 64,
+    "seq_len": 12,
+    "use_curriculum_learning": true
+  },
+  "train_settings": {
+    "base_lr": 0.01,
+    "dropout": 0,
+    "epoch": 0,
+    "epochs": 100,
+    "epsilon": 0.001,
+    "global_step": 0,
+    "lr_decay_ratio": 0.1,
+    "max_grad_norm": 5,
+    "max_to_keep": 100,
+    "min_learning_rate": 2e-06,
+    "optimizer": "adam",
+    "patience": 50,
+    "steps": [
+      20,
+      30,
+      40,
+      50
+    ],
+    "test_every_n_epochs": 10
+  },
+  "dataset": "METR-LA",
+  "mode": "forecast_only",
+  "seed": 2,
+  "profile": "full",
+  "epochs": 100,
+  "batch_size": 64,
+  "mean": 58.816716767323754,
+  "std": 12.537631645600714,
+  "graph_variant_sha256": "64bf5f3111a0d3f49b77edfa6268b21a95184c7aeafbfaed7fc809e0349e2105",
+  "torch": "2.10.0.dev20251210+cu128",
+  "speeds_sha256": "e00a068ca5ec0abcf225b5a044bf962cc1c32c4fef31bad8187c04f342ef0990",
+  "adjacency_sha256": "a35687c6e15aa228dc45027b0ed2a0ea0f4ec78f573deb992c595092d12f61b3"
+}

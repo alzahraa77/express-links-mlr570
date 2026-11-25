@@ -1,0 +1,9 @@
+{
+  "label": "fo_h1_b25_w2",
+  "hops": 1,
+  "budget": 25,
+  "weight_mult": 2.0,
+  "weight": 0.6405038833618164,
+  "targets": 25,
+  "adjacency_sha256": "2f7c7f9bf43fb563a518865e615690608598815854f0af5fdc90f91743ec1272"
+}

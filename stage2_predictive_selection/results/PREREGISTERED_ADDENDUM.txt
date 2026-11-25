@@ -1,0 +1,35 @@
+ADDENDUM to PREREGISTERED_DIAGNOSTIC.txt
+Written 19 Nov 2026, before any diagnostic or second-model result on real data was seen.
+The original file is unchanged; this note records details fixed while writing the code.
+
+1. Over-squashing test (oversquash_test.py), implementation details
+   - "Useful" pairs for the secondary rule are eligible pairs (at least 3 hops, not directly
+     linked) with POSITIVE held-out ridge gain. Ridge gain uses the same set-up as the
+     replication's selector, computed for every eligible pair on training data only.
+   - Matching is one-to-one and greedy: low-resistance pairs in order of decreasing gain, each
+     matched to the unused high-resistance pair at the same hop distance with the closest gain,
+     accepted only if the gains differ by at most 20% of the larger one.
+   - A same-target matching (both pairs share the target road) is reported as a robustness check.
+     It does not decide the rule.
+   - Swap fallback: if no training-period week has all 12 source readings observed, the nearest
+     training-period week is used anyway; the percentage of such swaps is reported.
+   - Day bootstrap: 1,000 resamples of whole test days, fixed random seed 12345.
+   - The --test-windows option is for quick checks only and cannot be used for any decision.
+   - Known imbalance for the primary rule: random_matched links sit much closer to their targets
+     (median resistance percentile 30 on METR-LA) than express_links (89). The primary rule
+     (A - B) therefore compares distant-source use with nearby-source use; it is reported as
+     planned but interpreted with this caveat. The secondary rule is not affected.
+
+2. Second model (run_other_model.py): is the effect Graph WaveNet's or the method's?
+   Model: DCGRU, a simplified DCRNN-style diffusion-convolution GRU encoder (2 layers, 64 units,
+   diffusion order 2 over the same forward/backward transition matrices, linear 12-step head),
+   trained with the same data, batching, loss, optimiser, clipping, 100 epochs and best-validation
+   checkpoint, on the same FROZEN link graphs (no re-selection) and evaluated on the identical
+   test slice (same evaluation_sha256). METR-LA; original, express_links, forecast_only,
+   random_matched; seeds 0, 1, 2.
+   Decision (target_low_mae60, i.e. 60-minute MAE on slow readings of the 25 target roads):
+   - The forecast-gain effect is NOT specific to Graph WaveNet if, with DCGRU, forecast_only is
+     lower than random_matched on at least 2 of 3 seeds AND its 3-seed mean is lower than
+     original's.
+   - The same test is applied to express_links and reported alongside.
+   - If neither holds, the effect is reported as specific to Graph WaveNet (or not robust).

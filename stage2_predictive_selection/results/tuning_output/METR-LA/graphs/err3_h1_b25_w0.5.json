@@ -1,0 +1,10 @@
+{
+  "label": "err3_h1_b25_w0.5",
+  "hops": 1,
+  "budget": 25,
+  "weight_mult": 0.5,
+  "weight": 0.1601259708404541,
+  "targets": 9,
+  "adjacency_sha256": "3ac5b1b33c97d2700f03a4fca8d8fe2daad5c8946b180501350fdc0ea0135f2d",
+  "allocation": "hardest roads first"
+}

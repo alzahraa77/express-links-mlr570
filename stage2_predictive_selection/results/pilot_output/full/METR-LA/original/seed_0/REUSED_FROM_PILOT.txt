@@ -1,0 +1,2 @@
+Checkpoint copied from /shared/g00112835/express_links_pilot/pilot_output/full/METR-LA/original/seed_0
+Pilot mae60 = 3.5527299714359173 (the re-evaluation should give the same value)

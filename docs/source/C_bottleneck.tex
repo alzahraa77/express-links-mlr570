@@ -1,0 +1,35 @@
+\documentclass[border=8pt]{standalone}
+\input{common.tex}
+\begin{document}
+\begin{tikzpicture}[font=\small, color=ink,
+  msg/.style={-{Stealth[length=1.8mm]}, line width=1.5pt, #1},
+  crowd/.style={-{Stealth[length=1.5mm]}, line width=0.9pt, ink!40}]
+% ---------- (a) without links
+\road{a}{(0,0)}{1.15}{white}
+\foreach \p/\q in {L1/L4,L4/L6,L6/hL,hL/hR,hR/R1,R1/R3,R3/R6}{\draw[msg=slow, shorten <=1.6mm, shorten >=1.6mm] (a\p) -- (a\q);}
+\foreach \p/\q in {L3/L6,L2/L5,L5/L7,L7/hL,L2/L4,L4/L7}{\draw[crowd, shorten <=1.6mm, shorten >=1.6mm] (a\p) -- (a\q);}
+\node[circle, fill=cEL, draw=ink, inner sep=0pt, minimum size=3.4mm] at (aL1) {};
+\node[circle, fill=cFO, draw=ink, inner sep=0pt, minimum size=3.4mm] at (aR6) {};
+\node[font=\footnotesize, text=cEL!85!black, anchor=east] at ($(aL1)+(-0.15,0)$) {road $u$};
+\node[font=\footnotesize, text=cFO!85!black, anchor=west] at ($(aR6)+(0.15,0)$) {road $v$};
+\draw[decorate, decoration={brace, amplitude=5pt}, ink!60] ($(ahL)+(-0.1,0.28)$) -- ($(ahR)+(0.1,0.28)$) node[midway, above=6pt, font=\scriptsize, text=slow, align=center] {all messages from\\the left share it};
+\node[font=\bfseries, align=center] at (3.28,-1.75) {(a) Without new links};
+\node[font=\footnotesize, text=muted, align=center] at (3.28,-2.2) {$u$ reaches $v$ in 7 hops, squeezed through the bottleneck};
+
+% ---------- (b) with an express link
+\begin{scope}[xshift=9.4cm]
+\road{b}{(0,0)}{1.15}{white}
+\draw[msg=cEL, line width=1.8pt] (bL1) to[bend left=30] (bR6);
+\foreach \p/\q in {L3/L6,L2/L5,L5/L7,L7/hL,L2/L4,L4/L7,L6/hL}{\draw[crowd, shorten <=1.6mm, shorten >=1.6mm] (b\p) -- (b\q);}
+\node[circle, fill=cEL, draw=ink, inner sep=0pt, minimum size=3.4mm] at (bL1) {};
+\node[circle, fill=cFO, draw=ink, inner sep=0pt, minimum size=3.4mm] at (bR6) {};
+\node[font=\footnotesize, text=cEL!85!black, anchor=east] at ($(bL1)+(-0.15,0)$) {road $u$};
+\node[font=\footnotesize, text=cFO!85!black, anchor=west] at ($(bR6)+(0.15,0)$) {road $v$};
+\node[font=\footnotesize, text=cEL!85!black] at (3.28,1.9) {added link $u\to v$};
+\node[font=\bfseries, anchor=west] at (-0.6,1.75) {};
+\node[font=\bfseries, align=center] at (3.28,-1.75) {(b) With one added link};
+\node[font=\footnotesize, text=muted, align=center] at (3.28,-2.2) {$u$ reaches $v$ in 1 hop, bypassing the bottleneck};
+\end{scope}
+\node[font=\bfseries, anchor=west] at (-0.6,-2.0) {};
+\end{tikzpicture}
+\end{document}

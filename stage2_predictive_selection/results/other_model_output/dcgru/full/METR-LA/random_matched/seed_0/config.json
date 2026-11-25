@@ -1,0 +1,21 @@
+{
+  "model": "dcgru",
+  "dataset": "METR-LA",
+  "mode": "random_matched",
+  "seed": 0,
+  "profile": "full",
+  "epochs": 100,
+  "hidden": 64,
+  "layers": 2,
+  "diffusion_order": 2,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5,
+  "adjacency": "doubletransition",
+  "mean": 58.816716767323754,
+  "std": 12.537631645600714,
+  "graph_variant_sha256": "3d69c40b7cdcb667b8f8f4ac27fedf1c22bf911678f6c51021b75f5a20e6a84f",
+  "torch": "2.10.0.dev20251210+cu128",
+  "speeds_sha256": "e00a068ca5ec0abcf225b5a044bf962cc1c32c4fef31bad8187c04f342ef0990"
+}

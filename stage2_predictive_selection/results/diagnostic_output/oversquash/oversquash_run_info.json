@@ -1,0 +1,17 @@
+{
+  "matched_pairs": 9626,
+  "matched_same_target": 2261,
+  "swap_fallback_percent": 0.0050829473470191695,
+  "slow_cutoff": 57.22222137451172,
+  "test_days": 24,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "modes": [
+    "original",
+    "express_links",
+    "random_matched"
+  ]
+}

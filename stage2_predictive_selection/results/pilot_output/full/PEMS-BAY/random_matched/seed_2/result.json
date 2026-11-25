@@ -1,0 +1,18 @@
+{
+  "best_epoch": 96,
+  "best_validation_MAE": 1.6341612288137761,
+  "test_origins": 10412,
+  "smoke": false,
+  "added_arcs": 25,
+  "mae60": 1.9769889695028218,
+  "band1_mae60": 4.698591474312305,
+  "band1_n60": 882314,
+  "target_low_mae60": 5.193709760477044,
+  "target_low_n60": 77284,
+  "target_sensor_n": 25,
+  "low_speed_cutoff": 62.20000076293945,
+  "evaluation_sha256": "2c46db9df9ac6368b79b0080bc282ffde59bf2737b2646a87f401311532df3d3",
+  "express_target_mae60": 2.3351352631589344,
+  "median_train_epoch_seconds": 62.47023846799857,
+  "peak_allocated_mib_this_session": 1541.48291015625
+}

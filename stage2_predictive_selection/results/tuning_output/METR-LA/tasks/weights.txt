@@ -1,0 +1,8 @@
+fo_h1_b25_w0.5 0
+fo_h1_b25_w0.5 1
+fo_h1_b25_w2 0
+fo_h1_b25_w2 1
+fo_h3_b25_w0.5 0
+fo_h3_b25_w0.5 1
+fo_h3_b25_w2 0
+fo_h3_b25_w2 1

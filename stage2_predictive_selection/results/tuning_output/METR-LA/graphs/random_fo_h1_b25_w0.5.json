@@ -1,0 +1,10 @@
+{
+  "label": "random_fo_h1_b25_w0.5",
+  "hops": 1,
+  "budget": 25,
+  "weight_mult": 0.5,
+  "weight": 0.1601259708404541,
+  "targets": 25,
+  "adjacency_sha256": "af6f35a601aac8bd57f6b521a9f35e9a97af318c71c9a08afff9c89c4f67d9b9",
+  "matched_to": "fo_h1_b25_w0.5"
+}

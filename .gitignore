@@ -1,0 +1,15 @@
+# model checkpoints and saved forecasts (too large for GitHub; regenerate with the scripts)
+*.pt
+*.npz
+!stage2_predictive_selection/02_pilot/reference_graphs_METR-LA/*.npz
+# Python / OS / editor
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.blg
+*.synctex.gz

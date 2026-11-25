@@ -1,0 +1,61 @@
+EXPRESS LINKS · INFORMATION-USE DIAGNOSTIC · DECISION RULES
+Written before any diagnostic is run. Do not edit after the first diagnostic result is seen.
+(If something must change, add a dated note at the end explaining why; keep the original text.)
+
+Question
+  Do the added shortcuts make Graph WaveNet use information from distant source roads that it
+  otherwise under-uses? This tests the over-squashing explanation, not forecast accuracy.
+
+Data and models (no retraining)
+  - Dataset: METR-LA, strict protocol, held-out test windows (6,843 issue times).
+  - Models: the saved best-validation weights of original, express_links and random_matched,
+    seeds 0, 1 and 2 (9 models). Horizon: 60 minutes.
+  - Pairs:
+      EL pairs   = the 25 (source -> target) links chosen by express_links.
+      RAND pairs = the 25 links chosen by random_matched (same 25 target roads).
+
+Intervention ("swap")
+  For one source road, replace its 12 input readings with that same road's readings at the same
+  weekday and time of day from a different week inside the TRAINING period (nearest earlier week
+  with all 12 readings observed, otherwise the next one). Everything else is unchanged, including
+  the time-of-day input and the imputation rule. No zeros or mean values are used as replacements.
+
+Measures, per model, per pair, per seed (60-minute target forecast)
+  Use(pair)         = MAE at the target with the source swapped  -  MAE at the target unswapped
+                      (positive = removing the source's real readings makes the forecast worse)
+  Sensitivity(pair) = mean |forecast with swap - forecast without swap| at the target
+  Gradient(pair)    = mean |d forecast(target, 60 min) / d input(source, last 12 readings)|
+  Each is averaged over the pair set; reported for all observed readings and, secondarily, for
+  readings below the training band-1 speed threshold (57.2 mph).
+  Uncertainty: 95% interval from 1,000 bootstrap resamples of whole test DAYS (not windows).
+
+PRIMARY RULE (does targeted placement add useful information use?)
+  A = Use(express_links model, EL pairs)     - Use(original model, EL pairs)
+  B = Use(random_matched model, RAND pairs)  - Use(original model, RAND pairs)
+  Supported if, on at least 2 of the 3 seeds, A - B > 0 AND its day-bootstrap 95% interval
+  excludes 0.
+
+SECONDARY RULE (does the original graph under-use weakly connected sources?)
+  Using the original model only. From TRAINING data only, form matched pairs of candidate
+  (source, target) pairs with: the same hop distance, ridge forecast gain within +/-20% of each
+  other, and effective resistance on opposite sides of the median for that hop distance.
+  C = Use(low-resistance member) - Use(high-resistance member), averaged over matched pairs.
+  Supported if, on at least 2 of the 3 seeds, C > 0 AND its day-bootstrap 95% interval excludes 0.
+  If fewer than 10 matched pairs exist, the secondary rule is reported as INCONCLUSIVE.
+
+What the project will claim
+  - Primary AND secondary supported: shortcuts help the model use distant, under-used information.
+    Follow up on PEMS-BAY and with a controlled synthetic bottleneck.
+  - Primary supported, secondary not: the shortcuts add useful information routes, but the
+    original graph's under-use is not shown to depend on weak connectivity (no over-squashing
+    claim).
+  - Primary not supported: present the project as predictive graph rewiring for low-speed traffic
+    forecasting, with high seed variance, and report that the resistance shortlist did not improve
+    the main forecasting metric.
+  Sensitivity and Gradient are supporting evidence only; they cannot overturn the rules above.
+
+Already known before this diagnostic (forecasting experiment, seeds 0-2)
+  - The pre-set forecasting rule failed on METR-LA (Express Links lost to random_matched on seed 1
+    and to original on seed 2); it passed on PEMS-BAY.
+  - Link positions (hops, resistance) per method were checked with check_link_positions.py
+    before this file's rules were applied.
