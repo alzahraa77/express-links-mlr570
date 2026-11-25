@@ -12,6 +12,8 @@
 - Added Tori et al. (ICLR 2025) and Attali et al. (2026 survey) to the Discussion; one matching sentence (no citation) in the Conclusion.
 - Plain-language pass on the method: lead-lag strength, effective resistance, the bottleneck screen, every Stage 1 and Stage 2 graph (including the virtual node), and the diagnostics are now explained where they first appear. Abstract and introduction glossed the same terms.
 - Figs. 1-5 captions shortened to one sentence; their explanations moved into the text. Added why DCRNN was run on METR-LA only.
+- Wording fixes: abstract Stage 1 description, resistance sentence in the conclusion, "regularized ridge objective" for the Forecast-only shortlist, "shared evaluation roads", and a conditional wording for the rewiring survey.
+- Added GitHub link (abstract and new Data Availability section), a paper-organization paragraph, Limitations and Future Work split into two subsections with bold topics.
 - Changes are in blue bold in the marked PDF (build marked.tex). No numbers changed and no experiments were run.
 
 # Introduction, related work and methodology revision

@@ -54,7 +54,7 @@ def main():
     horizons = horizons.groupby(["dataset", "graph", "horizon_minutes"])[list(METRICS)].mean()
     averages = averages.groupby(["dataset", "graph"])[list(METRICS)].mean()
     body = [table(
-        "\\rev{Six-way Graph WaveNet comparison on all observed test readings by forecast horizon.}",
+        "\\prev{Six-way Graph WaveNet comparison on all observed test readings by forecast horizon.}",
         "horizons", ["Dataset", "Graph", "15 minutes", "30 minutes", "60 minutes", "12-horizon mean"],
         horizon_rows(horizons, averages),
     )]
@@ -67,7 +67,7 @@ def main():
         for dataset in DATASETS for i, mode in enumerate(ORIGINAL)
     ]
     body.append(table(
-        "\\rev{Stage~1 jam-warning recall and precision (percent) on all roads.}",
+        "\\prev{Stage~1 jam-warning recall and precision (percent) on all roads.}",
         "events", ["Dataset", "Graph", "Recall at 30 min", "Precision at 30 min",
                    "Recall at 60 min", "Precision at 60 min"], rows,
     ))
@@ -79,7 +79,7 @@ def main():
         for model in ("dcrnn", "dcgru") for i, mode in enumerate(("original", "express_links", "forecast_only", "random_matched"))
     ]
     body.append(table(
-        "\\rev{DCRNN and DCGRU results on METR-LA (MAE in mph, mean over seeds 0--2).}",
+        "\\prev{DCRNN and DCGRU results on METR-LA (MAE in mph, mean over seeds 0--2).}",
         "second_models", ["Model", "Graph", "25 roads, low speed", "Band 1", "Overall 60 min", "Overall 12-horizon mean"], rows,
     ))
     (ROOT / "supplement_horizons.tex").write_text(body[0])
