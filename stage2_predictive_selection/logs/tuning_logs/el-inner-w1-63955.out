@@ -1,0 +1,114 @@
+el-tune worker inner 1 3 on gpu-dy-g5-0-15, Mon Nov 23 21:16:59 UTC 2026
+== inner_original seed 1: Mon Nov 23 21:16:59 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+METR-LA inner_original seed=1 epoch 1/100 train=3.8071 val=3.6055 sec=50.8
+METR-LA inner_original seed=1 epoch 2/100 train=3.5387 val=3.5401 sec=21.5
+METR-LA inner_original seed=1 epoch 3/100 train=3.4660 val=3.5056 sec=21.5
+METR-LA inner_original seed=1 epoch 4/100 train=3.4218 val=3.4107 sec=21.5
+METR-LA inner_original seed=1 epoch 5/100 train=3.3788 val=3.3894 sec=21.6
+METR-LA inner_original seed=1 epoch 6/100 train=3.3490 val=3.4947 sec=21.5
+METR-LA inner_original seed=1 epoch 7/100 train=3.3191 val=3.3364 sec=21.5
+METR-LA inner_original seed=1 epoch 8/100 train=3.2888 val=3.3237 sec=21.5
+METR-LA inner_original seed=1 epoch 9/100 train=3.2659 val=3.2960 sec=21.5
+METR-LA inner_original seed=1 epoch 10/100 train=3.2484 val=3.2710 sec=21.5
+METR-LA inner_original seed=1 epoch 11/100 train=3.2265 val=3.2433 sec=21.5
+METR-LA inner_original seed=1 epoch 12/100 train=3.2059 val=3.2209 sec=21.5
+METR-LA inner_original seed=1 epoch 13/100 train=3.1836 val=3.3107 sec=21.5
+METR-LA inner_original seed=1 epoch 14/100 train=3.1687 val=3.1854 sec=21.5
+METR-LA inner_original seed=1 epoch 15/100 train=3.1527 val=3.1654 sec=21.5
+METR-LA inner_original seed=1 epoch 16/100 train=3.1298 val=3.1374 sec=21.5
+METR-LA inner_original seed=1 epoch 17/100 train=3.1158 val=3.1440 sec=21.5
+METR-LA inner_original seed=1 epoch 18/100 train=3.1068 val=3.1538 sec=21.5
+METR-LA inner_original seed=1 epoch 19/100 train=3.0935 val=3.1549 sec=21.5
+METR-LA inner_original seed=1 epoch 20/100 train=3.0807 val=3.1256 sec=21.5
+METR-LA inner_original seed=1 epoch 21/100 train=3.0682 val=3.1135 sec=21.5
+METR-LA inner_original seed=1 epoch 22/100 train=3.0581 val=3.0811 sec=21.5
+METR-LA inner_original seed=1 epoch 23/100 train=3.0486 val=3.0844 sec=21.5
+METR-LA inner_original seed=1 epoch 24/100 train=3.0389 val=3.0755 sec=21.5
+METR-LA inner_original seed=1 epoch 25/100 train=3.0328 val=3.1003 sec=21.5
+METR-LA inner_original seed=1 epoch 26/100 train=3.0246 val=3.0699 sec=21.5
+METR-LA inner_original seed=1 epoch 27/100 train=3.0069 val=3.0531 sec=21.5
+METR-LA inner_original seed=1 epoch 28/100 train=3.0090 val=3.0716 sec=21.5
+METR-LA inner_original seed=1 epoch 29/100 train=2.9995 val=3.0568 sec=21.5
+METR-LA inner_original seed=1 epoch 30/100 train=2.9894 val=3.0522 sec=21.5
+METR-LA inner_original seed=1 epoch 31/100 train=2.9870 val=3.0583 sec=21.5
+METR-LA inner_original seed=1 epoch 32/100 train=2.9902 val=3.0923 sec=21.5
+METR-LA inner_original seed=1 epoch 33/100 train=2.9719 val=3.0416 sec=21.5
+METR-LA inner_original seed=1 epoch 34/100 train=2.9716 val=3.0558 sec=21.5
+METR-LA inner_original seed=1 epoch 35/100 train=2.9633 val=3.1272 sec=21.5
+METR-LA inner_original seed=1 epoch 36/100 train=2.9583 val=3.0757 sec=21.5
+METR-LA inner_original seed=1 epoch 37/100 train=2.9563 val=3.0175 sec=21.5
+METR-LA inner_original seed=1 epoch 38/100 train=2.9619 val=3.0201 sec=21.5
+METR-LA inner_original seed=1 epoch 39/100 train=2.9481 val=3.0634 sec=21.5
+METR-LA inner_original seed=1 epoch 40/100 train=2.9432 val=3.0295 sec=21.5
+METR-LA inner_original seed=1 epoch 41/100 train=2.9436 val=3.0141 sec=21.5
+METR-LA inner_original seed=1 epoch 42/100 train=2.9354 val=3.0229 sec=21.5
+METR-LA inner_original seed=1 epoch 43/100 train=2.9344 val=3.0117 sec=21.5
+METR-LA inner_original seed=1 epoch 44/100 train=2.9298 val=3.0194 sec=21.5
+METR-LA inner_original seed=1 epoch 45/100 train=2.9251 val=3.0039 sec=21.5
+METR-LA inner_original seed=1 epoch 46/100 train=2.9288 val=3.0230 sec=21.5
+METR-LA inner_original seed=1 epoch 47/100 train=2.9196 val=3.0211 sec=21.5
+METR-LA inner_original seed=1 epoch 48/100 train=2.9150 val=3.0042 sec=21.5
+METR-LA inner_original seed=1 epoch 49/100 train=2.9148 val=3.0173 sec=21.5
+METR-LA inner_original seed=1 epoch 50/100 train=2.9101 val=3.0687 sec=21.5
+METR-LA inner_original seed=1 epoch 51/100 train=2.9089 val=3.0119 sec=21.5
+METR-LA inner_original seed=1 epoch 52/100 train=2.9019 val=3.0219 sec=21.5
+METR-LA inner_original seed=1 epoch 53/100 train=2.9070 val=3.0228 sec=21.5
+METR-LA inner_original seed=1 epoch 54/100 train=2.9050 val=3.0261 sec=21.5
+METR-LA inner_original seed=1 epoch 55/100 train=2.8970 val=3.0034 sec=21.5
+METR-LA inner_original seed=1 epoch 56/100 train=2.9015 val=3.0152 sec=21.5
+METR-LA inner_original seed=1 epoch 57/100 train=2.8959 val=2.9976 sec=21.5
+METR-LA inner_original seed=1 epoch 58/100 train=2.8839 val=3.0045 sec=21.5
+METR-LA inner_original seed=1 epoch 59/100 train=2.8928 val=3.0143 sec=21.5
+METR-LA inner_original seed=1 epoch 60/100 train=2.8836 val=3.0121 sec=21.5
+METR-LA inner_original seed=1 epoch 61/100 train=2.8819 val=3.0266 sec=21.5
+METR-LA inner_original seed=1 epoch 62/100 train=2.8863 val=2.9918 sec=21.5
+METR-LA inner_original seed=1 epoch 63/100 train=2.8785 val=3.0032 sec=21.5
+METR-LA inner_original seed=1 epoch 64/100 train=2.8776 val=2.9987 sec=21.5
+METR-LA inner_original seed=1 epoch 65/100 train=2.8767 val=3.0052 sec=21.5
+METR-LA inner_original seed=1 epoch 66/100 train=2.8777 val=2.9936 sec=21.5
+METR-LA inner_original seed=1 epoch 67/100 train=2.8743 val=2.9958 sec=21.5
+METR-LA inner_original seed=1 epoch 68/100 train=2.8718 val=3.0017 sec=21.5
+METR-LA inner_original seed=1 epoch 69/100 train=2.8692 val=3.0023 sec=21.5
+METR-LA inner_original seed=1 epoch 70/100 train=2.8703 val=2.9975 sec=21.5
+METR-LA inner_original seed=1 epoch 71/100 train=2.8665 val=3.0279 sec=21.5
+METR-LA inner_original seed=1 epoch 72/100 train=2.8646 val=3.0178 sec=21.5
+METR-LA inner_original seed=1 epoch 73/100 train=2.8595 val=2.9980 sec=21.5
+METR-LA inner_original seed=1 epoch 74/100 train=2.8607 val=3.0041 sec=21.5
+METR-LA inner_original seed=1 epoch 75/100 train=2.8605 val=3.0190 sec=21.5
+METR-LA inner_original seed=1 epoch 76/100 train=2.8564 val=2.9888 sec=21.5
+METR-LA inner_original seed=1 epoch 77/100 train=2.8523 val=2.9947 sec=21.5
+METR-LA inner_original seed=1 epoch 78/100 train=2.8573 val=2.9929 sec=21.5
+METR-LA inner_original seed=1 epoch 79/100 train=2.8509 val=3.0047 sec=21.5
+METR-LA inner_original seed=1 epoch 80/100 train=2.8497 val=3.0178 sec=21.5
+METR-LA inner_original seed=1 epoch 81/100 train=2.8488 val=3.0010 sec=21.5
+METR-LA inner_original seed=1 epoch 82/100 train=2.8498 val=3.0016 sec=21.5
+METR-LA inner_original seed=1 epoch 83/100 train=2.8497 val=2.9948 sec=21.5
+METR-LA inner_original seed=1 epoch 84/100 train=2.8436 val=3.0437 sec=21.5
+METR-LA inner_original seed=1 epoch 85/100 train=2.8429 val=3.0192 sec=21.5
+METR-LA inner_original seed=1 epoch 86/100 train=2.8432 val=3.0178 sec=21.5
+METR-LA inner_original seed=1 epoch 87/100 train=2.8414 val=2.9932 sec=21.5
+METR-LA inner_original seed=1 epoch 88/100 train=2.8399 val=3.0081 sec=21.5
+METR-LA inner_original seed=1 epoch 89/100 train=2.8391 val=2.9948 sec=21.5
+METR-LA inner_original seed=1 epoch 90/100 train=2.8397 val=3.0000 sec=21.5
+METR-LA inner_original seed=1 epoch 91/100 train=2.8390 val=2.9978 sec=21.5
+METR-LA inner_original seed=1 epoch 92/100 train=2.8319 val=2.9863 sec=21.5
+METR-LA inner_original seed=1 epoch 93/100 train=2.8351 val=2.9895 sec=21.5
+METR-LA inner_original seed=1 epoch 94/100 train=2.8326 val=3.0054 sec=21.5
+METR-LA inner_original seed=1 epoch 95/100 train=2.8290 val=2.9902 sec=21.5
+METR-LA inner_original seed=1 epoch 96/100 train=2.8308 val=3.0137 sec=21.5
+METR-LA inner_original seed=1 epoch 97/100 train=2.8274 val=2.9842 sec=21.5
+METR-LA inner_original seed=1 epoch 98/100 train=2.8319 val=3.0244 sec=21.5
+METR-LA inner_original seed=1 epoch 99/100 train=2.8264 val=3.0015 sec=21.5
+METR-LA inner_original seed=1 epoch 100/100 train=2.8222 val=3.0500 sec=21.5
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15              957123 2.641242 5.029149  6.563121
+              30              957120 3.020256 6.073648  8.009895
+              60              957118 3.457145 7.156230  9.557982
+Worker 1 finished Mon Nov 23 21:56:04 UTC 2026

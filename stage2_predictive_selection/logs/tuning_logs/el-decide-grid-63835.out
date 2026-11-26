@@ -1,0 +1,30 @@
+el-tune decide grid on gpu-dy-g5-0-17, Mon Nov 23 19:52:52 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+
+=== Grid (validation, mean of seeds; d_ = change vs fo_h3_b25_w1)
+               band1  overall  roads25  d_band1  d_overall  d_roads25
+label                                                                
+fo_h1_b25_w1  7.3855   3.2511   7.8904  -0.0113    +0.0022    +0.3207
+fo_h3_b25_w1  7.3969   3.2488   7.5697  +0.0000    +0.0000    +0.0000
+fo_h3_b10_w1  7.4491   3.2567   8.0226  +0.0522    +0.0079    +0.4530
+fo_h3_b100_w1 7.4610   3.2002   7.7971  +0.0641    -0.0486    +0.2274
+fo_h2_b50_w1  7.4913   3.2390   7.9963  +0.0944    -0.0098    +0.4266
+original      7.5324   3.2407   8.0844  +0.1355    -0.0081    +0.5147
+fo_h3_b50_w1  7.5603   3.2255   8.1017  +0.1634    -0.0233    +0.5320
+fo_h1_b100_w1 7.5733   3.2182   7.9493  +0.1764    -0.0306    +0.3796
+fo_h2_b10_w1  7.5755   3.2364   7.8867  +0.1787    -0.0124    +0.3170
+fo_h1_b50_w1  7.5933   3.2444   8.0402  +0.1965    -0.0044    +0.4705
+fo_h2_b25_w1  7.6201   3.2317   8.0241  +0.2232    -0.0172    +0.4544
+fo_h1_b10_w1  7.6478   3.2264   8.2609  +0.2510    -0.0224    +0.6912
+fo_h2_b100_w1 7.6564   3.2207   8.1325  +0.2596    -0.0282    +0.5628
+
+Eligible (overall MAE within +0.01 of current Forecast-only): ['fo_h1_b25_w1', 'fo_h3_b25_w1', 'fo_h3_b10_w1', 'fo_h3_b100_w1', 'fo_h2_b50_w1', 'fo_h3_b50_w1', 'fo_h1_b100_w1', 'fo_h2_b10_w1', 'fo_h1_b50_w1', 'fo_h2_b25_w1', 'fo_h1_b10_w1', 'fo_h2_b100_w1']
+Two best eligible set-ups get the weight test: ['fo_h1_b25_w1', 'fo_h3_b25_w1']
+
+Decision saved: /shared/g00112835/express_links_replication/tuning_output/METR-LA/decisions/grid.json

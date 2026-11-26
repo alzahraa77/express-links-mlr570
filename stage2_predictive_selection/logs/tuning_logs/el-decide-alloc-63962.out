@@ -1,0 +1,20 @@
+el-tune decide alloc on gpu-dy-g5-0-6, Tue Nov 24 00:58:51 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+
+=== Allocation (validation, mean of seeds; d_ = change vs fo_h3_b25_w1)
+                  band1  overall  roads25  d_band1  d_overall  d_roads25
+label                                                                   
+fo_h1_b25_w0.5   7.3463   3.2368   7.6527  -0.0506    -0.0121    +0.0831
+fo_h3_b25_w1     7.3969   3.2488   7.5697  +0.0000    +0.0000    +0.0000
+std3_h1_b25_w0.5 7.4824   3.2329   7.9317  +0.0855    -0.0159    +0.3621
+err3_h1_b25_w0.5 7.5155   3.2344   8.0889  +0.1186    -0.0144    +0.5192
+
+Error-based vs best of (winner, standard-3): -0.16920 mph (needs >= 0.02, overall within limit: True) -> FINAL SET-UP: fo_h1_b25_w0.5
+
+Decision saved: /shared/g00112835/express_links_replication/tuning_output/METR-LA/decisions/alloc.json

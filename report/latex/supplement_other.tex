@@ -1,7 +1,7 @@
 \begin{table}[H]
 \centering
 \small
-\caption{\prev{Stage~1 jam-warning recall and precision (percent) on all roads.}}
+\caption{Stage~1 jam-warning recall and precision (percent) on all roads.}
 \label{tab:events}
 \begin{tabular}{@{}llrrrr@{}}
 \toprule
@@ -12,14 +12,14 @@ METR-LA & Original & 19.72 & 57.15 & 7.70 & 56.04 \\
  & Resistance only & 20.19 & 55.71 & 8.61 & 58.94 \\
  & Correlation only & 19.18 & 57.31 & 9.05 & 58.27 \\
  & Same-side & 20.50 & 55.09 & 8.19 & 54.44 \\
- & Greedy lead--lag & 20.21 & 54.53 & 8.59 & 58.01 \\
+ & Lead--lag selector & 20.21 & 54.53 & 8.59 & 58.01 \\
  & Virtual node & 19.80 & 59.96 & 8.07 & 58.20 \\
 PEMS-BAY & Original & 24.74 & 61.85 & 2.00 & 42.02 \\
  & Random & 22.45 & 61.58 & 1.52 & 40.10 \\
  & Resistance only & 24.19 & 62.74 & 1.67 & 48.01 \\
  & Correlation only & 25.34 & 62.61 & 2.19 & 47.57 \\
  & Same-side & 24.04 & 62.21 & 1.73 & 44.77 \\
- & Greedy lead--lag & 23.41 & 62.22 & 3.03 & 48.60 \\
+ & Lead--lag selector & 23.41 & 62.22 & 3.03 & 48.60 \\
  & Virtual node & 26.31 & 64.06 & 1.93 & 53.05 \\
 \bottomrule
 \end{tabular}
@@ -28,18 +28,18 @@ PEMS-BAY & Original & 24.74 & 61.85 & 2.00 & 42.02 \\
 \begin{table}[H]
 \centering
 \small
-\caption{\prev{DCRNN and DCGRU results on METR-LA (MAE in mph, mean over seeds 0--2).}}
+\caption{DCRNN and DCGRU results on METR-LA (MAE in mph, mean over seeds 0--2).}
 \label{tab:second_models}
 \begin{tabular}{@{}llrrrr@{}}
 \toprule
 Model & Graph & 25 roads, low speed & Band 1 & Overall 60 min & Overall 12-horizon mean \\
 \midrule
 DCRNN & Original & 8.383 & 7.747 & 3.529 & 3.034 \\
- & Ridge Express Links & 8.326 & 7.752 & 3.517 & 3.029 \\
+ & Express Links & 8.326 & 7.752 & 3.517 & 3.029 \\
  & Forecast-only & 8.051 & 7.760 & 3.526 & 3.032 \\
  & Matched random & 8.270 & 7.714 & 3.513 & 3.028 \\
 DCGRU & Original & 8.348 & 7.935 & 3.667 & 3.150 \\
- & Ridge Express Links & 8.497 & 7.978 & 3.677 & 3.156 \\
+ & Express Links & 8.497 & 7.978 & 3.677 & 3.156 \\
  & Forecast-only & 8.157 & 7.773 & 3.673 & 3.147 \\
  & Matched random & 8.519 & 7.992 & 3.659 & 3.141 \\
 \bottomrule

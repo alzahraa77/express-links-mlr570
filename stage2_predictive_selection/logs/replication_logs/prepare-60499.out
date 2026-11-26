@@ -1,0 +1,74 @@
+Collecting gdown==5.2.0
+  Downloading gdown-5.2.0-py3-none-any.whl (18 kB)
+Collecting tables
+  Downloading tables-3.10.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (7.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.6/7.6 MB 2.4 MB/s eta 0:00:00
+Collecting filelock
+  Downloading filelock-4.1.0-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.0/133.0 KB 2.6 MB/s eta 0:00:00
+Collecting requests[socks]
+  Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 KB 1.4 MB/s eta 0:00:00
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.9/109.9 KB 2.6 MB/s eta 0:00:00
+Collecting tqdm
+  Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 KB 1.7 MB/s eta 0:00:00
+Collecting numexpr>=2.6.2
+  Downloading numexpr-2.14.1-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (440 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 440.2/440.2 KB 7.8 MB/s eta 0:00:00
+Collecting numpy>=1.20.0
+  Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 7.5 MB/s eta 0:00:00
+Collecting py-cpuinfo
+  Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+Collecting packaging
+  Downloading packaging-26.3-py3-none-any.whl (129 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 KB 3.3 MB/s eta 0:00:00
+Collecting typing-extensions>=4.4.0
+  Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 KB 1.0 MB/s eta 0:00:00
+Collecting blosc2>=2.3.0
+  Downloading blosc2-4.3.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (6.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 11.3 MB/s eta 0:00:00
+Collecting msgpack
+  Downloading msgpack-1.2.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (461 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 461.8/461.8 KB 7.8 MB/s eta 0:00:00
+Collecting threadpoolctl
+  Downloading threadpoolctl-3.8.0-py3-none-any.whl (32 kB)
+Collecting pydantic
+  Downloading pydantic-2.14.3-py3-none-any.whl (494 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 494.1/494.1 KB 8.5 MB/s eta 0:00:00
+Collecting ndindex
+  Downloading ndindex-1.10.1-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (495 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 495.7/495.7 KB 9.0 MB/s eta 0:00:00
+Collecting soupsieve>=1.6.1
+  Downloading soupsieve-2.10-py3-none-any.whl (38 kB)
+Collecting urllib3<3,>=1.26
+  Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 KB 2.8 MB/s eta 0:00:00
+Collecting idna<4,>=2.5
+  Downloading idna-3.20-py3-none-any.whl (69 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 KB 1.5 MB/s eta 0:00:00
+Collecting charset_normalizer<4,>=2
+  Downloading charset_normalizer-3.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (271 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 271.1/271.1 KB 5.4 MB/s eta 0:00:00
+Collecting certifi>=2023.5.7
+  Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.1/135.1 KB 2.9 MB/s eta 0:00:00
+Collecting PySocks!=1.5.7,>=1.5.6
+  Downloading PySocks-1.7.1-py3-none-any.whl (16 kB)
+Collecting pydantic-core==2.50.4
+  Downloading pydantic_core-2.50.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 16.3 MB/s eta 0:00:00
+Collecting typing-inspection>=0.4.4
+  Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+Collecting annotated-types>=0.6.0
+  Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Installing collected packages: py-cpuinfo, urllib3, typing-extensions, tqdm, threadpoolctl, soupsieve, PySocks, packaging, numpy, ndindex, msgpack, idna, filelock, charset_normalizer, certifi, annotated-types, typing-inspection, requests, pydantic-core, numexpr, beautifulsoup4, pydantic, gdown, blosc2, tables
+Successfully installed PySocks-1.7.1 annotated-types-0.8.0 beautifulsoup4-4.15.0 blosc2-4.3.3 certifi-2026.10.23 charset_normalizer-3.5.2 filelock-4.1.0 gdown-5.2.0 idna-3.20 msgpack-1.2.4 ndindex-1.10.1 numexpr-2.14.1 numpy-2.2.6 packaging-26.3 py-cpuinfo-9.0.0 pydantic-2.14.3 pydantic-core-2.50.4 requests-2.34.2 soupsieve-2.10 tables-3.10.1 threadpoolctl-3.8.0 tqdm-4.70.1 typing-extensions-4.16.0 typing-inspection-0.4.5 urllib3-2.8.0
+Traceback (most recent call last):
+  File "/shared/g00112835/express_links_replication_code/run_replication.py", line 24, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'

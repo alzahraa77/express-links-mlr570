@@ -33,8 +33,11 @@ for k, ax in enumerate(axes):
         for g_i, model in enumerate(delta):
             d = delta[model][m][k]; xpos = g_i * 4 + m_i
             ax.bar(xpos, d, width=0.86, color=C[m], label=m if (k == 0 and g_i == 0) else None)
-            ax.text(xpos, d + (off if d >= 0 else -off), f"{d:+.3f}", ha="center", va="bottom" if d >= 0 else "top",
-                    fontsize=5.3, color=INK2)
+            # lift a label when the bar to its left ends at a similar height, so the two labels do not overlap
+            prev = delta[model][methods[m_i - 1]][k] if m_i else None
+            lift = 3.2 * off if (prev is not None and (prev >= 0) == (d >= 0) and abs(prev - d) < 0.12 * span) else 0
+            ax.text(xpos, d + (off + lift if d >= 0 else -off - lift), f"{d:+.3f}", ha="center",
+                    va="bottom" if d >= 0 else "top", fontsize=5.3, color=INK2)
     ax.axhline(0, color=INK2, lw=0.6)
     ax.set_xticks([1, 5]); ax.set_xticklabels(list(delta)); ax.tick_params(axis="x", length=0)
     ax.set_title(titles[k], color=INK); ax.yaxis.grid(True, color=GRID, lw=0.5); ax.set_axisbelow(True)
@@ -97,11 +100,11 @@ fig.savefig(FIGURES / "final_test.pdf"); plt.close(fig)
 print("ok")
 
 labels = {
-    "express": "Greedy lead–lag", "express_links": "Ridge Express Links",
+    "express": "Lead–lag selector", "express_links": "Express Links",
     "forecast_only": "Forecast-only", "random": "Random",
     "random_matched": "Matched random", "virtual_node": "Virtual node",
     "map_only": "Resistance only", "corr_only": "Correlation only",
-    "same_side": "Same-side", "gtr": "Greedy total resistance",
+    "same_side": "Same-side", "gtr": "GTR",
 }
 colors = {"express": "#1666a3", "express_links": "#1666a3",
           "forecast_only": "#a84c0e", "virtual_node": "#20705a"}
@@ -173,7 +176,7 @@ horizons = pd.read_csv(DATA / "replication_all_horizons.csv")
 modes = ["original", "express_links", "forecast_only", "gtr", "random_matched", "virtual_node"]
 styles = [
     ("Original", "#444444", "--", "o"),
-    ("Ridge Express Links", "#1d67ac", "-", "^"),
+    ("Express Links", "#1d67ac", "-", "^"),
     ("Forecast-only", "#b75310", "-", "s"),
     ("GTR", "#753e99", ":", "P"),
     ("Matched random", "#84651b", "-.", "v"),

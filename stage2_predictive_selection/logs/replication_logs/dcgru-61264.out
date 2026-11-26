@@ -1,0 +1,510 @@
+DCGRU worker 61264 on gpu-dy-g5-0-23, tasks: METR-LA:original:0 METR-LA:random_matched:0 METR-LA:forecast_only:1 METR-LA:express_links:2
+== METR-LA:original:0: starting Thu Nov 19 10:34:46 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+dcgru METR-LA original seed=0 epoch 1/100 train=4.0623 val=3.4193 sec=46.6
+dcgru METR-LA original seed=0 epoch 2/100 train=3.5715 val=3.3500 sec=28.5
+dcgru METR-LA original seed=0 epoch 3/100 train=3.5126 val=3.3171 sec=28.5
+dcgru METR-LA original seed=0 epoch 4/100 train=3.4601 val=3.2521 sec=28.5
+dcgru METR-LA original seed=0 epoch 5/100 train=3.3987 val=3.2271 sec=28.6
+dcgru METR-LA original seed=0 epoch 6/100 train=3.3499 val=3.1691 sec=28.5
+dcgru METR-LA original seed=0 epoch 7/100 train=3.2997 val=3.1409 sec=28.5
+dcgru METR-LA original seed=0 epoch 8/100 train=3.2550 val=3.0884 sec=28.6
+dcgru METR-LA original seed=0 epoch 9/100 train=3.2191 val=3.0717 sec=28.5
+dcgru METR-LA original seed=0 epoch 10/100 train=3.1828 val=3.0442 sec=28.5
+dcgru METR-LA original seed=0 epoch 11/100 train=3.1536 val=3.0264 sec=28.5
+dcgru METR-LA original seed=0 epoch 12/100 train=3.1202 val=3.0200 sec=28.5
+dcgru METR-LA original seed=0 epoch 13/100 train=3.0957 val=2.9987 sec=28.5
+dcgru METR-LA original seed=0 epoch 14/100 train=3.0768 val=2.9661 sec=28.5
+dcgru METR-LA original seed=0 epoch 15/100 train=3.0566 val=2.9660 sec=28.5
+dcgru METR-LA original seed=0 epoch 16/100 train=3.0379 val=2.9928 sec=28.5
+dcgru METR-LA original seed=0 epoch 17/100 train=3.0227 val=2.9618 sec=28.5
+dcgru METR-LA original seed=0 epoch 18/100 train=3.0051 val=2.9561 sec=28.6
+dcgru METR-LA original seed=0 epoch 19/100 train=2.9959 val=2.9336 sec=28.5
+dcgru METR-LA original seed=0 epoch 20/100 train=2.9797 val=2.9522 sec=28.5
+dcgru METR-LA original seed=0 epoch 21/100 train=2.9685 val=2.9353 sec=28.5
+dcgru METR-LA original seed=0 epoch 22/100 train=2.9579 val=2.9301 sec=28.5
+dcgru METR-LA original seed=0 epoch 23/100 train=2.9474 val=2.9254 sec=28.5
+dcgru METR-LA original seed=0 epoch 24/100 train=2.9377 val=2.9410 sec=28.5
+dcgru METR-LA original seed=0 epoch 25/100 train=2.9275 val=2.9301 sec=28.5
+dcgru METR-LA original seed=0 epoch 26/100 train=2.9234 val=2.9298 sec=28.5
+dcgru METR-LA original seed=0 epoch 27/100 train=2.9111 val=2.9315 sec=28.5
+dcgru METR-LA original seed=0 epoch 28/100 train=2.9055 val=2.9386 sec=28.6
+dcgru METR-LA original seed=0 epoch 29/100 train=2.8967 val=2.9117 sec=28.6
+dcgru METR-LA original seed=0 epoch 30/100 train=2.8906 val=2.9270 sec=28.6
+dcgru METR-LA original seed=0 epoch 31/100 train=2.8851 val=2.9060 sec=28.6
+dcgru METR-LA original seed=0 epoch 32/100 train=2.8777 val=2.8921 sec=28.6
+dcgru METR-LA original seed=0 epoch 33/100 train=2.8714 val=2.8942 sec=28.6
+dcgru METR-LA original seed=0 epoch 34/100 train=2.8666 val=2.9151 sec=28.6
+dcgru METR-LA original seed=0 epoch 35/100 train=2.8563 val=2.9132 sec=28.6
+dcgru METR-LA original seed=0 epoch 36/100 train=2.8517 val=2.9361 sec=28.6
+dcgru METR-LA original seed=0 epoch 37/100 train=2.8478 val=2.9113 sec=28.6
+dcgru METR-LA original seed=0 epoch 38/100 train=2.8434 val=2.9443 sec=28.6
+dcgru METR-LA original seed=0 epoch 39/100 train=2.8370 val=2.9104 sec=28.6
+dcgru METR-LA original seed=0 epoch 40/100 train=2.8303 val=2.8936 sec=28.6
+dcgru METR-LA original seed=0 epoch 41/100 train=2.8298 val=2.9136 sec=28.6
+dcgru METR-LA original seed=0 epoch 42/100 train=2.8231 val=2.8940 sec=28.6
+dcgru METR-LA original seed=0 epoch 43/100 train=2.8170 val=2.9053 sec=28.6
+dcgru METR-LA original seed=0 epoch 44/100 train=2.8120 val=2.9022 sec=28.6
+dcgru METR-LA original seed=0 epoch 45/100 train=2.8127 val=2.9153 sec=28.6
+dcgru METR-LA original seed=0 epoch 46/100 train=2.8052 val=2.9045 sec=28.6
+dcgru METR-LA original seed=0 epoch 47/100 train=2.8021 val=2.8997 sec=28.6
+dcgru METR-LA original seed=0 epoch 48/100 train=2.7967 val=2.9049 sec=28.6
+dcgru METR-LA original seed=0 epoch 49/100 train=2.7985 val=2.9121 sec=28.6
+dcgru METR-LA original seed=0 epoch 50/100 train=2.7919 val=2.8906 sec=28.6
+dcgru METR-LA original seed=0 epoch 51/100 train=2.7864 val=2.9301 sec=28.6
+dcgru METR-LA original seed=0 epoch 52/100 train=2.7866 val=2.9028 sec=28.6
+dcgru METR-LA original seed=0 epoch 53/100 train=2.7820 val=2.8994 sec=28.6
+dcgru METR-LA original seed=0 epoch 54/100 train=2.7786 val=2.8919 sec=28.6
+dcgru METR-LA original seed=0 epoch 55/100 train=2.7763 val=2.9079 sec=28.6
+dcgru METR-LA original seed=0 epoch 56/100 train=2.7709 val=2.9088 sec=28.6
+dcgru METR-LA original seed=0 epoch 57/100 train=2.7687 val=2.9230 sec=28.6
+dcgru METR-LA original seed=0 epoch 58/100 train=2.7659 val=2.8958 sec=28.5
+dcgru METR-LA original seed=0 epoch 59/100 train=2.7643 val=2.8964 sec=28.5
+dcgru METR-LA original seed=0 epoch 60/100 train=2.7594 val=2.9155 sec=28.5
+dcgru METR-LA original seed=0 epoch 61/100 train=2.7571 val=2.8902 sec=28.5
+dcgru METR-LA original seed=0 epoch 62/100 train=2.7528 val=2.8917 sec=28.6
+dcgru METR-LA original seed=0 epoch 63/100 train=2.7528 val=2.9183 sec=28.6
+dcgru METR-LA original seed=0 epoch 64/100 train=2.7465 val=2.9142 sec=28.6
+dcgru METR-LA original seed=0 epoch 65/100 train=2.7473 val=2.8935 sec=28.6
+dcgru METR-LA original seed=0 epoch 66/100 train=2.7452 val=2.8997 sec=28.6
+dcgru METR-LA original seed=0 epoch 67/100 train=2.7416 val=2.8988 sec=28.6
+dcgru METR-LA original seed=0 epoch 68/100 train=2.7436 val=2.9087 sec=28.6
+dcgru METR-LA original seed=0 epoch 69/100 train=2.7356 val=2.8972 sec=28.6
+dcgru METR-LA original seed=0 epoch 70/100 train=2.7357 val=2.9094 sec=28.6
+dcgru METR-LA original seed=0 epoch 71/100 train=2.7322 val=2.8932 sec=28.6
+dcgru METR-LA original seed=0 epoch 72/100 train=2.7307 val=2.8860 sec=28.6
+dcgru METR-LA original seed=0 epoch 73/100 train=2.7279 val=2.9082 sec=28.5
+dcgru METR-LA original seed=0 epoch 74/100 train=2.7285 val=2.9066 sec=28.5
+dcgru METR-LA original seed=0 epoch 75/100 train=2.7221 val=2.9026 sec=28.6
+dcgru METR-LA original seed=0 epoch 76/100 train=2.7224 val=2.9206 sec=28.6
+dcgru METR-LA original seed=0 epoch 77/100 train=2.7225 val=2.9242 sec=28.6
+dcgru METR-LA original seed=0 epoch 78/100 train=2.7209 val=2.8848 sec=28.6
+dcgru METR-LA original seed=0 epoch 79/100 train=2.7164 val=2.9144 sec=28.6
+dcgru METR-LA original seed=0 epoch 80/100 train=2.7125 val=2.9060 sec=28.6
+dcgru METR-LA original seed=0 epoch 81/100 train=2.7133 val=2.9010 sec=28.6
+dcgru METR-LA original seed=0 epoch 82/100 train=2.7109 val=2.9121 sec=28.6
+dcgru METR-LA original seed=0 epoch 83/100 train=2.7103 val=2.9043 sec=28.6
+dcgru METR-LA original seed=0 epoch 84/100 train=2.7050 val=2.9080 sec=28.6
+dcgru METR-LA original seed=0 epoch 85/100 train=2.7062 val=2.9188 sec=28.6
+dcgru METR-LA original seed=0 epoch 86/100 train=2.7058 val=2.9066 sec=28.6
+dcgru METR-LA original seed=0 epoch 87/100 train=2.7036 val=2.9210 sec=28.6
+dcgru METR-LA original seed=0 epoch 88/100 train=2.7006 val=2.9123 sec=28.6
+dcgru METR-LA original seed=0 epoch 89/100 train=2.7012 val=2.9012 sec=28.6
+dcgru METR-LA original seed=0 epoch 90/100 train=2.7012 val=2.9127 sec=28.6
+dcgru METR-LA original seed=0 epoch 91/100 train=2.6970 val=2.9172 sec=28.6
+dcgru METR-LA original seed=0 epoch 92/100 train=2.6958 val=2.9056 sec=28.6
+dcgru METR-LA original seed=0 epoch 93/100 train=2.6920 val=2.8998 sec=28.6
+dcgru METR-LA original seed=0 epoch 94/100 train=2.6904 val=2.9382 sec=28.6
+dcgru METR-LA original seed=0 epoch 95/100 train=2.6876 val=2.9270 sec=28.6
+dcgru METR-LA original seed=0 epoch 96/100 train=2.6875 val=2.9116 sec=28.6
+dcgru METR-LA original seed=0 epoch 97/100 train=2.6876 val=2.8981 sec=28.6
+dcgru METR-LA original seed=0 epoch 98/100 train=2.6869 val=2.9166 sec=28.6
+dcgru METR-LA original seed=0 epoch 99/100 train=2.6815 val=2.9075 sec=28.6
+dcgru METR-LA original seed=0 epoch 100/100 train=2.6827 val=2.9162 sec=28.6
+{
+  "model": "dcgru",
+  "best_epoch": 78,
+  "best_validation_MAE": 2.8847514188514567,
+  "test_origins": 6843,
+  "smoke": false,
+  "added_arcs": 0,
+  "mae60": 3.6736406106045787,
+  "band1_mae60": 8.025394523502323,
+  "band1_n60": 333768,
+  "express_target_mae60": 3.30808132371506,
+  "target_low_mae60": 8.528451487492243,
+  "target_low_n60": 30331,
+  "target_sensor_n": 25,
+  "low_speed_cutoff": 57.22222137451172,
+  "evaluation_sha256": "f48157ee238663f838dad34d396bfafb0d6116c42da43e559d0ae1aacb87f7c3",
+  "mae_mean_12": 3.1599898692704653,
+  "median_train_epoch_seconds": 28.575618467499908
+}
+== METR-LA:random_matched:0: starting Thu Nov 19 11:25:10 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+dcgru METR-LA random_matched seed=0 epoch 1/100 train=4.0618 val=3.4202 sec=28.9
+dcgru METR-LA random_matched seed=0 epoch 2/100 train=3.5717 val=3.3496 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 3/100 train=3.5119 val=3.3129 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 4/100 train=3.4584 val=3.2508 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 5/100 train=3.3977 val=3.2196 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 6/100 train=3.3473 val=3.1611 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 7/100 train=3.2972 val=3.1253 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 8/100 train=3.2552 val=3.0884 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 9/100 train=3.2218 val=3.0671 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 10/100 train=3.1875 val=3.0450 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 11/100 train=3.1603 val=3.0260 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 12/100 train=3.1309 val=3.0239 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 13/100 train=3.1070 val=2.9943 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 14/100 train=3.0848 val=2.9672 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 15/100 train=3.0654 val=2.9772 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 16/100 train=3.0433 val=2.9900 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 17/100 train=3.0282 val=2.9583 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 18/100 train=3.0126 val=2.9542 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 19/100 train=3.0029 val=2.9386 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 20/100 train=2.9862 val=2.9509 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 21/100 train=2.9749 val=2.9265 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 22/100 train=2.9637 val=2.9230 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 23/100 train=2.9507 val=2.9310 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 24/100 train=2.9426 val=2.9279 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 25/100 train=2.9321 val=2.9200 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 26/100 train=2.9262 val=2.9233 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 27/100 train=2.9177 val=2.9415 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 28/100 train=2.9108 val=2.9365 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 29/100 train=2.9022 val=2.9077 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 30/100 train=2.8957 val=2.9375 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 31/100 train=2.8888 val=2.8949 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 32/100 train=2.8809 val=2.9180 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 33/100 train=2.8751 val=2.9122 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 34/100 train=2.8713 val=2.9135 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 35/100 train=2.8612 val=2.9100 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 36/100 train=2.8573 val=2.9234 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 37/100 train=2.8534 val=2.9222 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 38/100 train=2.8479 val=2.9059 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 39/100 train=2.8416 val=2.9180 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 40/100 train=2.8359 val=2.9096 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 41/100 train=2.8329 val=2.9218 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 42/100 train=2.8327 val=2.9173 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 43/100 train=2.8211 val=2.9105 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 44/100 train=2.8179 val=2.9217 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 45/100 train=2.8190 val=2.9201 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 46/100 train=2.8096 val=2.9158 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 47/100 train=2.8091 val=2.9163 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 48/100 train=2.8054 val=2.9244 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 49/100 train=2.8010 val=2.9190 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 50/100 train=2.7975 val=2.9178 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 51/100 train=2.7921 val=2.9312 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 52/100 train=2.7893 val=2.9073 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 53/100 train=2.7848 val=2.9039 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 54/100 train=2.7855 val=2.9189 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 55/100 train=2.7813 val=2.9105 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 56/100 train=2.7782 val=2.9182 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 57/100 train=2.7753 val=2.9256 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 58/100 train=2.7706 val=2.9137 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 59/100 train=2.7683 val=2.9038 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 60/100 train=2.7644 val=2.9276 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 61/100 train=2.7627 val=2.9088 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 62/100 train=2.7585 val=2.9177 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 63/100 train=2.7581 val=2.9408 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 64/100 train=2.7539 val=2.9279 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 65/100 train=2.7514 val=2.9172 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 66/100 train=2.7476 val=2.9243 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 67/100 train=2.7501 val=2.9207 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 68/100 train=2.7440 val=2.9375 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 69/100 train=2.7409 val=2.9182 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 70/100 train=2.7428 val=2.9290 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 71/100 train=2.7362 val=2.9175 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 72/100 train=2.7353 val=2.9145 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 73/100 train=2.7316 val=2.9203 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 74/100 train=2.7288 val=2.9319 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 75/100 train=2.7253 val=2.9182 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 76/100 train=2.7242 val=2.9191 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 77/100 train=2.7246 val=2.9364 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 78/100 train=2.7243 val=2.9234 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 79/100 train=2.7212 val=2.9336 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 80/100 train=2.7176 val=2.9177 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 81/100 train=2.7167 val=2.9258 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 82/100 train=2.7149 val=2.9107 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 83/100 train=2.7138 val=2.9395 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 84/100 train=2.7094 val=2.9352 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 85/100 train=2.7113 val=2.9255 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 86/100 train=2.7084 val=2.9275 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 87/100 train=2.7080 val=2.9568 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 88/100 train=2.7009 val=2.9336 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 89/100 train=2.7039 val=2.9347 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 90/100 train=2.7006 val=2.9508 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 91/100 train=2.6970 val=2.9382 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 92/100 train=2.6970 val=2.9265 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 93/100 train=2.6952 val=2.9330 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 94/100 train=2.6924 val=2.9515 sec=28.6
+dcgru METR-LA random_matched seed=0 epoch 95/100 train=2.6913 val=2.9301 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 96/100 train=2.6939 val=2.9356 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 97/100 train=2.6876 val=2.9283 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 98/100 train=2.6906 val=2.9373 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 99/100 train=2.6855 val=2.9249 sec=28.5
+dcgru METR-LA random_matched seed=0 epoch 100/100 train=2.6863 val=2.9179 sec=28.5
+{
+  "model": "dcgru",
+  "best_epoch": 31,
+  "best_validation_MAE": 2.8948877982373507,
+  "test_origins": 6843,
+  "smoke": false,
+  "added_arcs": 25,
+  "mae60": 3.6695712898260857,
+  "band1_mae60": 8.014096089736432,
+  "band1_n60": 333768,
+  "express_target_mae60": 3.2603235878006727,
+  "target_low_mae60": 8.488957460853129,
+  "target_low_n60": 30331,
+  "target_sensor_n": 25,
+  "low_speed_cutoff": 57.22222137451172,
+  "evaluation_sha256": "f48157ee238663f838dad34d396bfafb0d6116c42da43e559d0ae1aacb87f7c3",
+  "mae_mean_12": 3.1420252658164607,
+  "median_train_epoch_seconds": 28.516503520000242
+}
+== METR-LA:forecast_only:1: starting Thu Nov 19 12:13:07 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+dcgru METR-LA forecast_only seed=1 epoch 1/100 train=4.0199 val=3.4455 sec=28.9
+dcgru METR-LA forecast_only seed=1 epoch 2/100 train=3.5927 val=3.3730 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 3/100 train=3.5256 val=3.3286 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 4/100 train=3.4687 val=3.2519 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 5/100 train=3.4070 val=3.2215 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 6/100 train=3.3527 val=3.1632 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 7/100 train=3.3059 val=3.1303 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 8/100 train=3.2657 val=3.1036 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 9/100 train=3.2285 val=3.0973 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 10/100 train=3.1969 val=3.0555 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 11/100 train=3.1627 val=3.0466 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 12/100 train=3.1366 val=3.0063 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 13/100 train=3.1103 val=3.0284 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 14/100 train=3.0872 val=2.9899 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 15/100 train=3.0674 val=2.9858 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 16/100 train=3.0472 val=2.9465 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 17/100 train=3.0327 val=2.9603 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 18/100 train=3.0143 val=2.9909 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 19/100 train=3.0012 val=2.9606 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 20/100 train=2.9886 val=2.9595 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 21/100 train=2.9771 val=2.9301 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 22/100 train=2.9650 val=2.9660 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 23/100 train=2.9581 val=2.9309 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 24/100 train=2.9439 val=2.9397 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 25/100 train=2.9348 val=2.9217 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 26/100 train=2.9286 val=2.9146 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 27/100 train=2.9176 val=2.9202 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 28/100 train=2.9097 val=2.9221 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 29/100 train=2.9035 val=2.9368 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 30/100 train=2.8954 val=2.8993 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 31/100 train=2.8901 val=2.9272 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 32/100 train=2.8840 val=2.9288 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 33/100 train=2.8780 val=2.9206 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 34/100 train=2.8677 val=2.9172 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 35/100 train=2.8648 val=2.8981 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 36/100 train=2.8599 val=2.9088 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 37/100 train=2.8528 val=2.8957 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 38/100 train=2.8482 val=2.9070 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 39/100 train=2.8432 val=2.9331 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 40/100 train=2.8422 val=2.8929 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 41/100 train=2.8341 val=2.9472 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 42/100 train=2.8315 val=2.9189 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 43/100 train=2.8274 val=2.9044 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 44/100 train=2.8191 val=2.9167 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 45/100 train=2.8126 val=2.9436 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 46/100 train=2.8154 val=2.9057 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 47/100 train=2.8058 val=2.9352 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 48/100 train=2.8064 val=2.9025 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 49/100 train=2.8019 val=2.9268 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 50/100 train=2.7950 val=2.8937 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 51/100 train=2.7925 val=2.9296 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 52/100 train=2.7875 val=2.9153 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 53/100 train=2.7863 val=2.9184 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 54/100 train=2.7834 val=2.9190 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 55/100 train=2.7803 val=2.9036 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 56/100 train=2.7797 val=2.9128 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 57/100 train=2.7738 val=2.9501 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 58/100 train=2.7728 val=2.9143 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 59/100 train=2.7701 val=2.9126 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 60/100 train=2.7660 val=2.9120 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 61/100 train=2.7616 val=2.9119 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 62/100 train=2.7590 val=2.9033 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 63/100 train=2.7574 val=2.9239 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 64/100 train=2.7559 val=2.9211 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 65/100 train=2.7500 val=2.9180 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 66/100 train=2.7462 val=2.9257 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 67/100 train=2.7512 val=2.9249 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 68/100 train=2.7453 val=2.9085 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 69/100 train=2.7426 val=2.9095 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 70/100 train=2.7426 val=2.9199 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 71/100 train=2.7372 val=2.9175 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 72/100 train=2.7346 val=2.9163 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 73/100 train=2.7319 val=2.9198 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 74/100 train=2.7307 val=2.9239 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 75/100 train=2.7298 val=2.9259 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 76/100 train=2.7258 val=2.8965 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 77/100 train=2.7228 val=2.9296 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 78/100 train=2.7260 val=2.9101 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 79/100 train=2.7241 val=2.9180 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 80/100 train=2.7191 val=2.9124 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 81/100 train=2.7136 val=2.9404 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 82/100 train=2.7193 val=2.9237 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 83/100 train=2.7094 val=2.9518 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 84/100 train=2.7102 val=2.9231 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 85/100 train=2.7100 val=2.9271 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 86/100 train=2.7062 val=2.9175 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 87/100 train=2.7075 val=2.9276 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 88/100 train=2.7052 val=2.9247 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 89/100 train=2.7011 val=2.9257 sec=28.6
+dcgru METR-LA forecast_only seed=1 epoch 90/100 train=2.6995 val=2.9249 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 91/100 train=2.6981 val=2.9581 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 92/100 train=2.6998 val=2.9373 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 93/100 train=2.6946 val=2.9233 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 94/100 train=2.6947 val=2.9126 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 95/100 train=2.6941 val=2.9196 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 96/100 train=2.6918 val=2.9195 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 97/100 train=2.6886 val=2.9245 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 98/100 train=2.6904 val=2.9251 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 99/100 train=2.6855 val=2.9185 sec=28.5
+dcgru METR-LA forecast_only seed=1 epoch 100/100 train=2.6862 val=2.9175 sec=28.5
+{
+  "model": "dcgru",
+  "best_epoch": 40,
+  "best_validation_MAE": 2.8929353052715086,
+  "test_origins": 6843,
+  "smoke": false,
+  "added_arcs": 25,
+  "mae60": 3.642290037069457,
+  "band1_mae60": 7.763298247182829,
+  "band1_n60": 333768,
+  "express_target_mae60": 3.267611311015701,
+  "target_low_mae60": 7.8971644235661085,
+  "target_low_n60": 30331,
+  "target_sensor_n": 25,
+  "low_speed_cutoff": 57.22222137451172,
+  "evaluation_sha256": "f48157ee238663f838dad34d396bfafb0d6116c42da43e559d0ae1aacb87f7c3",
+  "mae_mean_12": 3.13275279316693,
+  "median_train_epoch_seconds": 28.530927645999327
+}
+== METR-LA:express_links:2: starting Thu Nov 19 13:01:07 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+dcgru METR-LA express_links seed=2 epoch 1/100 train=3.9993 val=3.4124 sec=28.9
+dcgru METR-LA express_links seed=2 epoch 2/100 train=3.5731 val=3.3611 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 3/100 train=3.5103 val=3.3013 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 4/100 train=3.4559 val=3.2647 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 5/100 train=3.3939 val=3.2098 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 6/100 train=3.3487 val=3.1876 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 7/100 train=3.2981 val=3.1427 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 8/100 train=3.2539 val=3.0854 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 9/100 train=3.2196 val=3.0594 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 10/100 train=3.1897 val=3.0562 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 11/100 train=3.1583 val=3.0392 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 12/100 train=3.1282 val=3.0096 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 13/100 train=3.1040 val=3.0008 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 14/100 train=3.0801 val=2.9849 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 15/100 train=3.0594 val=2.9660 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 16/100 train=3.0415 val=2.9727 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 17/100 train=3.0296 val=2.9671 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 18/100 train=3.0127 val=2.9614 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 19/100 train=2.9988 val=2.9556 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 20/100 train=2.9847 val=2.9586 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 21/100 train=2.9732 val=2.9456 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 22/100 train=2.9609 val=2.9334 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 23/100 train=2.9550 val=2.9393 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 24/100 train=2.9431 val=2.9204 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 25/100 train=2.9316 val=2.9408 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 26/100 train=2.9272 val=2.9251 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 27/100 train=2.9150 val=2.9150 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 28/100 train=2.9108 val=2.9195 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 29/100 train=2.9027 val=2.9057 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 30/100 train=2.8933 val=2.9230 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 31/100 train=2.8854 val=2.9120 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 32/100 train=2.8815 val=2.9169 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 33/100 train=2.8804 val=2.9270 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 34/100 train=2.8691 val=2.9018 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 35/100 train=2.8649 val=2.9046 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 36/100 train=2.8565 val=2.9053 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 37/100 train=2.8507 val=2.9107 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 38/100 train=2.8489 val=2.9113 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 39/100 train=2.8435 val=2.9260 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 40/100 train=2.8333 val=2.9148 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 41/100 train=2.8329 val=2.9020 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 42/100 train=2.8272 val=2.9286 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 43/100 train=2.8231 val=2.8945 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 44/100 train=2.8199 val=2.9233 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 45/100 train=2.8178 val=2.9032 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 46/100 train=2.8090 val=2.9197 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 47/100 train=2.8057 val=2.9173 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 48/100 train=2.8025 val=2.9109 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 49/100 train=2.7970 val=2.9069 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 50/100 train=2.7909 val=2.9081 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 51/100 train=2.7940 val=2.9216 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 52/100 train=2.7844 val=2.9269 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 53/100 train=2.7828 val=2.9097 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 54/100 train=2.7822 val=2.9170 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 55/100 train=2.7771 val=2.9169 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 56/100 train=2.7705 val=2.9100 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 57/100 train=2.7696 val=2.9126 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 58/100 train=2.7669 val=2.9277 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 59/100 train=2.7618 val=2.9156 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 60/100 train=2.7611 val=2.9058 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 61/100 train=2.7587 val=2.9384 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 62/100 train=2.7565 val=2.9059 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 63/100 train=2.7527 val=2.9229 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 64/100 train=2.7522 val=2.9136 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 65/100 train=2.7452 val=2.9069 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 66/100 train=2.7477 val=2.9197 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 67/100 train=2.7409 val=2.9193 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 68/100 train=2.7386 val=2.9191 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 69/100 train=2.7339 val=2.9305 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 70/100 train=2.7356 val=2.9283 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 71/100 train=2.7315 val=2.9270 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 72/100 train=2.7335 val=2.9285 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 73/100 train=2.7235 val=2.9187 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 74/100 train=2.7265 val=2.9394 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 75/100 train=2.7261 val=2.9454 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 76/100 train=2.7209 val=2.9417 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 77/100 train=2.7159 val=2.9277 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 78/100 train=2.7184 val=2.9273 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 79/100 train=2.7137 val=2.9116 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 80/100 train=2.7143 val=2.9276 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 81/100 train=2.7118 val=2.9333 sec=28.6
+dcgru METR-LA express_links seed=2 epoch 82/100 train=2.7119 val=2.9370 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 83/100 train=2.7064 val=2.9260 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 84/100 train=2.7052 val=2.9136 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 85/100 train=2.7028 val=2.9508 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 86/100 train=2.7052 val=2.9262 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 87/100 train=2.7001 val=2.9342 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 88/100 train=2.7000 val=2.9350 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 89/100 train=2.6979 val=2.9334 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 90/100 train=2.6925 val=2.9334 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 91/100 train=2.6932 val=2.9261 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 92/100 train=2.6944 val=2.9382 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 93/100 train=2.6903 val=2.9239 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 94/100 train=2.6893 val=2.9256 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 95/100 train=2.6859 val=2.9498 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 96/100 train=2.6871 val=2.9364 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 97/100 train=2.6833 val=2.9274 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 98/100 train=2.6823 val=2.9417 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 99/100 train=2.6848 val=2.9268 sec=28.5
+dcgru METR-LA express_links seed=2 epoch 100/100 train=2.6793 val=2.9614 sec=28.5
+{
+  "model": "dcgru",
+  "best_epoch": 43,
+  "best_validation_MAE": 2.8944669714513815,
+  "test_origins": 6843,
+  "smoke": false,
+  "added_arcs": 25,
+  "mae60": 3.677116836572573,
+  "band1_mae60": 7.727871548206829,
+  "band1_n60": 333768,
+  "express_target_mae60": 3.247319608783721,
+  "target_low_mae60": 8.315197268428767,
+  "target_low_n60": 30331,
+  "target_sensor_n": 25,
+  "low_speed_cutoff": 57.22222137451172,
+  "evaluation_sha256": "f48157ee238663f838dad34d396bfafb0d6116c42da43e559d0ae1aacb87f7c3",
+  "mae_mean_12": 3.146773773481048,
+  "median_train_epoch_seconds": 28.508748668000408
+}
+Worker finished Thu Nov 19 13:49:07 UTC 2026. Failed tasks: none

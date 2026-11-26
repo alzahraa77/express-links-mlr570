@@ -30,7 +30,7 @@ The project ran in two stages:
 - **Stage 1** (Google Colab) tested the method from our proposal: a greedy selector that scores each candidate link by lead–lag correlation × the drop in total effective resistance.
 - **Stage 2** (single NVIDIA A10G GPU) followed up with two selectors built on a held-out ridge-regression screen: Express Links and Forecast-only. It added controls, two over-squashing diagnostics, a second model (DCRNN) and a tuning study.
 
-Both stages use the METR-LA and PEMS-BAY benchmarks and Graph WaveNet with its learned adjacency switched off, trained for 100 epochs with seeds 0, 1 and 2. The two stages prepare missing data differently, so their numbers should not be compared directly:
+Both stages use the METR-LA and PEMS-BAY benchmarks and Graph WaveNet with its learned adjacency switched off, trained for 100 epochs with seeds 0, 1 and 2. The tuning study chose its set-up on seeds 0 and 1 and ran the final comparison on seeds 0 to 4. The two stages prepare missing data differently, so their numbers should not be compared directly:
 - Stage 1 keeps missing readings as zeros and masks them.
 - Stage 2 fills inputs causally and scores only observed readings.
 
@@ -57,7 +57,7 @@ The repository holds all code, logs and result tables. Large files are kept else
 
 | What | Where |
 |---|---|
-| METR-LA and PEMS-BAY speeds (`metr-la.h5`, `pems-bay.h5`) | DCRNN authors' Google Drive folder: <https://drive.google.com/drive/folders/10FOTa6HXPqX8Pf5WRoRwcFnW9BrNZEIX>. The scripts download it with `gdown`. If Drive limits downloads, they fall back to the mirror at <https://huggingface.co/datasets/TorchSpatiotemporal/ProcessedDatasets/tree/v1.0.0/traffic> |
+| METR-LA and PEMS-BAY speeds | Stage 1 used the DCRNN authors' Google Drive folder (<https://drive.google.com/drive/folders/10FOTa6HXPqX8Pf5WRoRwcFnW9BrNZEIX>). By the time Stage 2 started, that link no longer worked, so every Stage 2 experiment used the Torch Spatiotemporal mirror: <https://huggingface.co/datasets/TorchSpatiotemporal/ProcessedDatasets/tree/v1.0.0/traffic>. The Stage 2 scripts still try Drive first with `gdown` and fall back to the mirror; each run records the source and a checksum of the speed file. |
 | Road graphs (`adj_mx.pkl`, `adj_mx_bay.pkl`) and sensor locations | DCRNN repository, pinned commit: <https://github.com/liyaguang/DCRNN/tree/602afd9d767d3aa1c9b3eac51710d6aeee12c227/data/sensor_graph> |
 | Graph WaveNet code | <https://github.com/nnzhan/Graph-WaveNet/tree/6b162e80c59a1d494809252eca055cff93dc66b1> (cloned by the scripts) |
 | DCRNN PyTorch code | <https://github.com/chnsh/DCRNN_PyTorch/tree/d92490b808ba5c5be2f23d427d96e9a56b066d7f> (cloned by `setup_dcrnn.sh`) |
@@ -71,15 +71,17 @@ The Stage 1 notebooks download the same speed files into the team's Drive folder
 | Report item | Code | Saved results |
 |---|---|---|
 | Figs. 1–3 and 5 (motivation, framework overview, selector illustration, the two Stage 2 selectors) | `docs/source/*.tex` (TikZ) | illustrations, no data |
-| Table I (related methods), Table II (notation), Table III (protocol summary) | — | text tables |
-| Stage 1: Algorithm 1, Fig. 4 (worked example), Fig. 6, Table IV, Fig. 7 | `stage1_leadlag_selector/notebooks/05_*`, `07_*`–`09_*` | `stage1_leadlag_selector/results/scores.csv`, `versions_summary_*.csv` |
-| Stage 1 jam warnings: Table XII (Appendix B) | `stage1_leadlag_selector/code/metrics.py` | `report_figures/data/original_study.csv` |
-| Baseline reproduction: Table V | `stage2_predictive_selection/01_baseline_graph_wavenet/` | job logs; `report_figures/data/baseline*.csv` |
+| Table I (related methods), Table II (notation), Table V (protocol summary) | — | text tables |
+| Table III (datasets), Table IV (training settings) | `03_main_code/run_replication.py`, `run_dcrnn.py` | `results/pilot_output/worker_audit/*/*/seed_*/source_audit.json`, `preprocessing.json`, `splits.csv` |
+| Stage 1: Algorithm 1, Fig. 4 (worked example), Fig. 6, Table VI, Fig. 7 | `stage1_leadlag_selector/notebooks/05_*`, `07_*`–`09_*` | `stage1_leadlag_selector/results/scores.csv`, `versions_summary_*.csv` |
+| Stage 1 jam warnings: Table XIV (Appendix B) | `stage1_leadlag_selector/code/metrics.py` | `report_figures/data/original_study.csv` |
+| Baseline reproduction: Table VII | `stage2_predictive_selection/01_baseline_graph_wavenet/` | job logs; `report_figures/data/baseline*.csv` |
 | Seed-0 pilot | `02_pilot/express_links_step2_pilot.py` | `02_pilot/reference_graphs_METR-LA/` |
-| Six-way comparison: Algorithm 2, Fig. 5, Table VI, Figs. 8–10; Appendix A (Table XI, Fig. 15) | `03_main_code/run_replication.py`, `collect_replication.py` | `results/pilot_output/full/comparison.csv`, `results/pilot_output/graphs/` |
-| Week-swap and five-donor diagnostics: Table VII, Fig. 11 | `03_main_code/oversquash_test.py`, `04_five_donor_diagnostic/run_diagnostic.py` | `results/diagnostic_output/oversquash/`, `results/diagnostic/` |
-| DCRNN and DCGRU: Table VIII, Fig. 12, Table XIII (Appendix B) | `03_main_code/run_dcrnn.py`, `run_other_model.py` | `results/other_model_output/` |
-| Tuning: Tables IX–X, Figs. 13–14 | `03_main_code/tune_forecast_only.py` | `results/tuning_output/METR-LA/decisions/final_result.json` |
+| Six-way comparison: Algorithm 2, Fig. 5, Table VIII, Figs. 8–10; Appendix A (Table XIII, Fig. 15) | `03_main_code/run_replication.py`, `collect_replication.py` | `results/pilot_output/full/comparison.csv`, `results/pilot_output/graphs/` |
+| Week-swap and five-donor diagnostics: Table IX, Fig. 11 | `03_main_code/oversquash_test.py`, `04_five_donor_diagnostic/run_diagnostic.py` | `results/diagnostic_output/oversquash/`, `results/diagnostic/` |
+| DCRNN and DCGRU: Table X, Fig. 12, Table XV (Appendix B) | `03_main_code/run_dcrnn.py`, `run_other_model.py` | `results/other_model_output/` |
+| Tuning: Tables XI–XII, Figs. 13–14 | `03_main_code/tune_forecast_only.py` | `results/tuning_output/METR-LA/decisions/`; the five-seed validation block of Table XI is printed in `logs/tuning_logs/el-decide-confirm-63969.out` |
+| Exploratory LargeST runs (Appendix B) | — | `report_figures/data/largest_pilot.csv`, `largest_destination_check.csv`, `largest_hub_sweep.csv` |
 
 All figure and table numbers refer to `report/Express_Links_Final_Report.pdf`.
 
@@ -132,7 +134,9 @@ These files were written before the results they govern, and the report follows 
 - `03_main_code/PREREGISTERED_TUNING.txt`: tuning grid, thresholds and the locked final test.
 - `04_five_donor_diagnostic/Express_Links_Diagnostic_Decision_Rule.md` (19 Nov): the five-donor gate.
 
-We chose the six-way primary metric (low-speed error at the 25 target roads) after the seed-0 pilot. The report says this too.
+We chose the six-way primary metric (low-speed error at the 25 target roads) and its decision rule after the seed-0 pilot, before seeds 1 and 2 were run. The report says this too.
+
+All rule files were added to this repository in one commit, so the Git history does not show when they were written. For the five-donor rule, the SHA-256 checksum of `04_five_donor_diagnostic/Express_Links_Diagnostic_Decision_Rule.md` (`b2bd25b1b8f7492c334f8979745e507700a37beb441504c3ec372a17f635eb91`) matches the `decision_rule_sha256` stored in `results/diagnostic/diagnostic_result.json` when the diagnostic ran.
 
 ## Redrawing the report figures
 

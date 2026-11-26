@@ -1,0 +1,1160 @@
+Worker 60508 on gpu-dy-g5-0-12, tasks: 2 5 8 11 14 17 20 23 26 29 32 35
+== task 2 PEMS-BAY forecast_only seed 0: starting Wed Nov 18 19:22:44 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+PEMS-BAY strict missing zeros 0.003 %
+split  windows        first_target         last_target  missing_target_fraction
+train    36435 2017-01-01 01:00:00 2017-05-07 17:00:00                 0.000015
+  val     5201 2017-05-07 17:05:00 2017-05-25 19:20:00                 0.000078
+ test    10412 2017-05-25 19:25:00 2017-06-30 23:55:00                 0.000064
+PEMS-BAY forecast_only seed=0 epoch 1/100 train=2.0964 val=2.2163 sec=95.3
+PEMS-BAY forecast_only seed=0 epoch 2/100 train=1.8907 val=2.0629 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 3/100 train=1.8550 val=2.0236 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 4/100 train=1.8243 val=1.9652 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 5/100 train=1.8042 val=1.9720 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 6/100 train=1.7855 val=1.9356 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 7/100 train=1.7718 val=1.9404 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 8/100 train=1.7543 val=1.8658 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 9/100 train=1.7349 val=1.9108 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 10/100 train=1.7256 val=1.8402 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 11/100 train=1.7116 val=1.8649 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 12/100 train=1.6984 val=1.8058 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 13/100 train=1.6848 val=1.7954 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 14/100 train=1.6776 val=1.7808 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 15/100 train=1.6658 val=1.7634 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 16/100 train=1.6587 val=1.8626 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 17/100 train=1.6507 val=1.7641 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 18/100 train=1.6393 val=1.7803 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 19/100 train=1.6326 val=1.7543 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 20/100 train=1.6261 val=1.7789 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 21/100 train=1.6203 val=1.7358 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 22/100 train=1.6156 val=1.7463 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 23/100 train=1.6101 val=1.7286 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 24/100 train=1.6049 val=1.7286 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 25/100 train=1.6013 val=1.7976 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 26/100 train=1.5999 val=1.7428 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 27/100 train=1.5916 val=1.7087 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 28/100 train=1.5885 val=1.7639 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 29/100 train=1.5841 val=1.6930 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 30/100 train=1.5802 val=1.7246 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 31/100 train=1.5776 val=1.7164 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 32/100 train=1.5770 val=1.6989 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 33/100 train=1.5747 val=1.7322 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 34/100 train=1.5726 val=1.7326 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 35/100 train=1.5682 val=1.6980 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 36/100 train=1.5676 val=1.6817 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 37/100 train=1.5624 val=1.7006 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 38/100 train=1.5615 val=1.6693 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 39/100 train=1.5585 val=1.6889 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 40/100 train=1.5560 val=1.6957 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 41/100 train=1.5564 val=1.6859 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 42/100 train=1.5531 val=1.6998 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 43/100 train=1.5532 val=1.6735 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 44/100 train=1.5500 val=1.6735 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 45/100 train=1.5514 val=1.6936 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 46/100 train=1.5454 val=1.6705 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 47/100 train=1.5441 val=1.6671 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 48/100 train=1.5439 val=1.6572 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 49/100 train=1.5438 val=1.6697 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 50/100 train=1.5415 val=1.6735 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 51/100 train=1.5395 val=1.6579 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 52/100 train=1.5411 val=1.6711 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 53/100 train=1.5360 val=1.6938 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 54/100 train=1.5341 val=1.6692 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 55/100 train=1.5340 val=1.6538 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 56/100 train=1.5346 val=1.6612 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 57/100 train=1.5332 val=1.6753 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 58/100 train=1.5305 val=1.6575 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 59/100 train=1.5323 val=1.6653 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 60/100 train=1.5289 val=1.6630 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 61/100 train=1.5282 val=1.6636 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 62/100 train=1.5265 val=1.6589 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 63/100 train=1.5260 val=1.6518 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 64/100 train=1.5237 val=1.6511 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 65/100 train=1.5258 val=1.6725 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 66/100 train=1.5213 val=1.6687 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 67/100 train=1.5246 val=1.6559 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 68/100 train=1.5206 val=1.6553 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 69/100 train=1.5199 val=1.6537 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 70/100 train=1.5180 val=1.6545 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 71/100 train=1.5190 val=1.6401 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 72/100 train=1.5167 val=1.6587 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 73/100 train=1.5173 val=1.6438 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 74/100 train=1.5180 val=1.6406 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 75/100 train=1.5158 val=1.6426 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 76/100 train=1.5150 val=1.6442 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 77/100 train=1.5132 val=1.6462 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 78/100 train=1.5130 val=1.6342 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 79/100 train=1.5126 val=1.6686 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 80/100 train=1.5122 val=1.6390 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 81/100 train=1.5119 val=1.6871 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 82/100 train=1.5130 val=1.6441 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 83/100 train=1.5117 val=1.6371 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 84/100 train=1.5090 val=1.6376 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 85/100 train=1.5103 val=1.6456 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 86/100 train=1.5084 val=1.6378 sec=62.3
+PEMS-BAY forecast_only seed=0 epoch 87/100 train=1.5072 val=1.6417 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 88/100 train=1.5086 val=1.6476 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 89/100 train=1.5081 val=1.6469 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 90/100 train=1.5063 val=1.6393 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 91/100 train=1.5043 val=1.6284 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 92/100 train=1.5065 val=1.6508 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 93/100 train=1.5037 val=1.6305 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 94/100 train=1.5053 val=1.6356 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 95/100 train=1.5039 val=1.6435 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 96/100 train=1.5020 val=1.6389 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 97/100 train=1.5011 val=1.6271 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 98/100 train=1.5020 val=1.6318 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 99/100 train=1.5022 val=1.6363 sec=62.4
+PEMS-BAY forecast_only seed=0 epoch 100/100 train=1.5022 val=1.6658 sec=62.4
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             3383683 1.316337 2.753609  2.735486
+              30             3383683 1.650671 3.734227  3.712541
+              60             3383683 1.961439 4.565780  4.691907
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 5 PEMS-BAY virtual_node seed 0: starting Wed Nov 18 21:10:35 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+PEMS-BAY strict missing zeros 0.003 %
+split  windows        first_target         last_target  missing_target_fraction
+train    36435 2017-01-01 01:00:00 2017-05-07 17:00:00                 0.000015
+  val     5201 2017-05-07 17:05:00 2017-05-25 19:20:00                 0.000078
+ test    10412 2017-05-25 19:25:00 2017-06-30 23:55:00                 0.000064
+PEMS-BAY virtual_node seed=0 epoch 1/100 train=2.0897 val=2.1326 sec=62.8
+PEMS-BAY virtual_node seed=0 epoch 2/100 train=1.8747 val=2.0174 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 3/100 train=1.8427 val=2.0037 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 4/100 train=1.8124 val=1.9585 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 5/100 train=1.7968 val=1.9873 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 6/100 train=1.7796 val=1.9993 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 7/100 train=1.7705 val=1.9001 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 8/100 train=1.7529 val=1.8797 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 9/100 train=1.7363 val=1.8894 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 10/100 train=1.7261 val=1.8649 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 11/100 train=1.7140 val=1.9090 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 12/100 train=1.6980 val=1.8534 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 13/100 train=1.6842 val=1.8028 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 14/100 train=1.6760 val=1.7989 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 15/100 train=1.6642 val=1.7905 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 16/100 train=1.6568 val=1.8853 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 17/100 train=1.6520 val=1.7954 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 18/100 train=1.6386 val=1.8087 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 19/100 train=1.6313 val=1.7540 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 20/100 train=1.6237 val=1.7633 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 21/100 train=1.6180 val=1.7324 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 22/100 train=1.6120 val=1.7442 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 23/100 train=1.6043 val=1.7119 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 24/100 train=1.6003 val=1.7756 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 25/100 train=1.5950 val=1.7440 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 26/100 train=1.5935 val=1.7155 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 27/100 train=1.5865 val=1.6976 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 28/100 train=1.5816 val=1.7545 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 29/100 train=1.5778 val=1.6947 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 30/100 train=1.5759 val=1.7716 sec=62.3
+PEMS-BAY virtual_node seed=0 epoch 31/100 train=1.5730 val=1.7309 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 32/100 train=1.5717 val=1.6990 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 33/100 train=1.5697 val=1.7006 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 34/100 train=1.5660 val=1.6822 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 35/100 train=1.5622 val=1.7152 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 36/100 train=1.5611 val=1.6648 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 37/100 train=1.5589 val=1.6790 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 38/100 train=1.5552 val=1.6570 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 39/100 train=1.5533 val=1.6888 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 40/100 train=1.5526 val=1.6624 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 41/100 train=1.5502 val=1.6907 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 42/100 train=1.5472 val=1.6612 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 43/100 train=1.5474 val=1.6638 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 44/100 train=1.5444 val=1.6593 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 45/100 train=1.5448 val=1.6717 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 46/100 train=1.5408 val=1.6630 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 47/100 train=1.5396 val=1.6676 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 48/100 train=1.5383 val=1.6517 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 49/100 train=1.5401 val=1.6536 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 50/100 train=1.5364 val=1.6676 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 51/100 train=1.5353 val=1.6519 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 52/100 train=1.5346 val=1.6616 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 53/100 train=1.5307 val=1.6836 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 54/100 train=1.5298 val=1.6687 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 55/100 train=1.5283 val=1.6514 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 56/100 train=1.5289 val=1.6566 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 57/100 train=1.5272 val=1.6573 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 58/100 train=1.5256 val=1.6496 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 59/100 train=1.5273 val=1.6458 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 60/100 train=1.5239 val=1.6726 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 61/100 train=1.5247 val=1.6485 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 62/100 train=1.5225 val=1.6525 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 63/100 train=1.5217 val=1.6602 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 64/100 train=1.5203 val=1.6424 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 65/100 train=1.5228 val=1.6655 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 66/100 train=1.5182 val=1.6927 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 67/100 train=1.5203 val=1.6755 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 68/100 train=1.5174 val=1.6415 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 69/100 train=1.5143 val=1.6456 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 70/100 train=1.5139 val=1.6592 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 71/100 train=1.5165 val=1.6421 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 72/100 train=1.5128 val=1.6419 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 73/100 train=1.5127 val=1.6435 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 74/100 train=1.5132 val=1.6730 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 75/100 train=1.5127 val=1.6341 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 76/100 train=1.5121 val=1.6460 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 77/100 train=1.5090 val=1.6348 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 78/100 train=1.5101 val=1.6332 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 79/100 train=1.5096 val=1.6759 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 80/100 train=1.5080 val=1.6210 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 81/100 train=1.5062 val=1.6770 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 82/100 train=1.5095 val=1.6384 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 83/100 train=1.5086 val=1.6418 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 84/100 train=1.5038 val=1.6447 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 85/100 train=1.5054 val=1.6387 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 86/100 train=1.5050 val=1.6306 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 87/100 train=1.5025 val=1.6364 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 88/100 train=1.5057 val=1.6373 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 89/100 train=1.5025 val=1.6281 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 90/100 train=1.5025 val=1.6453 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 91/100 train=1.5011 val=1.6353 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 92/100 train=1.5038 val=1.6442 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 93/100 train=1.4994 val=1.6294 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 94/100 train=1.4999 val=1.6206 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 95/100 train=1.5001 val=1.6497 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 96/100 train=1.4988 val=1.6479 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 97/100 train=1.4976 val=1.6234 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 98/100 train=1.4964 val=1.6275 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 99/100 train=1.4991 val=1.6340 sec=62.2
+PEMS-BAY virtual_node seed=0 epoch 100/100 train=1.4984 val=1.6421 sec=62.2
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             3383683 1.307249 2.732551  2.728160
+              30             3383683 1.637406 3.685851  3.681484
+              60             3383683 1.949193 4.492642  4.634135
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 8 PEMS-BAY forecast_only seed 1: starting Wed Nov 18 22:55:06 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+PEMS-BAY strict missing zeros 0.003 %
+split  windows        first_target         last_target  missing_target_fraction
+train    36435 2017-01-01 01:00:00 2017-05-07 17:00:00                 0.000015
+  val     5201 2017-05-07 17:05:00 2017-05-25 19:20:00                 0.000078
+ test    10412 2017-05-25 19:25:00 2017-06-30 23:55:00                 0.000064
+PEMS-BAY forecast_only seed=1 epoch 1/100 train=2.0556 val=2.2253 sec=62.9
+PEMS-BAY forecast_only seed=1 epoch 2/100 train=1.8981 val=2.0256 sec=62.3
+PEMS-BAY forecast_only seed=1 epoch 3/100 train=1.8523 val=1.9935 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 4/100 train=1.8273 val=1.9709 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 5/100 train=1.8064 val=2.0312 sec=62.3
+PEMS-BAY forecast_only seed=1 epoch 6/100 train=1.7868 val=1.9214 sec=62.3
+PEMS-BAY forecast_only seed=1 epoch 7/100 train=1.7698 val=1.9003 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 8/100 train=1.7529 val=1.9006 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 9/100 train=1.7395 val=1.8731 sec=62.3
+PEMS-BAY forecast_only seed=1 epoch 10/100 train=1.7254 val=1.8546 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 11/100 train=1.7135 val=1.8209 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 12/100 train=1.7014 val=1.8288 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 13/100 train=1.6887 val=1.8761 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 14/100 train=1.6838 val=1.8548 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 15/100 train=1.6717 val=1.7952 sec=62.3
+PEMS-BAY forecast_only seed=1 epoch 16/100 train=1.6597 val=1.7939 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 17/100 train=1.6531 val=1.7946 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 18/100 train=1.6418 val=1.7758 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 19/100 train=1.6375 val=1.7974 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 20/100 train=1.6316 val=1.8112 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 21/100 train=1.6276 val=1.7419 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 22/100 train=1.6203 val=1.7424 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 23/100 train=1.6135 val=1.7239 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 24/100 train=1.6078 val=1.7334 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 25/100 train=1.6041 val=1.7235 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 26/100 train=1.6004 val=1.7137 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 27/100 train=1.5958 val=1.7184 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 28/100 train=1.5894 val=1.7240 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 29/100 train=1.5877 val=1.6987 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 30/100 train=1.5822 val=1.6967 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 31/100 train=1.5793 val=1.7507 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 32/100 train=1.5780 val=1.6965 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 33/100 train=1.5766 val=1.6901 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 34/100 train=1.5682 val=1.6997 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 35/100 train=1.5714 val=1.7150 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 36/100 train=1.5685 val=1.7280 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 37/100 train=1.5660 val=1.7410 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 38/100 train=1.5642 val=1.6999 sec=62.3
+PEMS-BAY forecast_only seed=1 epoch 39/100 train=1.5623 val=1.6768 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 40/100 train=1.5553 val=1.7037 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 41/100 train=1.5536 val=1.6691 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 42/100 train=1.5561 val=1.6845 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 43/100 train=1.5485 val=1.6685 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 44/100 train=1.5502 val=1.6721 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 45/100 train=1.5458 val=1.6769 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 46/100 train=1.5458 val=1.6567 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 47/100 train=1.5429 val=1.6614 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 48/100 train=1.5414 val=1.6612 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 49/100 train=1.5404 val=1.6633 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 50/100 train=1.5378 val=1.6522 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 51/100 train=1.5396 val=1.6630 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 52/100 train=1.5362 val=1.6558 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 53/100 train=1.5349 val=1.6878 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 54/100 train=1.5351 val=1.6741 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 55/100 train=1.5342 val=1.6666 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 56/100 train=1.5294 val=1.6538 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 57/100 train=1.5306 val=1.6828 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 58/100 train=1.5279 val=1.6525 sec=62.3
+PEMS-BAY forecast_only seed=1 epoch 59/100 train=1.5289 val=1.6450 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 60/100 train=1.5293 val=1.6472 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 61/100 train=1.5251 val=1.6601 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 62/100 train=1.5238 val=1.6819 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 63/100 train=1.5250 val=1.6648 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 64/100 train=1.5257 val=1.6788 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 65/100 train=1.5209 val=1.6384 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 66/100 train=1.5213 val=1.6538 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 67/100 train=1.5210 val=1.6425 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 68/100 train=1.5182 val=1.6641 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 69/100 train=1.5205 val=1.6408 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 70/100 train=1.5165 val=1.6403 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 71/100 train=1.5171 val=1.6800 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 72/100 train=1.5163 val=1.6480 sec=62.3
+PEMS-BAY forecast_only seed=1 epoch 73/100 train=1.5143 val=1.6499 sec=62.3
+PEMS-BAY forecast_only seed=1 epoch 74/100 train=1.5164 val=1.6561 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 75/100 train=1.5127 val=1.6503 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 76/100 train=1.5131 val=1.6461 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 77/100 train=1.5119 val=1.6425 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 78/100 train=1.5129 val=1.6460 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 79/100 train=1.5134 val=1.6538 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 80/100 train=1.5092 val=1.6352 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 81/100 train=1.5091 val=1.6559 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 82/100 train=1.5095 val=1.6563 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 83/100 train=1.5102 val=1.6404 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 84/100 train=1.5075 val=1.6404 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 85/100 train=1.5060 val=1.6423 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 86/100 train=1.5086 val=1.6390 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 87/100 train=1.5052 val=1.6430 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 88/100 train=1.5035 val=1.6499 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 89/100 train=1.5079 val=1.6406 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 90/100 train=1.5058 val=1.6596 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 91/100 train=1.5054 val=1.6398 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 92/100 train=1.5031 val=1.6385 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 93/100 train=1.5024 val=1.6448 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 94/100 train=1.5014 val=1.6303 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 95/100 train=1.5031 val=1.6381 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 96/100 train=1.5014 val=1.6416 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 97/100 train=1.5014 val=1.6361 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 98/100 train=1.5015 val=1.6312 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 99/100 train=1.5016 val=1.6274 sec=62.4
+PEMS-BAY forecast_only seed=1 epoch 100/100 train=1.5014 val=1.6371 sec=62.4
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             3383683 1.315678 2.755793  2.720329
+              30             3383683 1.646767 3.717485  3.670751
+              60             3383683 1.951309 4.519481  4.646435
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 11 PEMS-BAY virtual_node seed 1: starting Thu Nov 19 00:39:53 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+PEMS-BAY strict missing zeros 0.003 %
+split  windows        first_target         last_target  missing_target_fraction
+train    36435 2017-01-01 01:00:00 2017-05-07 17:00:00                 0.000015
+  val     5201 2017-05-07 17:05:00 2017-05-25 19:20:00                 0.000078
+ test    10412 2017-05-25 19:25:00 2017-06-30 23:55:00                 0.000064
+PEMS-BAY virtual_node seed=1 epoch 1/100 train=2.0507 val=2.0798 sec=62.7
+PEMS-BAY virtual_node seed=1 epoch 2/100 train=1.8784 val=2.0207 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 3/100 train=1.8368 val=1.9946 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 4/100 train=1.8138 val=1.9559 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 5/100 train=1.7993 val=2.0159 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 6/100 train=1.7837 val=1.9193 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 7/100 train=1.7679 val=1.9097 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 8/100 train=1.7542 val=1.8922 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 9/100 train=1.7403 val=1.8970 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 10/100 train=1.7258 val=1.8679 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 11/100 train=1.7111 val=1.8338 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 12/100 train=1.7000 val=1.8354 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 13/100 train=1.6861 val=1.8261 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 14/100 train=1.6797 val=1.8896 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 15/100 train=1.6670 val=1.8307 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 16/100 train=1.6559 val=1.7957 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 17/100 train=1.6450 val=1.7771 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 18/100 train=1.6348 val=1.7540 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 19/100 train=1.6303 val=1.8077 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 20/100 train=1.6211 val=1.7971 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 21/100 train=1.6160 val=1.7343 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 22/100 train=1.6110 val=1.7313 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 23/100 train=1.6008 val=1.7249 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 24/100 train=1.5965 val=1.7274 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 25/100 train=1.5913 val=1.7013 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 26/100 train=1.5880 val=1.7211 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 27/100 train=1.5853 val=1.7232 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 28/100 train=1.5765 val=1.6956 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 29/100 train=1.5773 val=1.6835 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 30/100 train=1.5698 val=1.6878 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 31/100 train=1.5679 val=1.7146 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 32/100 train=1.5661 val=1.6845 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 33/100 train=1.5672 val=1.7005 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 34/100 train=1.5585 val=1.6915 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 35/100 train=1.5597 val=1.6788 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 36/100 train=1.5557 val=1.7003 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 37/100 train=1.5570 val=1.6962 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 38/100 train=1.5525 val=1.6739 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 39/100 train=1.5522 val=1.6687 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 40/100 train=1.5456 val=1.6936 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 41/100 train=1.5449 val=1.6788 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 42/100 train=1.5449 val=1.6826 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 43/100 train=1.5394 val=1.6668 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 44/100 train=1.5406 val=1.6763 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 45/100 train=1.5377 val=1.6792 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 46/100 train=1.5366 val=1.6579 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 47/100 train=1.5349 val=1.6469 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 48/100 train=1.5343 val=1.6483 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 49/100 train=1.5316 val=1.6512 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 50/100 train=1.5296 val=1.6449 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 51/100 train=1.5304 val=1.6509 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 52/100 train=1.5263 val=1.6510 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 53/100 train=1.5259 val=1.6537 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 54/100 train=1.5267 val=1.6583 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 55/100 train=1.5251 val=1.6608 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 56/100 train=1.5225 val=1.6542 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 57/100 train=1.5201 val=1.6434 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 58/100 train=1.5193 val=1.6475 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 59/100 train=1.5204 val=1.6412 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 60/100 train=1.5214 val=1.6530 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 61/100 train=1.5167 val=1.6485 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 62/100 train=1.5153 val=1.6681 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 63/100 train=1.5155 val=1.6675 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 64/100 train=1.5140 val=1.6592 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 65/100 train=1.5142 val=1.6407 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 66/100 train=1.5130 val=1.6457 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 67/100 train=1.5130 val=1.6285 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 68/100 train=1.5119 val=1.6548 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 69/100 train=1.5123 val=1.6396 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 70/100 train=1.5097 val=1.6390 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 71/100 train=1.5090 val=1.6556 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 72/100 train=1.5080 val=1.6462 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 73/100 train=1.5063 val=1.6398 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 74/100 train=1.5084 val=1.6333 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 75/100 train=1.5058 val=1.6481 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 76/100 train=1.5057 val=1.6599 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 77/100 train=1.5041 val=1.6490 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 78/100 train=1.5027 val=1.6535 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 79/100 train=1.5057 val=1.6485 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 80/100 train=1.5008 val=1.6408 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 81/100 train=1.5009 val=1.6392 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 82/100 train=1.5014 val=1.6468 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 83/100 train=1.5012 val=1.6456 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 84/100 train=1.5007 val=1.6397 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 85/100 train=1.4976 val=1.6388 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 86/100 train=1.5000 val=1.6409 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 87/100 train=1.4962 val=1.6247 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 88/100 train=1.4950 val=1.6394 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 89/100 train=1.4991 val=1.6357 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 90/100 train=1.4969 val=1.6507 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 91/100 train=1.4962 val=1.6225 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 92/100 train=1.4943 val=1.6319 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 93/100 train=1.4946 val=1.6415 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 94/100 train=1.4936 val=1.6299 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 95/100 train=1.4934 val=1.6269 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 96/100 train=1.4923 val=1.6314 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 97/100 train=1.4938 val=1.6392 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 98/100 train=1.4923 val=1.6417 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 99/100 train=1.4934 val=1.6308 sec=62.2
+PEMS-BAY virtual_node seed=1 epoch 100/100 train=1.4921 val=1.6472 sec=62.2
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             3383683 1.309382 2.744538  2.723683
+              30             3383683 1.636887 3.684728  3.659962
+              60             3383683 1.952757 4.504587  4.629603
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 14 PEMS-BAY forecast_only seed 2: starting Thu Nov 19 02:24:25 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+PEMS-BAY strict missing zeros 0.003 %
+split  windows        first_target         last_target  missing_target_fraction
+train    36435 2017-01-01 01:00:00 2017-05-07 17:00:00                 0.000015
+  val     5201 2017-05-07 17:05:00 2017-05-25 19:20:00                 0.000078
+ test    10412 2017-05-25 19:25:00 2017-06-30 23:55:00                 0.000064
+PEMS-BAY forecast_only seed=2 epoch 1/100 train=2.1197 val=2.1724 sec=62.9
+PEMS-BAY forecast_only seed=2 epoch 2/100 train=1.9076 val=2.0780 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 3/100 train=1.8674 val=1.9838 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 4/100 train=1.8294 val=2.0185 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 5/100 train=1.8065 val=1.9368 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 6/100 train=1.7863 val=2.0195 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 7/100 train=1.7702 val=1.9232 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 8/100 train=1.7553 val=1.9433 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 9/100 train=1.7461 val=1.9201 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 10/100 train=1.7286 val=1.8733 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 11/100 train=1.7165 val=1.8660 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 12/100 train=1.6999 val=1.8530 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 13/100 train=1.6945 val=1.8378 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 14/100 train=1.6781 val=1.8312 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 15/100 train=1.6674 val=1.9195 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 16/100 train=1.6599 val=1.7774 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 17/100 train=1.6496 val=1.7737 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 18/100 train=1.6435 val=1.8180 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 19/100 train=1.6371 val=1.7560 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 20/100 train=1.6332 val=1.7568 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 21/100 train=1.6272 val=1.7543 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 22/100 train=1.6177 val=1.7194 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 23/100 train=1.6126 val=1.7510 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 24/100 train=1.6108 val=1.7254 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 25/100 train=1.6042 val=1.7366 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 26/100 train=1.6005 val=1.7333 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 27/100 train=1.5991 val=1.6991 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 28/100 train=1.5949 val=1.7163 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 29/100 train=1.5881 val=1.7025 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 30/100 train=1.5889 val=1.6938 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 31/100 train=1.5843 val=1.7475 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 32/100 train=1.5822 val=1.7109 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 33/100 train=1.5794 val=1.7012 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 34/100 train=1.5759 val=1.6970 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 35/100 train=1.5721 val=1.7007 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 36/100 train=1.5746 val=1.6859 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 37/100 train=1.5702 val=1.6975 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 38/100 train=1.5667 val=1.7339 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 39/100 train=1.5674 val=1.7069 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 40/100 train=1.5633 val=1.7059 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 41/100 train=1.5612 val=1.6781 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 42/100 train=1.5610 val=1.6863 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 43/100 train=1.5617 val=1.6948 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 44/100 train=1.5588 val=1.6900 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 45/100 train=1.5556 val=1.7000 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 46/100 train=1.5546 val=1.6717 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 47/100 train=1.5505 val=1.6802 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 48/100 train=1.5518 val=1.6749 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 49/100 train=1.5515 val=1.6870 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 50/100 train=1.5502 val=1.6795 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 51/100 train=1.5477 val=1.6660 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 52/100 train=1.5435 val=1.6679 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 53/100 train=1.5461 val=1.6975 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 54/100 train=1.5433 val=1.6688 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 55/100 train=1.5449 val=1.6641 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 56/100 train=1.5395 val=1.6637 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 57/100 train=1.5411 val=1.6757 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 58/100 train=1.5381 val=1.7043 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 59/100 train=1.5375 val=1.6578 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 60/100 train=1.5390 val=1.6765 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 61/100 train=1.5343 val=1.6697 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 62/100 train=1.5348 val=1.6579 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 63/100 train=1.5335 val=1.6856 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 64/100 train=1.5327 val=1.6764 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 65/100 train=1.5305 val=1.6629 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 66/100 train=1.5289 val=1.6799 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 67/100 train=1.5326 val=1.6535 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 68/100 train=1.5301 val=1.6591 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 69/100 train=1.5246 val=1.6629 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 70/100 train=1.5283 val=1.6550 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 71/100 train=1.5252 val=1.6596 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 72/100 train=1.5236 val=1.6482 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 73/100 train=1.5231 val=1.6758 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 74/100 train=1.5252 val=1.6474 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 75/100 train=1.5226 val=1.6548 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 76/100 train=1.5232 val=1.6566 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 77/100 train=1.5225 val=1.6494 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 78/100 train=1.5190 val=1.6836 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 79/100 train=1.5194 val=1.6554 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 80/100 train=1.5192 val=1.6451 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 81/100 train=1.5188 val=1.6429 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 82/100 train=1.5178 val=1.6624 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 83/100 train=1.5160 val=1.6617 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 84/100 train=1.5173 val=1.6474 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 85/100 train=1.5135 val=1.6489 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 86/100 train=1.5161 val=1.6598 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 87/100 train=1.5142 val=1.6512 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 88/100 train=1.5139 val=1.6464 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 89/100 train=1.5120 val=1.6410 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 90/100 train=1.5120 val=1.6637 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 91/100 train=1.5104 val=1.6516 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 92/100 train=1.5107 val=1.6607 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 93/100 train=1.5095 val=1.6472 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 94/100 train=1.5112 val=1.6501 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 95/100 train=1.5097 val=1.6523 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 96/100 train=1.5102 val=1.6386 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 97/100 train=1.5075 val=1.6743 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 98/100 train=1.5048 val=1.6551 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 99/100 train=1.5082 val=1.6420 sec=62.4
+PEMS-BAY forecast_only seed=2 epoch 100/100 train=1.5072 val=1.6609 sec=62.4
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             3383683 1.323251 2.776642  2.801555
+              30             3383683 1.656766 3.743630  3.747274
+              60             3383683 1.978956 4.559383  4.722874
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 17 PEMS-BAY virtual_node seed 2: starting Thu Nov 19 04:09:12 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+PEMS-BAY strict missing zeros 0.003 %
+split  windows        first_target         last_target  missing_target_fraction
+train    36435 2017-01-01 01:00:00 2017-05-07 17:00:00                 0.000015
+  val     5201 2017-05-07 17:05:00 2017-05-25 19:20:00                 0.000078
+ test    10412 2017-05-25 19:25:00 2017-06-30 23:55:00                 0.000064
+PEMS-BAY virtual_node seed=2 epoch 1/100 train=2.1154 val=2.1294 sec=62.7
+PEMS-BAY virtual_node seed=2 epoch 2/100 train=1.8934 val=2.0264 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 3/100 train=1.8542 val=1.9877 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 4/100 train=1.8243 val=1.9647 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 5/100 train=1.7998 val=1.9743 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 6/100 train=1.7864 val=1.9941 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 7/100 train=1.7726 val=1.9266 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 8/100 train=1.7577 val=1.8991 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 9/100 train=1.7485 val=1.8975 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 10/100 train=1.7326 val=1.9261 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 11/100 train=1.7227 val=1.8671 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 12/100 train=1.7058 val=1.8433 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 13/100 train=1.6985 val=1.8333 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 14/100 train=1.6861 val=1.8379 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 15/100 train=1.6765 val=1.8184 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 16/100 train=1.6675 val=1.7793 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 17/100 train=1.6566 val=1.7859 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 18/100 train=1.6487 val=1.7663 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 19/100 train=1.6419 val=1.7650 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 20/100 train=1.6353 val=1.7536 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 21/100 train=1.6285 val=1.7685 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 22/100 train=1.6186 val=1.7194 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 23/100 train=1.6136 val=1.7356 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 24/100 train=1.6102 val=1.7187 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 25/100 train=1.6043 val=1.7644 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 26/100 train=1.5993 val=1.7103 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 27/100 train=1.5963 val=1.7109 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 28/100 train=1.5908 val=1.7108 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 29/100 train=1.5849 val=1.6999 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 30/100 train=1.5847 val=1.7043 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 31/100 train=1.5781 val=1.7316 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 32/100 train=1.5765 val=1.6916 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 33/100 train=1.5726 val=1.6909 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 34/100 train=1.5674 val=1.7030 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 35/100 train=1.5643 val=1.6842 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 36/100 train=1.5674 val=1.6743 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 37/100 train=1.5619 val=1.6704 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 38/100 train=1.5573 val=1.7059 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 39/100 train=1.5571 val=1.7159 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 40/100 train=1.5521 val=1.7058 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 41/100 train=1.5514 val=1.6829 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 42/100 train=1.5502 val=1.6701 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 43/100 train=1.5490 val=1.6601 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 44/100 train=1.5470 val=1.6840 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 45/100 train=1.5456 val=1.6829 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 46/100 train=1.5422 val=1.6606 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 47/100 train=1.5403 val=1.6729 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 48/100 train=1.5406 val=1.6596 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 49/100 train=1.5394 val=1.6576 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 50/100 train=1.5371 val=1.6867 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 51/100 train=1.5380 val=1.6612 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 52/100 train=1.5320 val=1.6503 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 53/100 train=1.5349 val=1.6866 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 54/100 train=1.5318 val=1.6793 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 55/100 train=1.5318 val=1.6465 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 56/100 train=1.5284 val=1.6476 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 57/100 train=1.5298 val=1.6567 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 58/100 train=1.5247 val=1.6953 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 59/100 train=1.5243 val=1.6509 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 60/100 train=1.5258 val=1.6656 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 61/100 train=1.5210 val=1.6683 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 62/100 train=1.5225 val=1.6472 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 63/100 train=1.5208 val=1.6897 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 64/100 train=1.5208 val=1.6438 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 65/100 train=1.5182 val=1.6596 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 66/100 train=1.5170 val=1.6474 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 67/100 train=1.5178 val=1.6436 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 68/100 train=1.5196 val=1.6395 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 69/100 train=1.5125 val=1.6389 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 70/100 train=1.5168 val=1.6377 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 71/100 train=1.5131 val=1.6360 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 72/100 train=1.5115 val=1.6398 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 73/100 train=1.5119 val=1.6389 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 74/100 train=1.5126 val=1.6376 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 75/100 train=1.5085 val=1.6389 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 76/100 train=1.5122 val=1.6321 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 77/100 train=1.5094 val=1.6429 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 78/100 train=1.5060 val=1.6398 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 79/100 train=1.5081 val=1.6366 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 80/100 train=1.5095 val=1.6477 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 81/100 train=1.5089 val=1.6287 sec=62.3
+PEMS-BAY virtual_node seed=2 epoch 82/100 train=1.5061 val=1.6499 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 83/100 train=1.5043 val=1.6457 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 84/100 train=1.5059 val=1.6225 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 85/100 train=1.5024 val=1.6377 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 86/100 train=1.5041 val=1.6246 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 87/100 train=1.5027 val=1.6394 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 88/100 train=1.5034 val=1.6317 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 89/100 train=1.5009 val=1.6230 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 90/100 train=1.5003 val=1.6393 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 91/100 train=1.5011 val=1.6497 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 92/100 train=1.4991 val=1.6350 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 93/100 train=1.4989 val=1.6317 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 94/100 train=1.4995 val=1.6296 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 95/100 train=1.4992 val=1.6381 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 96/100 train=1.4985 val=1.6300 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 97/100 train=1.4956 val=1.6684 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 98/100 train=1.4963 val=1.6327 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 99/100 train=1.4962 val=1.6246 sec=62.2
+PEMS-BAY virtual_node seed=2 epoch 100/100 train=1.4945 val=1.6454 sec=62.2
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             3383683 1.313499 2.741300  2.731815
+              30             3383683 1.648570 3.705052  3.688527
+              60             3383683 1.943263 4.456206  4.638504
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 20 METR-LA forecast_only seed 0: starting Thu Nov 19 05:53:46 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+Resuming METR-LA/forecast_only from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.703160 5.148568  6.917426
+              30             1244816 3.093459 6.193207  8.228693
+              60             1244780 3.566483 7.339052  9.894635
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 23 METR-LA virtual_node seed 0: starting Thu Nov 19 05:54:09 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+Resuming METR-LA/virtual_node from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.696783 5.147436  6.992636
+              30             1244816 3.080980 6.173405  8.574208
+              60             1244780 3.516360 7.263816 10.287562
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 26 METR-LA forecast_only seed 1: starting Thu Nov 19 05:54:31 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+METR-LA forecast_only seed=1 epoch 1/100 train=3.7666 val=3.5268 sec=26.4
+METR-LA forecast_only seed=1 epoch 2/100 train=3.5201 val=3.2991 sec=25.8
+METR-LA forecast_only seed=1 epoch 3/100 train=3.4491 val=3.3812 sec=25.8
+METR-LA forecast_only seed=1 epoch 4/100 train=3.3832 val=3.1691 sec=25.8
+METR-LA forecast_only seed=1 epoch 5/100 train=3.3419 val=3.2484 sec=25.8
+METR-LA forecast_only seed=1 epoch 6/100 train=3.3109 val=3.2561 sec=25.8
+METR-LA forecast_only seed=1 epoch 7/100 train=3.2713 val=3.0628 sec=25.8
+METR-LA forecast_only seed=1 epoch 8/100 train=3.2484 val=3.0361 sec=25.8
+METR-LA forecast_only seed=1 epoch 9/100 train=3.2136 val=3.0962 sec=25.8
+METR-LA forecast_only seed=1 epoch 10/100 train=3.1949 val=3.0318 sec=25.8
+METR-LA forecast_only seed=1 epoch 11/100 train=3.1698 val=3.0434 sec=25.8
+METR-LA forecast_only seed=1 epoch 12/100 train=3.1566 val=3.0122 sec=25.8
+METR-LA forecast_only seed=1 epoch 13/100 train=3.1327 val=3.0274 sec=25.8
+METR-LA forecast_only seed=1 epoch 14/100 train=3.1188 val=2.9840 sec=25.8
+METR-LA forecast_only seed=1 epoch 15/100 train=3.1022 val=3.0084 sec=25.8
+METR-LA forecast_only seed=1 epoch 16/100 train=3.0835 val=2.9880 sec=25.8
+METR-LA forecast_only seed=1 epoch 17/100 train=3.0774 val=2.9999 sec=25.8
+METR-LA forecast_only seed=1 epoch 18/100 train=3.0645 val=2.9508 sec=25.8
+METR-LA forecast_only seed=1 epoch 19/100 train=3.0568 val=2.9489 sec=25.8
+METR-LA forecast_only seed=1 epoch 20/100 train=3.0477 val=2.9464 sec=25.8
+METR-LA forecast_only seed=1 epoch 21/100 train=3.0384 val=2.8932 sec=25.8
+METR-LA forecast_only seed=1 epoch 22/100 train=3.0237 val=2.9321 sec=25.8
+METR-LA forecast_only seed=1 epoch 23/100 train=3.0159 val=2.9173 sec=25.8
+METR-LA forecast_only seed=1 epoch 24/100 train=3.0116 val=2.9202 sec=25.8
+METR-LA forecast_only seed=1 epoch 25/100 train=3.0042 val=2.8981 sec=25.8
+METR-LA forecast_only seed=1 epoch 26/100 train=2.9972 val=2.8687 sec=25.8
+METR-LA forecast_only seed=1 epoch 27/100 train=2.9855 val=2.8838 sec=25.8
+METR-LA forecast_only seed=1 epoch 28/100 train=2.9846 val=2.8837 sec=25.8
+METR-LA forecast_only seed=1 epoch 29/100 train=2.9752 val=2.8880 sec=25.8
+METR-LA forecast_only seed=1 epoch 30/100 train=2.9681 val=2.8534 sec=25.8
+METR-LA forecast_only seed=1 epoch 31/100 train=2.9692 val=2.8640 sec=25.8
+METR-LA forecast_only seed=1 epoch 32/100 train=2.9585 val=2.8926 sec=25.8
+METR-LA forecast_only seed=1 epoch 33/100 train=2.9566 val=2.8776 sec=25.8
+METR-LA forecast_only seed=1 epoch 34/100 train=2.9546 val=2.8522 sec=25.8
+METR-LA forecast_only seed=1 epoch 35/100 train=2.9463 val=2.8721 sec=25.8
+METR-LA forecast_only seed=1 epoch 36/100 train=2.9436 val=2.8617 sec=25.8
+METR-LA forecast_only seed=1 epoch 37/100 train=2.9431 val=2.9040 sec=25.8
+METR-LA forecast_only seed=1 epoch 38/100 train=2.9400 val=2.8976 sec=25.8
+METR-LA forecast_only seed=1 epoch 39/100 train=2.9330 val=2.8579 sec=25.8
+METR-LA forecast_only seed=1 epoch 40/100 train=2.9351 val=2.8418 sec=25.8
+METR-LA forecast_only seed=1 epoch 41/100 train=2.9275 val=2.8800 sec=25.8
+METR-LA forecast_only seed=1 epoch 42/100 train=2.9277 val=2.8426 sec=25.8
+METR-LA forecast_only seed=1 epoch 43/100 train=2.9205 val=2.8358 sec=25.8
+METR-LA forecast_only seed=1 epoch 44/100 train=2.9161 val=2.8531 sec=25.8
+METR-LA forecast_only seed=1 epoch 45/100 train=2.9143 val=2.8783 sec=25.8
+METR-LA forecast_only seed=1 epoch 46/100 train=2.9084 val=2.8480 sec=25.8
+METR-LA forecast_only seed=1 epoch 47/100 train=2.9142 val=2.8562 sec=25.8
+METR-LA forecast_only seed=1 epoch 48/100 train=2.9075 val=2.8550 sec=25.8
+METR-LA forecast_only seed=1 epoch 49/100 train=2.9078 val=2.8721 sec=25.8
+METR-LA forecast_only seed=1 epoch 50/100 train=2.9003 val=2.8401 sec=25.8
+METR-LA forecast_only seed=1 epoch 51/100 train=2.8983 val=2.8474 sec=25.8
+METR-LA forecast_only seed=1 epoch 52/100 train=2.8973 val=2.8325 sec=25.8
+METR-LA forecast_only seed=1 epoch 53/100 train=2.8931 val=2.8730 sec=25.8
+METR-LA forecast_only seed=1 epoch 54/100 train=2.8964 val=2.8417 sec=25.8
+METR-LA forecast_only seed=1 epoch 55/100 train=2.8885 val=2.8330 sec=25.8
+METR-LA forecast_only seed=1 epoch 56/100 train=2.8867 val=2.8303 sec=25.8
+METR-LA forecast_only seed=1 epoch 57/100 train=2.8865 val=2.8300 sec=25.8
+METR-LA forecast_only seed=1 epoch 58/100 train=2.8864 val=2.8340 sec=25.8
+METR-LA forecast_only seed=1 epoch 59/100 train=2.8831 val=2.8740 sec=25.8
+METR-LA forecast_only seed=1 epoch 60/100 train=2.8812 val=2.8211 sec=25.8
+METR-LA forecast_only seed=1 epoch 61/100 train=2.8808 val=2.8438 sec=25.8
+METR-LA forecast_only seed=1 epoch 62/100 train=2.8769 val=2.8263 sec=25.8
+METR-LA forecast_only seed=1 epoch 63/100 train=2.8781 val=2.8535 sec=25.8
+METR-LA forecast_only seed=1 epoch 64/100 train=2.8732 val=2.8374 sec=25.8
+METR-LA forecast_only seed=1 epoch 65/100 train=2.8717 val=2.8831 sec=25.8
+METR-LA forecast_only seed=1 epoch 66/100 train=2.8729 val=2.8865 sec=25.8
+METR-LA forecast_only seed=1 epoch 67/100 train=2.8743 val=2.8482 sec=25.8
+METR-LA forecast_only seed=1 epoch 68/100 train=2.8683 val=2.8450 sec=25.8
+METR-LA forecast_only seed=1 epoch 69/100 train=2.8633 val=2.8371 sec=25.8
+METR-LA forecast_only seed=1 epoch 70/100 train=2.8678 val=2.8487 sec=25.8
+METR-LA forecast_only seed=1 epoch 71/100 train=2.8626 val=2.8523 sec=25.8
+METR-LA forecast_only seed=1 epoch 72/100 train=2.8639 val=2.8509 sec=25.8
+METR-LA forecast_only seed=1 epoch 73/100 train=2.8627 val=2.8538 sec=25.8
+METR-LA forecast_only seed=1 epoch 74/100 train=2.8582 val=2.8542 sec=25.8
+METR-LA forecast_only seed=1 epoch 75/100 train=2.8543 val=2.8153 sec=25.8
+METR-LA forecast_only seed=1 epoch 76/100 train=2.8599 val=2.8605 sec=25.8
+METR-LA forecast_only seed=1 epoch 77/100 train=2.8613 val=2.8421 sec=25.8
+METR-LA forecast_only seed=1 epoch 78/100 train=2.8589 val=2.8255 sec=25.8
+METR-LA forecast_only seed=1 epoch 79/100 train=2.8532 val=2.8152 sec=25.8
+METR-LA forecast_only seed=1 epoch 80/100 train=2.8537 val=2.8307 sec=25.8
+METR-LA forecast_only seed=1 epoch 81/100 train=2.8452 val=2.8311 sec=25.8
+METR-LA forecast_only seed=1 epoch 82/100 train=2.8570 val=2.8392 sec=25.8
+METR-LA forecast_only seed=1 epoch 83/100 train=2.8461 val=2.8388 sec=25.8
+METR-LA forecast_only seed=1 epoch 84/100 train=2.8477 val=2.8194 sec=25.8
+METR-LA forecast_only seed=1 epoch 85/100 train=2.8510 val=2.8496 sec=25.8
+METR-LA forecast_only seed=1 epoch 86/100 train=2.8444 val=2.8411 sec=25.8
+METR-LA forecast_only seed=1 epoch 87/100 train=2.8451 val=2.8441 sec=25.8
+METR-LA forecast_only seed=1 epoch 88/100 train=2.8408 val=2.8348 sec=25.8
+METR-LA forecast_only seed=1 epoch 89/100 train=2.8437 val=2.8178 sec=25.8
+METR-LA forecast_only seed=1 epoch 90/100 train=2.8417 val=2.8430 sec=25.8
+METR-LA forecast_only seed=1 epoch 91/100 train=2.8411 val=2.9098 sec=25.8
+METR-LA forecast_only seed=1 epoch 92/100 train=2.8409 val=2.8183 sec=25.8
+METR-LA forecast_only seed=1 epoch 93/100 train=2.8376 val=2.8263 sec=25.8
+METR-LA forecast_only seed=1 epoch 94/100 train=2.8363 val=2.8370 sec=25.8
+METR-LA forecast_only seed=1 epoch 95/100 train=2.8356 val=2.8233 sec=25.8
+METR-LA forecast_only seed=1 epoch 96/100 train=2.8371 val=2.8473 sec=25.8
+METR-LA forecast_only seed=1 epoch 97/100 train=2.8418 val=2.8354 sec=25.8
+METR-LA forecast_only seed=1 epoch 98/100 train=2.8315 val=2.8279 sec=25.8
+METR-LA forecast_only seed=1 epoch 99/100 train=2.8338 val=2.8288 sec=25.8
+METR-LA forecast_only seed=1 epoch 100/100 train=2.8313 val=2.8157 sec=25.8
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.706663 5.184588  6.932502
+              30             1244816 3.089481 6.208399  8.389705
+              60             1244780 3.579826 7.392801 10.033606
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 29 METR-LA virtual_node seed 1: starting Thu Nov 19 06:38:01 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+METR-LA virtual_node seed=1 epoch 1/100 train=3.7642 val=3.5417 sec=26.0
+METR-LA virtual_node seed=1 epoch 2/100 train=3.5096 val=3.2507 sec=25.4
+METR-LA virtual_node seed=1 epoch 3/100 train=3.4369 val=3.4454 sec=25.4
+METR-LA virtual_node seed=1 epoch 4/100 train=3.3786 val=3.1585 sec=25.4
+METR-LA virtual_node seed=1 epoch 5/100 train=3.3426 val=3.1832 sec=25.4
+METR-LA virtual_node seed=1 epoch 6/100 train=3.3146 val=3.1091 sec=25.4
+METR-LA virtual_node seed=1 epoch 7/100 train=3.2765 val=3.0782 sec=25.4
+METR-LA virtual_node seed=1 epoch 8/100 train=3.2535 val=3.0486 sec=25.4
+METR-LA virtual_node seed=1 epoch 9/100 train=3.2238 val=3.1082 sec=25.4
+METR-LA virtual_node seed=1 epoch 10/100 train=3.2085 val=3.0345 sec=25.4
+METR-LA virtual_node seed=1 epoch 11/100 train=3.1836 val=2.9973 sec=25.4
+METR-LA virtual_node seed=1 epoch 12/100 train=3.1711 val=3.0128 sec=25.4
+METR-LA virtual_node seed=1 epoch 13/100 train=3.1463 val=2.9803 sec=25.4
+METR-LA virtual_node seed=1 epoch 14/100 train=3.1349 val=2.9844 sec=25.4
+METR-LA virtual_node seed=1 epoch 15/100 train=3.1156 val=2.9608 sec=25.4
+METR-LA virtual_node seed=1 epoch 16/100 train=3.0980 val=2.9745 sec=25.4
+METR-LA virtual_node seed=1 epoch 17/100 train=3.0902 val=3.0245 sec=25.4
+METR-LA virtual_node seed=1 epoch 18/100 train=3.0780 val=2.9711 sec=25.4
+METR-LA virtual_node seed=1 epoch 19/100 train=3.0653 val=2.9317 sec=25.4
+METR-LA virtual_node seed=1 epoch 20/100 train=3.0560 val=2.9783 sec=25.4
+METR-LA virtual_node seed=1 epoch 21/100 train=3.0462 val=2.9006 sec=25.4
+METR-LA virtual_node seed=1 epoch 22/100 train=3.0304 val=2.9059 sec=25.4
+METR-LA virtual_node seed=1 epoch 23/100 train=3.0234 val=2.8971 sec=25.4
+METR-LA virtual_node seed=1 epoch 24/100 train=3.0144 val=2.8993 sec=25.4
+METR-LA virtual_node seed=1 epoch 25/100 train=3.0077 val=2.8788 sec=25.4
+METR-LA virtual_node seed=1 epoch 26/100 train=3.0012 val=2.8774 sec=25.4
+METR-LA virtual_node seed=1 epoch 27/100 train=2.9902 val=2.8720 sec=25.4
+METR-LA virtual_node seed=1 epoch 28/100 train=2.9851 val=2.8780 sec=25.4
+METR-LA virtual_node seed=1 epoch 29/100 train=2.9782 val=2.8559 sec=25.4
+METR-LA virtual_node seed=1 epoch 30/100 train=2.9680 val=2.8475 sec=25.4
+METR-LA virtual_node seed=1 epoch 31/100 train=2.9699 val=2.8589 sec=25.4
+METR-LA virtual_node seed=1 epoch 32/100 train=2.9605 val=2.8829 sec=25.4
+METR-LA virtual_node seed=1 epoch 33/100 train=2.9571 val=2.8618 sec=25.4
+METR-LA virtual_node seed=1 epoch 34/100 train=2.9565 val=2.8484 sec=25.4
+METR-LA virtual_node seed=1 epoch 35/100 train=2.9483 val=2.8750 sec=25.4
+METR-LA virtual_node seed=1 epoch 36/100 train=2.9421 val=2.8436 sec=25.4
+METR-LA virtual_node seed=1 epoch 37/100 train=2.9396 val=2.8782 sec=25.4
+METR-LA virtual_node seed=1 epoch 38/100 train=2.9405 val=2.8664 sec=25.4
+METR-LA virtual_node seed=1 epoch 39/100 train=2.9331 val=2.8850 sec=25.4
+METR-LA virtual_node seed=1 epoch 40/100 train=2.9357 val=2.8553 sec=25.4
+METR-LA virtual_node seed=1 epoch 41/100 train=2.9269 val=2.8832 sec=25.4
+METR-LA virtual_node seed=1 epoch 42/100 train=2.9275 val=2.8772 sec=25.4
+METR-LA virtual_node seed=1 epoch 43/100 train=2.9210 val=2.8562 sec=25.4
+METR-LA virtual_node seed=1 epoch 44/100 train=2.9147 val=2.8554 sec=25.4
+METR-LA virtual_node seed=1 epoch 45/100 train=2.9133 val=2.8730 sec=25.4
+METR-LA virtual_node seed=1 epoch 46/100 train=2.9094 val=2.8443 sec=25.4
+METR-LA virtual_node seed=1 epoch 47/100 train=2.9105 val=2.8517 sec=25.4
+METR-LA virtual_node seed=1 epoch 48/100 train=2.9080 val=2.8545 sec=25.4
+METR-LA virtual_node seed=1 epoch 49/100 train=2.9069 val=2.8421 sec=25.4
+METR-LA virtual_node seed=1 epoch 50/100 train=2.8981 val=2.8222 sec=25.4
+METR-LA virtual_node seed=1 epoch 51/100 train=2.8948 val=2.8415 sec=25.4
+METR-LA virtual_node seed=1 epoch 52/100 train=2.8944 val=2.8241 sec=25.4
+METR-LA virtual_node seed=1 epoch 53/100 train=2.8967 val=2.8515 sec=25.4
+METR-LA virtual_node seed=1 epoch 54/100 train=2.8911 val=2.8552 sec=25.4
+METR-LA virtual_node seed=1 epoch 55/100 train=2.8885 val=2.8159 sec=25.4
+METR-LA virtual_node seed=1 epoch 56/100 train=2.8864 val=2.8208 sec=25.4
+METR-LA virtual_node seed=1 epoch 57/100 train=2.8846 val=2.8283 sec=25.4
+METR-LA virtual_node seed=1 epoch 58/100 train=2.8839 val=2.8466 sec=25.4
+METR-LA virtual_node seed=1 epoch 59/100 train=2.8798 val=2.8679 sec=25.4
+METR-LA virtual_node seed=1 epoch 60/100 train=2.8789 val=2.8092 sec=25.4
+METR-LA virtual_node seed=1 epoch 61/100 train=2.8780 val=2.8186 sec=25.4
+METR-LA virtual_node seed=1 epoch 62/100 train=2.8737 val=2.8239 sec=25.4
+METR-LA virtual_node seed=1 epoch 63/100 train=2.8737 val=2.8259 sec=25.4
+METR-LA virtual_node seed=1 epoch 64/100 train=2.8717 val=2.8470 sec=25.4
+METR-LA virtual_node seed=1 epoch 65/100 train=2.8714 val=2.8757 sec=25.4
+METR-LA virtual_node seed=1 epoch 66/100 train=2.8674 val=2.8703 sec=25.4
+METR-LA virtual_node seed=1 epoch 67/100 train=2.8702 val=2.8443 sec=25.4
+METR-LA virtual_node seed=1 epoch 68/100 train=2.8676 val=2.8486 sec=25.4
+METR-LA virtual_node seed=1 epoch 69/100 train=2.8598 val=2.8250 sec=25.4
+METR-LA virtual_node seed=1 epoch 70/100 train=2.8639 val=2.8468 sec=25.4
+METR-LA virtual_node seed=1 epoch 71/100 train=2.8606 val=2.8506 sec=25.4
+METR-LA virtual_node seed=1 epoch 72/100 train=2.8619 val=2.8376 sec=25.4
+METR-LA virtual_node seed=1 epoch 73/100 train=2.8624 val=2.8417 sec=25.4
+METR-LA virtual_node seed=1 epoch 74/100 train=2.8533 val=2.8348 sec=25.4
+METR-LA virtual_node seed=1 epoch 75/100 train=2.8508 val=2.8178 sec=25.4
+METR-LA virtual_node seed=1 epoch 76/100 train=2.8557 val=2.8524 sec=25.4
+METR-LA virtual_node seed=1 epoch 77/100 train=2.8548 val=2.8288 sec=25.4
+METR-LA virtual_node seed=1 epoch 78/100 train=2.8576 val=2.8245 sec=25.4
+METR-LA virtual_node seed=1 epoch 79/100 train=2.8494 val=2.8065 sec=25.4
+METR-LA virtual_node seed=1 epoch 80/100 train=2.8503 val=2.8137 sec=25.5
+METR-LA virtual_node seed=1 epoch 81/100 train=2.8424 val=2.8107 sec=25.4
+METR-LA virtual_node seed=1 epoch 82/100 train=2.8507 val=2.8269 sec=25.4
+METR-LA virtual_node seed=1 epoch 83/100 train=2.8437 val=2.8339 sec=25.5
+METR-LA virtual_node seed=1 epoch 84/100 train=2.8429 val=2.8032 sec=25.4
+METR-LA virtual_node seed=1 epoch 85/100 train=2.8477 val=2.8800 sec=25.4
+METR-LA virtual_node seed=1 epoch 86/100 train=2.8421 val=2.8145 sec=25.4
+METR-LA virtual_node seed=1 epoch 87/100 train=2.8401 val=2.8263 sec=25.4
+METR-LA virtual_node seed=1 epoch 88/100 train=2.8361 val=2.8100 sec=25.4
+METR-LA virtual_node seed=1 epoch 89/100 train=2.8393 val=2.8027 sec=25.4
+METR-LA virtual_node seed=1 epoch 90/100 train=2.8356 val=2.8263 sec=25.4
+METR-LA virtual_node seed=1 epoch 91/100 train=2.8366 val=2.9191 sec=25.4
+METR-LA virtual_node seed=1 epoch 92/100 train=2.8382 val=2.8114 sec=25.4
+METR-LA virtual_node seed=1 epoch 93/100 train=2.8330 val=2.8300 sec=25.4
+METR-LA virtual_node seed=1 epoch 94/100 train=2.8322 val=2.8203 sec=25.4
+METR-LA virtual_node seed=1 epoch 95/100 train=2.8327 val=2.8197 sec=25.4
+METR-LA virtual_node seed=1 epoch 96/100 train=2.8308 val=2.8133 sec=25.4
+METR-LA virtual_node seed=1 epoch 97/100 train=2.8332 val=2.8109 sec=25.4
+METR-LA virtual_node seed=1 epoch 98/100 train=2.8279 val=2.8265 sec=25.4
+METR-LA virtual_node seed=1 epoch 99/100 train=2.8284 val=2.8017 sec=25.4
+METR-LA virtual_node seed=1 epoch 100/100 train=2.8260 val=2.8123 sec=25.4
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.696767 5.146127  6.895362
+              30             1244816 3.076704 6.162620  8.235516
+              60             1244780 3.544233 7.304969  9.794465
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 32 METR-LA forecast_only seed 2: starting Thu Nov 19 07:20:59 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+METR-LA forecast_only seed=2 epoch 1/100 train=3.8154 val=3.3198 sec=26.3
+METR-LA forecast_only seed=2 epoch 2/100 train=3.5227 val=3.2792 sec=25.8
+METR-LA forecast_only seed=2 epoch 3/100 train=3.4565 val=3.3058 sec=25.8
+METR-LA forecast_only seed=2 epoch 4/100 train=3.3953 val=3.1918 sec=25.8
+METR-LA forecast_only seed=2 epoch 5/100 train=3.3610 val=3.2096 sec=25.8
+METR-LA forecast_only seed=2 epoch 6/100 train=3.3266 val=3.2279 sec=25.8
+METR-LA forecast_only seed=2 epoch 7/100 train=3.2960 val=3.0852 sec=25.8
+METR-LA forecast_only seed=2 epoch 8/100 train=3.2644 val=3.0866 sec=25.8
+METR-LA forecast_only seed=2 epoch 9/100 train=3.2421 val=3.0533 sec=25.8
+METR-LA forecast_only seed=2 epoch 10/100 train=3.2141 val=3.0434 sec=25.8
+METR-LA forecast_only seed=2 epoch 11/100 train=3.1919 val=3.0199 sec=25.8
+METR-LA forecast_only seed=2 epoch 12/100 train=3.1689 val=2.9974 sec=25.8
+METR-LA forecast_only seed=2 epoch 13/100 train=3.1502 val=2.9992 sec=25.8
+METR-LA forecast_only seed=2 epoch 14/100 train=3.1243 val=2.9515 sec=25.8
+METR-LA forecast_only seed=2 epoch 15/100 train=3.1153 val=2.9464 sec=25.8
+METR-LA forecast_only seed=2 epoch 16/100 train=3.1009 val=2.9228 sec=25.8
+METR-LA forecast_only seed=2 epoch 17/100 train=3.0838 val=2.9545 sec=25.8
+METR-LA forecast_only seed=2 epoch 18/100 train=3.0675 val=2.9198 sec=25.8
+METR-LA forecast_only seed=2 epoch 19/100 train=3.0700 val=2.9239 sec=25.8
+METR-LA forecast_only seed=2 epoch 20/100 train=3.0534 val=2.9237 sec=25.8
+METR-LA forecast_only seed=2 epoch 21/100 train=3.0480 val=2.8948 sec=25.8
+METR-LA forecast_only seed=2 epoch 22/100 train=3.0322 val=2.9248 sec=25.8
+METR-LA forecast_only seed=2 epoch 23/100 train=3.0237 val=2.9367 sec=25.8
+METR-LA forecast_only seed=2 epoch 24/100 train=3.0197 val=2.8909 sec=25.8
+METR-LA forecast_only seed=2 epoch 25/100 train=3.0121 val=2.9323 sec=25.8
+METR-LA forecast_only seed=2 epoch 26/100 train=3.0077 val=2.9025 sec=25.8
+METR-LA forecast_only seed=2 epoch 27/100 train=2.9967 val=2.8708 sec=25.8
+METR-LA forecast_only seed=2 epoch 28/100 train=2.9943 val=2.8823 sec=25.8
+METR-LA forecast_only seed=2 epoch 29/100 train=2.9851 val=2.8615 sec=25.8
+METR-LA forecast_only seed=2 epoch 30/100 train=2.9824 val=2.8751 sec=25.8
+METR-LA forecast_only seed=2 epoch 31/100 train=2.9739 val=2.8465 sec=25.8
+METR-LA forecast_only seed=2 epoch 32/100 train=2.9664 val=2.8633 sec=25.8
+METR-LA forecast_only seed=2 epoch 33/100 train=2.9638 val=2.8708 sec=25.8
+METR-LA forecast_only seed=2 epoch 34/100 train=2.9586 val=2.8722 sec=25.8
+METR-LA forecast_only seed=2 epoch 35/100 train=2.9545 val=2.8431 sec=25.8
+METR-LA forecast_only seed=2 epoch 36/100 train=2.9556 val=2.8801 sec=25.8
+METR-LA forecast_only seed=2 epoch 37/100 train=2.9510 val=2.8779 sec=25.8
+METR-LA forecast_only seed=2 epoch 38/100 train=2.9439 val=2.8511 sec=25.8
+METR-LA forecast_only seed=2 epoch 39/100 train=2.9400 val=2.8709 sec=25.8
+METR-LA forecast_only seed=2 epoch 40/100 train=2.9364 val=2.8653 sec=25.8
+METR-LA forecast_only seed=2 epoch 41/100 train=2.9313 val=2.8431 sec=25.8
+METR-LA forecast_only seed=2 epoch 42/100 train=2.9325 val=2.8807 sec=25.8
+METR-LA forecast_only seed=2 epoch 43/100 train=2.9231 val=2.8483 sec=25.8
+METR-LA forecast_only seed=2 epoch 44/100 train=2.9242 val=2.8586 sec=25.8
+METR-LA forecast_only seed=2 epoch 45/100 train=2.9221 val=2.8564 sec=25.8
+METR-LA forecast_only seed=2 epoch 46/100 train=2.9204 val=2.8832 sec=25.8
+METR-LA forecast_only seed=2 epoch 47/100 train=2.9141 val=2.8472 sec=25.8
+METR-LA forecast_only seed=2 epoch 48/100 train=2.9153 val=2.8721 sec=25.8
+METR-LA forecast_only seed=2 epoch 49/100 train=2.9098 val=2.8430 sec=25.8
+METR-LA forecast_only seed=2 epoch 50/100 train=2.9052 val=2.9795 sec=25.8
+METR-LA forecast_only seed=2 epoch 51/100 train=2.9094 val=2.8614 sec=25.8
+METR-LA forecast_only seed=2 epoch 52/100 train=2.9033 val=2.8408 sec=25.8
+METR-LA forecast_only seed=2 epoch 53/100 train=2.8958 val=2.8222 sec=25.8
+METR-LA forecast_only seed=2 epoch 54/100 train=2.8995 val=2.8301 sec=25.8
+METR-LA forecast_only seed=2 epoch 55/100 train=2.9012 val=2.8773 sec=25.8
+METR-LA forecast_only seed=2 epoch 56/100 train=2.8935 val=2.8339 sec=25.8
+METR-LA forecast_only seed=2 epoch 57/100 train=2.8896 val=2.8528 sec=25.8
+METR-LA forecast_only seed=2 epoch 58/100 train=2.8897 val=2.8724 sec=25.8
+METR-LA forecast_only seed=2 epoch 59/100 train=2.8833 val=2.8475 sec=25.8
+METR-LA forecast_only seed=2 epoch 60/100 train=2.8844 val=2.8401 sec=25.8
+METR-LA forecast_only seed=2 epoch 61/100 train=2.8853 val=2.8511 sec=25.8
+METR-LA forecast_only seed=2 epoch 62/100 train=2.8856 val=2.8369 sec=25.8
+METR-LA forecast_only seed=2 epoch 63/100 train=2.8824 val=2.8511 sec=25.8
+METR-LA forecast_only seed=2 epoch 64/100 train=2.8795 val=2.8174 sec=25.8
+METR-LA forecast_only seed=2 epoch 65/100 train=2.8758 val=2.8227 sec=25.8
+METR-LA forecast_only seed=2 epoch 66/100 train=2.8756 val=2.8499 sec=25.8
+METR-LA forecast_only seed=2 epoch 67/100 train=2.8734 val=2.8479 sec=25.8
+METR-LA forecast_only seed=2 epoch 68/100 train=2.8728 val=2.8549 sec=25.8
+METR-LA forecast_only seed=2 epoch 69/100 train=2.8709 val=2.8213 sec=25.8
+METR-LA forecast_only seed=2 epoch 70/100 train=2.8655 val=2.8283 sec=25.8
+METR-LA forecast_only seed=2 epoch 71/100 train=2.8721 val=2.8458 sec=25.8
+METR-LA forecast_only seed=2 epoch 72/100 train=2.8671 val=2.8432 sec=25.8
+METR-LA forecast_only seed=2 epoch 73/100 train=2.8635 val=2.8448 sec=25.8
+METR-LA forecast_only seed=2 epoch 74/100 train=2.8672 val=2.8601 sec=25.8
+METR-LA forecast_only seed=2 epoch 75/100 train=2.8627 val=2.8230 sec=25.8
+METR-LA forecast_only seed=2 epoch 76/100 train=2.8614 val=2.8397 sec=25.8
+METR-LA forecast_only seed=2 epoch 77/100 train=2.8576 val=2.8304 sec=25.8
+METR-LA forecast_only seed=2 epoch 78/100 train=2.8578 val=2.8205 sec=25.8
+METR-LA forecast_only seed=2 epoch 79/100 train=2.8550 val=2.8334 sec=25.8
+METR-LA forecast_only seed=2 epoch 80/100 train=2.8575 val=2.8236 sec=25.8
+METR-LA forecast_only seed=2 epoch 81/100 train=2.8543 val=2.8364 sec=25.8
+METR-LA forecast_only seed=2 epoch 82/100 train=2.8531 val=2.8313 sec=25.8
+METR-LA forecast_only seed=2 epoch 83/100 train=2.8470 val=2.8325 sec=25.8
+METR-LA forecast_only seed=2 epoch 84/100 train=2.8518 val=2.8393 sec=25.8
+METR-LA forecast_only seed=2 epoch 85/100 train=2.8536 val=2.8445 sec=25.8
+METR-LA forecast_only seed=2 epoch 86/100 train=2.8519 val=2.8375 sec=25.8
+METR-LA forecast_only seed=2 epoch 87/100 train=2.8477 val=2.8305 sec=25.8
+METR-LA forecast_only seed=2 epoch 88/100 train=2.8424 val=2.8233 sec=25.8
+METR-LA forecast_only seed=2 epoch 89/100 train=2.8392 val=2.8488 sec=25.8
+METR-LA forecast_only seed=2 epoch 90/100 train=2.8431 val=2.8346 sec=25.8
+METR-LA forecast_only seed=2 epoch 91/100 train=2.8441 val=2.8557 sec=25.8
+METR-LA forecast_only seed=2 epoch 92/100 train=2.8437 val=2.8265 sec=25.8
+METR-LA forecast_only seed=2 epoch 93/100 train=2.8379 val=2.8196 sec=25.8
+METR-LA forecast_only seed=2 epoch 94/100 train=2.8387 val=2.8177 sec=25.8
+METR-LA forecast_only seed=2 epoch 95/100 train=2.8447 val=2.8085 sec=25.8
+METR-LA forecast_only seed=2 epoch 96/100 train=2.8333 val=2.8163 sec=25.8
+METR-LA forecast_only seed=2 epoch 97/100 train=2.8411 val=2.8527 sec=25.8
+METR-LA forecast_only seed=2 epoch 98/100 train=2.8359 val=2.8406 sec=25.8
+METR-LA forecast_only seed=2 epoch 99/100 train=2.8375 val=2.8238 sec=25.8
+METR-LA forecast_only seed=2 epoch 100/100 train=2.8307 val=2.8284 sec=25.8
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.697868 5.132295  6.942446
+              30             1244816 3.078493 6.151897  8.421432
+              60             1244780 3.545216 7.283647 10.096067
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+== task 35 METR-LA virtual_node seed 2: starting Thu Nov 19 08:04:31 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+METR-LA virtual_node seed=2 epoch 1/100 train=3.8171 val=3.3432 sec=26.0
+METR-LA virtual_node seed=2 epoch 2/100 train=3.5137 val=3.2535 sec=25.4
+METR-LA virtual_node seed=2 epoch 3/100 train=3.4506 val=3.2319 sec=25.4
+METR-LA virtual_node seed=2 epoch 4/100 train=3.3899 val=3.2369 sec=25.4
+METR-LA virtual_node seed=2 epoch 5/100 train=3.3541 val=3.1472 sec=25.5
+METR-LA virtual_node seed=2 epoch 6/100 train=3.3195 val=3.2871 sec=25.4
+METR-LA virtual_node seed=2 epoch 7/100 train=3.2915 val=3.0798 sec=25.4
+METR-LA virtual_node seed=2 epoch 8/100 train=3.2615 val=3.0963 sec=25.4
+METR-LA virtual_node seed=2 epoch 9/100 train=3.2430 val=3.0772 sec=25.4
+METR-LA virtual_node seed=2 epoch 10/100 train=3.2159 val=3.0448 sec=25.4
+METR-LA virtual_node seed=2 epoch 11/100 train=3.1936 val=3.0160 sec=25.4
+METR-LA virtual_node seed=2 epoch 12/100 train=3.1756 val=2.9897 sec=25.4
+METR-LA virtual_node seed=2 epoch 13/100 train=3.1536 val=2.9674 sec=25.4
+METR-LA virtual_node seed=2 epoch 14/100 train=3.1317 val=2.9923 sec=25.4
+METR-LA virtual_node seed=2 epoch 15/100 train=3.1214 val=2.9450 sec=25.4
+METR-LA virtual_node seed=2 epoch 16/100 train=3.1084 val=2.9250 sec=25.4
+METR-LA virtual_node seed=2 epoch 17/100 train=3.0871 val=2.9600 sec=25.4
+METR-LA virtual_node seed=2 epoch 18/100 train=3.0726 val=2.9097 sec=25.4
+METR-LA virtual_node seed=2 epoch 19/100 train=3.0736 val=2.9525 sec=25.4
+METR-LA virtual_node seed=2 epoch 20/100 train=3.0592 val=2.9313 sec=25.4
+METR-LA virtual_node seed=2 epoch 21/100 train=3.0513 val=2.8868 sec=25.4
+METR-LA virtual_node seed=2 epoch 22/100 train=3.0360 val=2.9070 sec=25.4
+METR-LA virtual_node seed=2 epoch 23/100 train=3.0257 val=2.8891 sec=25.4
+METR-LA virtual_node seed=2 epoch 24/100 train=3.0225 val=2.8814 sec=25.4
+METR-LA virtual_node seed=2 epoch 25/100 train=3.0089 val=2.9221 sec=25.4
+METR-LA virtual_node seed=2 epoch 26/100 train=3.0057 val=2.8795 sec=25.4
+METR-LA virtual_node seed=2 epoch 27/100 train=2.9924 val=2.8604 sec=25.4
+METR-LA virtual_node seed=2 epoch 28/100 train=2.9946 val=2.8600 sec=25.4
+METR-LA virtual_node seed=2 epoch 29/100 train=2.9826 val=2.8584 sec=25.4
+METR-LA virtual_node seed=2 epoch 30/100 train=2.9832 val=2.8652 sec=25.4
+METR-LA virtual_node seed=2 epoch 31/100 train=2.9706 val=2.8449 sec=25.4
+METR-LA virtual_node seed=2 epoch 32/100 train=2.9631 val=2.8657 sec=25.4
+METR-LA virtual_node seed=2 epoch 33/100 train=2.9597 val=2.8413 sec=25.4
+METR-LA virtual_node seed=2 epoch 34/100 train=2.9556 val=2.8798 sec=25.4
+METR-LA virtual_node seed=2 epoch 35/100 train=2.9491 val=2.8372 sec=25.4
+METR-LA virtual_node seed=2 epoch 36/100 train=2.9488 val=2.8637 sec=25.4
+METR-LA virtual_node seed=2 epoch 37/100 train=2.9439 val=2.8432 sec=25.4
+METR-LA virtual_node seed=2 epoch 38/100 train=2.9363 val=2.8397 sec=25.4
+METR-LA virtual_node seed=2 epoch 39/100 train=2.9362 val=2.8460 sec=25.4
+METR-LA virtual_node seed=2 epoch 40/100 train=2.9295 val=2.8672 sec=25.4
+METR-LA virtual_node seed=2 epoch 41/100 train=2.9255 val=2.8443 sec=25.4
+METR-LA virtual_node seed=2 epoch 42/100 train=2.9223 val=2.8539 sec=25.4
+METR-LA virtual_node seed=2 epoch 43/100 train=2.9172 val=2.8477 sec=25.4
+METR-LA virtual_node seed=2 epoch 44/100 train=2.9172 val=2.8385 sec=25.4
+METR-LA virtual_node seed=2 epoch 45/100 train=2.9157 val=2.8471 sec=25.4
+METR-LA virtual_node seed=2 epoch 46/100 train=2.9087 val=2.8377 sec=25.4
+METR-LA virtual_node seed=2 epoch 47/100 train=2.9068 val=2.8407 sec=25.4
+METR-LA virtual_node seed=2 epoch 48/100 train=2.9074 val=2.8558 sec=25.4
+METR-LA virtual_node seed=2 epoch 49/100 train=2.9000 val=2.8462 sec=25.4
+METR-LA virtual_node seed=2 epoch 50/100 train=2.8973 val=2.8965 sec=25.4
+METR-LA virtual_node seed=2 epoch 51/100 train=2.8975 val=2.8637 sec=25.4
+METR-LA virtual_node seed=2 epoch 52/100 train=2.8939 val=2.8129 sec=25.4
+METR-LA virtual_node seed=2 epoch 53/100 train=2.8871 val=2.8075 sec=25.4
+METR-LA virtual_node seed=2 epoch 54/100 train=2.8914 val=2.8077 sec=25.4
+METR-LA virtual_node seed=2 epoch 55/100 train=2.8909 val=2.8570 sec=25.4
+METR-LA virtual_node seed=2 epoch 56/100 train=2.8860 val=2.8205 sec=25.4
+METR-LA virtual_node seed=2 epoch 57/100 train=2.8806 val=2.8177 sec=25.4
+METR-LA virtual_node seed=2 epoch 58/100 train=2.8823 val=2.8556 sec=25.4
+METR-LA virtual_node seed=2 epoch 59/100 train=2.8752 val=2.8255 sec=25.4
+METR-LA virtual_node seed=2 epoch 60/100 train=2.8749 val=2.8110 sec=25.4
+METR-LA virtual_node seed=2 epoch 61/100 train=2.8766 val=2.8347 sec=25.4
+METR-LA virtual_node seed=2 epoch 62/100 train=2.8780 val=2.8287 sec=25.4
+METR-LA virtual_node seed=2 epoch 63/100 train=2.8714 val=2.8356 sec=25.4
+METR-LA virtual_node seed=2 epoch 64/100 train=2.8722 val=2.8074 sec=25.4
+METR-LA virtual_node seed=2 epoch 65/100 train=2.8695 val=2.8163 sec=25.4
+METR-LA virtual_node seed=2 epoch 66/100 train=2.8655 val=2.8311 sec=25.4
+METR-LA virtual_node seed=2 epoch 67/100 train=2.8609 val=2.8304 sec=25.4
+METR-LA virtual_node seed=2 epoch 68/100 train=2.8620 val=2.8358 sec=25.4
+METR-LA virtual_node seed=2 epoch 69/100 train=2.8602 val=2.8099 sec=25.4
+METR-LA virtual_node seed=2 epoch 70/100 train=2.8570 val=2.8089 sec=25.4
+METR-LA virtual_node seed=2 epoch 71/100 train=2.8620 val=2.8268 sec=25.4
+METR-LA virtual_node seed=2 epoch 72/100 train=2.8565 val=2.8205 sec=25.4
+METR-LA virtual_node seed=2 epoch 73/100 train=2.8554 val=2.8243 sec=25.4
+METR-LA virtual_node seed=2 epoch 74/100 train=2.8581 val=2.8451 sec=25.4
+METR-LA virtual_node seed=2 epoch 75/100 train=2.8551 val=2.8205 sec=25.4
+METR-LA virtual_node seed=2 epoch 76/100 train=2.8497 val=2.8314 sec=25.4
+METR-LA virtual_node seed=2 epoch 77/100 train=2.8511 val=2.8098 sec=25.4
+METR-LA virtual_node seed=2 epoch 78/100 train=2.8495 val=2.8113 sec=25.4
+METR-LA virtual_node seed=2 epoch 79/100 train=2.8458 val=2.8265 sec=25.4
+METR-LA virtual_node seed=2 epoch 80/100 train=2.8482 val=2.8143 sec=25.4
+METR-LA virtual_node seed=2 epoch 81/100 train=2.8476 val=2.8247 sec=25.4
+METR-LA virtual_node seed=2 epoch 82/100 train=2.8439 val=2.8128 sec=25.4
+METR-LA virtual_node seed=2 epoch 83/100 train=2.8415 val=2.8045 sec=25.4
+METR-LA virtual_node seed=2 epoch 84/100 train=2.8466 val=2.8496 sec=25.4
+METR-LA virtual_node seed=2 epoch 85/100 train=2.8467 val=2.8357 sec=25.4
+METR-LA virtual_node seed=2 epoch 86/100 train=2.8400 val=2.8125 sec=25.4
+METR-LA virtual_node seed=2 epoch 87/100 train=2.8401 val=2.8229 sec=25.4
+METR-LA virtual_node seed=2 epoch 88/100 train=2.8374 val=2.8101 sec=25.4
+METR-LA virtual_node seed=2 epoch 89/100 train=2.8353 val=2.8351 sec=25.4
+METR-LA virtual_node seed=2 epoch 90/100 train=2.8360 val=2.8137 sec=25.4
+METR-LA virtual_node seed=2 epoch 91/100 train=2.8365 val=2.8330 sec=25.4
+METR-LA virtual_node seed=2 epoch 92/100 train=2.8370 val=2.7982 sec=25.4
+METR-LA virtual_node seed=2 epoch 93/100 train=2.8332 val=2.7985 sec=25.4
+METR-LA virtual_node seed=2 epoch 94/100 train=2.8315 val=2.7956 sec=25.5
+METR-LA virtual_node seed=2 epoch 95/100 train=2.8321 val=2.8122 sec=25.4
+METR-LA virtual_node seed=2 epoch 96/100 train=2.8265 val=2.8069 sec=25.4
+METR-LA virtual_node seed=2 epoch 97/100 train=2.8345 val=2.8368 sec=25.4
+METR-LA virtual_node seed=2 epoch 98/100 train=2.8264 val=2.8237 sec=25.4
+METR-LA virtual_node seed=2 epoch 99/100 train=2.8325 val=2.8366 sec=25.4
+METR-LA virtual_node seed=2 epoch 100/100 train=2.8250 val=2.8087 sec=25.4
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.699685 5.164039  7.065958
+              30             1244816 3.081137 6.187496  8.578459
+              60             1244780 3.504090 7.240845 10.200785
+Outputs: /shared/g00112835/express_links_replication/pilot_output
+Worker finished Thu Nov 19 08:47:28 UTC 2026. Failed tasks: none

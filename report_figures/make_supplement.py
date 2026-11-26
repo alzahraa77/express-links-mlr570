@@ -6,10 +6,10 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 NAMES = {
-    "original": "Original", "express_links": "Ridge Express Links",
+    "original": "Original", "express_links": "Express Links",
     "forecast_only": "Forecast-only", "gtr": "GTR",
     "random_matched": "Matched random", "virtual_node": "Virtual node",
-    "express": "Greedy lead--lag", "random": "Random",
+    "express": "Lead--lag selector", "random": "Random",
     "map_only": "Resistance only", "corr_only": "Correlation only",
     "same_side": "Same-side",
 }
@@ -54,7 +54,7 @@ def main():
     horizons = horizons.groupby(["dataset", "graph", "horizon_minutes"])[list(METRICS)].mean()
     averages = averages.groupby(["dataset", "graph"])[list(METRICS)].mean()
     body = [table(
-        "Six-way Graph WaveNet comparison on all observed test readings. Entries are MAE / RMSE / MAPE, in mph / mph / percent. Each metric averages three seeds. The final column uses the arithmetic mean over the 12 horizons.",
+        "Six-way Graph WaveNet comparison on all observed test readings by forecast horizon.",
         "horizons", ["Dataset", "Graph", "15 minutes", "30 minutes", "60 minutes", "12-horizon mean"],
         horizon_rows(horizons, averages),
     )]
@@ -67,7 +67,7 @@ def main():
         for dataset in DATASETS for i, mode in enumerate(ORIGINAL)
     ]
     body.append(table(
-        "Jam-warning recall and precision (percent) on all roads in the original greedy lead--lag study, averaged over three seeds. These scores require prediction of a jam onset and use the original event rule. The PEMS-BAY tolerance check in the main text measures speed error at observed events.",
+        "Stage~1 jam-warning recall and precision (percent) on all roads.",
         "events", ["Dataset", "Graph", "Recall at 30 min", "Precision at 30 min",
                    "Recall at 60 min", "Precision at 60 min"], rows,
     ))
@@ -79,7 +79,7 @@ def main():
         for model in ("dcrnn", "dcgru") for i, mode in enumerate(("original", "express_links", "forecast_only", "random_matched"))
     ]
     body.append(table(
-        "DCRNN and supplementary DCGRU results on METR-LA. MAE in mph, means over three seeds. The first metric is the shared low-speed target-road slice, Band 1 includes low-speed readings on all roads, and overall results include all observed speeds.",
+        "DCRNN and DCGRU results on METR-LA (MAE in mph, mean over seeds 0--2).",
         "second_models", ["Model", "Graph", "25 roads, low speed", "Band 1", "Overall 60 min", "Overall 12-horizon mean"], rows,
     ))
     (ROOT / "supplement_horizons.tex").write_text(body[0])

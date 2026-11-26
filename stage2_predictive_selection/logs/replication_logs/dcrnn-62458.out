@@ -1,0 +1,559 @@
+DCRNN worker 62458 on gpu-dy-g5-0-12, tasks: METR-LA:original:0 METR-LA:random_matched:0 METR-LA:forecast_only:1 METR-LA:express_links:2
+== METR-LA:original:0: starting Sat Nov 21 18:27:10 UTC 2026
+2026-11-21 18:30:11.835409: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Matplotlib is building the font cache; this may take a moment.
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+DCRNN d92490b (dcrnn_la.yaml): 372353 parameters, 207 nodes, 23967 training windows
+Total trainable parameters 372353
+dcrnn METR-LA original seed=0 epoch 1/100 train=2.5595 val=3.3501 lr=1.00e-02 sec=223.9
+dcrnn METR-LA original seed=0 epoch 2/100 train=2.2789 val=3.2866 lr=1.00e-02 sec=211.1
+dcrnn METR-LA original seed=0 epoch 3/100 train=2.2244 val=3.1214 lr=1.00e-02 sec=211.2
+dcrnn METR-LA original seed=0 epoch 4/100 train=2.1889 val=3.1270 lr=1.00e-02 sec=211.3
+dcrnn METR-LA original seed=0 epoch 5/100 train=2.1618 val=3.0388 lr=1.00e-02 sec=211.0
+dcrnn METR-LA original seed=0 epoch 6/100 train=2.1436 val=3.0892 lr=1.00e-02 sec=211.0
+dcrnn METR-LA original seed=0 epoch 7/100 train=2.1225 val=2.9969 lr=1.00e-02 sec=211.0
+dcrnn METR-LA original seed=0 epoch 8/100 train=2.1120 val=2.9559 lr=1.00e-02 sec=211.1
+dcrnn METR-LA original seed=0 epoch 9/100 train=2.0960 val=3.0143 lr=1.00e-02 sec=211.2
+dcrnn METR-LA original seed=0 epoch 10/100 train=2.0845 val=2.9546 lr=1.00e-02 sec=211.1
+dcrnn METR-LA original seed=0 epoch 11/100 train=2.0746 val=2.9592 lr=1.00e-02 sec=211.0
+dcrnn METR-LA original seed=0 epoch 12/100 train=2.0664 val=3.0490 lr=1.00e-02 sec=211.3
+dcrnn METR-LA original seed=0 epoch 13/100 train=2.0579 val=3.0004 lr=1.00e-02 sec=211.0
+dcrnn METR-LA original seed=0 epoch 14/100 train=2.0503 val=2.9178 lr=1.00e-02 sec=211.1
+dcrnn METR-LA original seed=0 epoch 15/100 train=2.0449 val=2.9233 lr=1.00e-02 sec=211.0
+dcrnn METR-LA original seed=0 epoch 16/100 train=2.0368 val=2.9070 lr=1.00e-02 sec=210.9
+dcrnn METR-LA original seed=0 epoch 17/100 train=2.0329 val=2.9096 lr=1.00e-02 sec=211.0
+dcrnn METR-LA original seed=0 epoch 18/100 train=2.0274 val=3.0525 lr=1.00e-02 sec=211.0
+dcrnn METR-LA original seed=0 epoch 19/100 train=2.0231 val=2.9019 lr=1.00e-02 sec=211.1
+dcrnn METR-LA original seed=0 epoch 20/100 train=2.0209 val=2.9274 lr=1.00e-03 sec=210.7
+dcrnn METR-LA original seed=0 epoch 21/100 train=1.9948 val=2.8554 lr=1.00e-03 sec=211.0
+dcrnn METR-LA original seed=0 epoch 22/100 train=1.9958 val=2.8517 lr=1.00e-03 sec=210.9
+dcrnn METR-LA original seed=0 epoch 23/100 train=1.9931 val=2.8593 lr=1.00e-03 sec=210.9
+dcrnn METR-LA original seed=0 epoch 24/100 train=1.9957 val=2.8476 lr=1.00e-03 sec=211.1
+dcrnn METR-LA original seed=0 epoch 25/100 train=1.9964 val=2.8489 lr=1.00e-03 sec=211.1
+dcrnn METR-LA original seed=0 epoch 26/100 train=1.9972 val=2.8562 lr=1.00e-03 sec=210.9
+dcrnn METR-LA original seed=0 epoch 27/100 train=2.0008 val=2.8498 lr=1.00e-03 sec=211.1
+dcrnn METR-LA original seed=0 epoch 28/100 train=2.0044 val=2.8564 lr=1.00e-03 sec=211.1
+dcrnn METR-LA original seed=0 epoch 29/100 train=2.0129 val=2.8482 lr=1.00e-03 sec=211.1
+dcrnn METR-LA original seed=0 epoch 30/100 train=2.0174 val=2.8533 lr=1.00e-04 sec=211.1
+dcrnn METR-LA original seed=0 epoch 31/100 train=2.0219 val=2.8372 lr=1.00e-04 sec=211.1
+dcrnn METR-LA original seed=0 epoch 32/100 train=2.0265 val=2.8394 lr=1.00e-04 sec=211.2
+dcrnn METR-LA original seed=0 epoch 33/100 train=2.0371 val=2.8395 lr=1.00e-04 sec=211.3
+dcrnn METR-LA original seed=0 epoch 34/100 train=2.0505 val=2.8390 lr=1.00e-04 sec=211.1
+dcrnn METR-LA original seed=0 epoch 35/100 train=2.0616 val=2.8337 lr=1.00e-04 sec=211.1
+dcrnn METR-LA original seed=0 epoch 36/100 train=2.0750 val=2.8318 lr=1.00e-04 sec=211.3
+dcrnn METR-LA original seed=0 epoch 37/100 train=2.0981 val=2.8337 lr=1.00e-04 sec=211.1
+dcrnn METR-LA original seed=0 epoch 38/100 train=2.1171 val=2.8275 lr=1.00e-04 sec=211.1
+dcrnn METR-LA original seed=0 epoch 39/100 train=2.1435 val=2.8234 lr=1.00e-04 sec=211.1
+dcrnn METR-LA original seed=0 epoch 40/100 train=2.1587 val=2.8367 lr=1.00e-05 sec=211.2
+dcrnn METR-LA original seed=0 epoch 41/100 train=2.1830 val=2.8216 lr=1.00e-05 sec=211.0
+dcrnn METR-LA original seed=0 epoch 42/100 train=2.2242 val=2.8192 lr=1.00e-05 sec=211.0
+dcrnn METR-LA original seed=0 epoch 43/100 train=2.2421 val=2.8201 lr=1.00e-05 sec=211.1
+dcrnn METR-LA original seed=0 epoch 44/100 train=2.2807 val=2.8162 lr=1.00e-05 sec=211.2
+dcrnn METR-LA original seed=0 epoch 45/100 train=2.3100 val=2.8147 lr=1.00e-05 sec=211.1
+dcrnn METR-LA original seed=0 epoch 46/100 train=2.3514 val=2.8149 lr=1.00e-05 sec=211.1
+dcrnn METR-LA original seed=0 epoch 47/100 train=2.3876 val=2.8139 lr=1.00e-05 sec=211.1
+dcrnn METR-LA original seed=0 epoch 48/100 train=2.4179 val=2.8125 lr=1.00e-05 sec=211.2
+dcrnn METR-LA original seed=0 epoch 49/100 train=2.4561 val=2.8150 lr=1.00e-05 sec=210.9
+dcrnn METR-LA original seed=0 epoch 50/100 train=2.4768 val=2.8107 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 51/100 train=2.4887 val=2.8108 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 52/100 train=2.5385 val=2.8098 lr=1.00e-06 sec=211.0
+dcrnn METR-LA original seed=0 epoch 53/100 train=2.5719 val=2.8101 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 54/100 train=2.5850 val=2.8087 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 55/100 train=2.6116 val=2.8094 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 56/100 train=2.6274 val=2.8093 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 57/100 train=2.6371 val=2.8081 lr=1.00e-06 sec=211.0
+dcrnn METR-LA original seed=0 epoch 58/100 train=2.6508 val=2.8076 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 59/100 train=2.6608 val=2.8078 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 60/100 train=2.6649 val=2.8077 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 61/100 train=2.6820 val=2.8073 lr=1.00e-06 sec=210.9
+dcrnn METR-LA original seed=0 epoch 62/100 train=2.6858 val=2.8072 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 63/100 train=2.6904 val=2.8068 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 64/100 train=2.6938 val=2.8074 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 65/100 train=2.6985 val=2.8067 lr=1.00e-06 sec=211.0
+dcrnn METR-LA original seed=0 epoch 66/100 train=2.7032 val=2.8070 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 67/100 train=2.7095 val=2.8079 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 68/100 train=2.7043 val=2.8066 lr=1.00e-06 sec=211.0
+dcrnn METR-LA original seed=0 epoch 69/100 train=2.7110 val=2.8077 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 70/100 train=2.7117 val=2.8070 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 71/100 train=2.7145 val=2.8065 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 72/100 train=2.7132 val=2.8068 lr=1.00e-06 sec=211.0
+dcrnn METR-LA original seed=0 epoch 73/100 train=2.7130 val=2.8066 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 74/100 train=2.7105 val=2.8068 lr=1.00e-06 sec=211.0
+dcrnn METR-LA original seed=0 epoch 75/100 train=2.7147 val=2.8062 lr=1.00e-06 sec=211.0
+dcrnn METR-LA original seed=0 epoch 76/100 train=2.7150 val=2.8071 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 77/100 train=2.7140 val=2.8070 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 78/100 train=2.7111 val=2.8070 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 79/100 train=2.7130 val=2.8070 lr=1.00e-06 sec=211.0
+dcrnn METR-LA original seed=0 epoch 80/100 train=2.7146 val=2.8070 lr=1.00e-06 sec=211.0
+dcrnn METR-LA original seed=0 epoch 81/100 train=2.7136 val=2.8062 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 82/100 train=2.7141 val=2.8075 lr=1.00e-06 sec=211.0
+dcrnn METR-LA original seed=0 epoch 83/100 train=2.7135 val=2.8062 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 84/100 train=2.7141 val=2.8064 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 85/100 train=2.7140 val=2.8062 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 86/100 train=2.7142 val=2.8057 lr=1.00e-06 sec=211.3
+dcrnn METR-LA original seed=0 epoch 87/100 train=2.7140 val=2.8058 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 88/100 train=2.7135 val=2.8059 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 89/100 train=2.7134 val=2.8059 lr=1.00e-06 sec=211.3
+dcrnn METR-LA original seed=0 epoch 90/100 train=2.7130 val=2.8055 lr=1.00e-06 sec=211.3
+dcrnn METR-LA original seed=0 epoch 91/100 train=2.7127 val=2.8059 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 92/100 train=2.7127 val=2.8057 lr=1.00e-06 sec=211.1
+dcrnn METR-LA original seed=0 epoch 93/100 train=2.7126 val=2.8057 lr=1.00e-06 sec=211.2
+dcrnn METR-LA original seed=0 epoch 94/100 train=2.7119 val=2.8051 lr=1.00e-06 sec=211.3
+dcrnn METR-LA original seed=0 epoch 95/100 train=2.7119 val=2.8059 lr=1.00e-06 sec=211.3
+dcrnn METR-LA original seed=0 epoch 96/100 train=2.7117 val=2.8050 lr=1.00e-06 sec=211.4
+dcrnn METR-LA original seed=0 epoch 97/100 train=2.7113 val=2.8058 lr=1.00e-06 sec=211.3
+dcrnn METR-LA original seed=0 epoch 98/100 train=2.7107 val=2.8059 lr=1.00e-06 sec=211.4
+dcrnn METR-LA original seed=0 epoch 99/100 train=2.7109 val=2.8055 lr=1.00e-06 sec=211.4
+dcrnn METR-LA original seed=0 epoch 100/100 train=2.7105 val=2.8058 lr=1.00e-06 sec=211.4
+{
+  "model": "dcrnn",
+  "code_commit": "d92490b808ba5c5be2f23d427d96e9a56b066d7f",
+  "best_epoch": 96,
+  "best_validation_MAE": 2.80499370592945,
+  "epochs_run": 100,
+  "stopped_early": false,
+  "test_origins": 6843,
+  "smoke": false,
+  "added_arcs": 0,
+  "parameters": 372353,
+  "mae60": 3.5133462414200296,
+  "band1_mae60": 7.733836781458829,
+  "band1_n60": 333768,
+  "express_target_mae60": 3.089591751425843,
+  "target_low_mae60": 8.339032636599505,
+  "target_low_n60": 30331,
+  "target_sensor_n": 25,
+  "low_speed_cutoff": 57.22222137451172,
+  "evaluation_sha256": "f48157ee238663f838dad34d396bfafb0d6116c42da43e559d0ae1aacb87f7c3",
+  "mae15": 2.682914890535542,
+  "mae30": 3.069318143549738,
+  "rmse60": 7.428777715391086,
+  "mape60_pct": 10.300894762374178,
+  "mae_mean_12": 3.0274453719091974,
+  "median_train_epoch_seconds": 211.09837867149963
+}
+== METR-LA:random_matched:0: starting Sun Nov 22 00:26:09 UTC 2026
+2026-11-22 00:26:15.072501: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+DCRNN d92490b (dcrnn_la.yaml): 372353 parameters, 207 nodes, 23967 training windows
+Total trainable parameters 372353
+dcrnn METR-LA random_matched seed=0 epoch 1/100 train=2.5447 val=3.4778 lr=1.00e-02 sec=211.3
+dcrnn METR-LA random_matched seed=0 epoch 2/100 train=2.2777 val=3.3147 lr=1.00e-02 sec=211.1
+dcrnn METR-LA random_matched seed=0 epoch 3/100 train=2.2222 val=3.1357 lr=1.00e-02 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 4/100 train=2.1913 val=3.4132 lr=1.00e-02 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 5/100 train=2.1639 val=3.0369 lr=1.00e-02 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 6/100 train=2.1447 val=3.1013 lr=1.00e-02 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 7/100 train=2.1256 val=3.0394 lr=1.00e-02 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 8/100 train=2.1133 val=2.9357 lr=1.00e-02 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 9/100 train=2.0989 val=3.0017 lr=1.00e-02 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 10/100 train=2.0869 val=2.9498 lr=1.00e-02 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 11/100 train=2.0772 val=2.9199 lr=1.00e-02 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 12/100 train=2.0681 val=2.9403 lr=1.00e-02 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 13/100 train=2.0590 val=2.9767 lr=1.00e-02 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 14/100 train=2.0523 val=3.0033 lr=1.00e-02 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 15/100 train=2.0469 val=2.9664 lr=1.00e-02 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 16/100 train=2.0392 val=2.9321 lr=1.00e-02 sec=211.7
+dcrnn METR-LA random_matched seed=0 epoch 17/100 train=2.0332 val=2.9597 lr=1.00e-02 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 18/100 train=2.0293 val=2.9846 lr=1.00e-02 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 19/100 train=2.0256 val=2.9814 lr=1.00e-02 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 20/100 train=2.0248 val=2.9575 lr=1.00e-03 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 21/100 train=1.9975 val=2.8609 lr=1.00e-03 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 22/100 train=1.9985 val=2.8566 lr=1.00e-03 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 23/100 train=1.9958 val=2.8563 lr=1.00e-03 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 24/100 train=1.9984 val=2.8535 lr=1.00e-03 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 25/100 train=1.9992 val=2.8639 lr=1.00e-03 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 26/100 train=2.0000 val=2.8622 lr=1.00e-03 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 27/100 train=2.0035 val=2.8571 lr=1.00e-03 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 28/100 train=2.0072 val=2.8523 lr=1.00e-03 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 29/100 train=2.0155 val=2.8459 lr=1.00e-03 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 30/100 train=2.0200 val=2.8606 lr=1.00e-04 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 31/100 train=2.0247 val=2.8353 lr=1.00e-04 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 32/100 train=2.0291 val=2.8376 lr=1.00e-04 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 33/100 train=2.0399 val=2.8393 lr=1.00e-04 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 34/100 train=2.0529 val=2.8368 lr=1.00e-04 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 35/100 train=2.0643 val=2.8283 lr=1.00e-04 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 36/100 train=2.0780 val=2.8296 lr=1.00e-04 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 37/100 train=2.1009 val=2.8279 lr=1.00e-04 sec=210.7
+dcrnn METR-LA random_matched seed=0 epoch 38/100 train=2.1195 val=2.8240 lr=1.00e-04 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 39/100 train=2.1457 val=2.8235 lr=1.00e-04 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 40/100 train=2.1615 val=2.8253 lr=1.00e-05 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 41/100 train=2.1856 val=2.8162 lr=1.00e-05 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 42/100 train=2.2264 val=2.8140 lr=1.00e-05 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 43/100 train=2.2445 val=2.8148 lr=1.00e-05 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 44/100 train=2.2830 val=2.8112 lr=1.00e-05 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 45/100 train=2.3114 val=2.8097 lr=1.00e-05 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 46/100 train=2.3529 val=2.8089 lr=1.00e-05 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 47/100 train=2.3890 val=2.8049 lr=1.00e-05 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 48/100 train=2.4188 val=2.8051 lr=1.00e-05 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 49/100 train=2.4584 val=2.8054 lr=1.00e-05 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 50/100 train=2.4784 val=2.8010 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 51/100 train=2.4898 val=2.8011 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 52/100 train=2.5398 val=2.8007 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 53/100 train=2.5737 val=2.7997 lr=1.00e-06 sec=211.1
+dcrnn METR-LA random_matched seed=0 epoch 54/100 train=2.5876 val=2.7990 lr=1.00e-06 sec=211.1
+dcrnn METR-LA random_matched seed=0 epoch 55/100 train=2.6129 val=2.7991 lr=1.00e-06 sec=211.1
+dcrnn METR-LA random_matched seed=0 epoch 56/100 train=2.6298 val=2.7991 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 57/100 train=2.6382 val=2.7984 lr=1.00e-06 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 58/100 train=2.6522 val=2.7983 lr=1.00e-06 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 59/100 train=2.6621 val=2.7980 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 60/100 train=2.6668 val=2.7980 lr=1.00e-06 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 61/100 train=2.6837 val=2.7978 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 62/100 train=2.6881 val=2.7973 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 63/100 train=2.6920 val=2.7974 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 64/100 train=2.6958 val=2.7975 lr=1.00e-06 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 65/100 train=2.6996 val=2.7972 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 66/100 train=2.7052 val=2.7971 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 67/100 train=2.7116 val=2.7976 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 68/100 train=2.7063 val=2.7968 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 69/100 train=2.7134 val=2.7971 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 70/100 train=2.7137 val=2.7965 lr=1.00e-06 sec=211.1
+dcrnn METR-LA random_matched seed=0 epoch 71/100 train=2.7166 val=2.7967 lr=1.00e-06 sec=211.4
+dcrnn METR-LA random_matched seed=0 epoch 72/100 train=2.7153 val=2.7966 lr=1.00e-06 sec=211.6
+dcrnn METR-LA random_matched seed=0 epoch 73/100 train=2.7147 val=2.7967 lr=1.00e-06 sec=211.2
+dcrnn METR-LA random_matched seed=0 epoch 74/100 train=2.7125 val=2.7965 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 75/100 train=2.7168 val=2.7960 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 76/100 train=2.7171 val=2.7963 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 77/100 train=2.7160 val=2.7968 lr=1.00e-06 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 78/100 train=2.7131 val=2.7965 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 79/100 train=2.7149 val=2.7963 lr=1.00e-06 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 80/100 train=2.7166 val=2.7962 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 81/100 train=2.7157 val=2.7959 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 82/100 train=2.7163 val=2.7965 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 83/100 train=2.7157 val=2.7960 lr=1.00e-06 sec=210.8
+dcrnn METR-LA random_matched seed=0 epoch 84/100 train=2.7163 val=2.7962 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 85/100 train=2.7160 val=2.7958 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 86/100 train=2.7164 val=2.7957 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 87/100 train=2.7160 val=2.7953 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 88/100 train=2.7156 val=2.7959 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 89/100 train=2.7155 val=2.7957 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 90/100 train=2.7153 val=2.7955 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 91/100 train=2.7148 val=2.7956 lr=1.00e-06 sec=210.9
+dcrnn METR-LA random_matched seed=0 epoch 92/100 train=2.7149 val=2.7956 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 93/100 train=2.7147 val=2.7956 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 94/100 train=2.7141 val=2.7955 lr=1.00e-06 sec=211.1
+dcrnn METR-LA random_matched seed=0 epoch 95/100 train=2.7140 val=2.7953 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 96/100 train=2.7140 val=2.7953 lr=1.00e-06 sec=211.1
+dcrnn METR-LA random_matched seed=0 epoch 97/100 train=2.7135 val=2.7957 lr=1.00e-06 sec=211.1
+dcrnn METR-LA random_matched seed=0 epoch 98/100 train=2.7130 val=2.7956 lr=1.00e-06 sec=211.1
+dcrnn METR-LA random_matched seed=0 epoch 99/100 train=2.7131 val=2.7955 lr=1.00e-06 sec=211.0
+dcrnn METR-LA random_matched seed=0 epoch 100/100 train=2.7128 val=2.7957 lr=1.00e-06 sec=211.1
+{
+  "model": "dcrnn",
+  "code_commit": "d92490b808ba5c5be2f23d427d96e9a56b066d7f",
+  "best_epoch": 95,
+  "best_validation_MAE": 2.7952770557043687,
+  "epochs_run": 100,
+  "stopped_early": false,
+  "test_origins": 6843,
+  "smoke": false,
+  "added_arcs": 25,
+  "parameters": 372353,
+  "mae60": 3.50690397291992,
+  "band1_mae60": 7.694739116681375,
+  "band1_n60": 333768,
+  "express_target_mae60": 3.087337238302211,
+  "target_low_mae60": 8.268229883670069,
+  "target_low_n60": 30331,
+  "target_sensor_n": 25,
+  "low_speed_cutoff": 57.22222137451172,
+  "evaluation_sha256": "f48157ee238663f838dad34d396bfafb0d6116c42da43e559d0ae1aacb87f7c3",
+  "mae15": 2.679101670166022,
+  "mae30": 3.0603146762604547,
+  "rmse60": 7.417460392701753,
+  "mape60_pct": 10.25745195811903,
+  "mae_mean_12": 3.0207310823390876,
+  "median_train_epoch_seconds": 210.90185313050097
+}
+== METR-LA:forecast_only:1: starting Sun Nov 22 06:18:58 UTC 2026
+2026-11-22 06:19:02.136891: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+DCRNN d92490b (dcrnn_la.yaml): 372353 parameters, 207 nodes, 23967 training windows
+Total trainable parameters 372353
+dcrnn METR-LA forecast_only seed=1 epoch 1/100 train=2.5687 val=3.3354 lr=1.00e-02 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 2/100 train=2.2836 val=3.2020 lr=1.00e-02 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 3/100 train=2.2257 val=3.3913 lr=1.00e-02 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 4/100 train=2.1923 val=3.1061 lr=1.00e-02 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 5/100 train=2.1646 val=3.0304 lr=1.00e-02 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 6/100 train=2.1452 val=3.1607 lr=1.00e-02 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 7/100 train=2.1267 val=2.9930 lr=1.00e-02 sec=210.9
+dcrnn METR-LA forecast_only seed=1 epoch 8/100 train=2.1120 val=2.9717 lr=1.00e-02 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 9/100 train=2.0997 val=3.0414 lr=1.00e-02 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 10/100 train=2.0905 val=2.9823 lr=1.00e-02 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 11/100 train=2.0820 val=2.9813 lr=1.00e-02 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 12/100 train=2.0702 val=2.8994 lr=1.00e-02 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 13/100 train=2.0625 val=3.0089 lr=1.00e-02 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 14/100 train=2.0562 val=2.9807 lr=1.00e-02 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 15/100 train=2.0486 val=2.9125 lr=1.00e-02 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 16/100 train=2.0438 val=2.9045 lr=1.00e-02 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 17/100 train=2.0380 val=2.9324 lr=1.00e-02 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 18/100 train=2.0339 val=2.9060 lr=1.00e-02 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 19/100 train=2.0304 val=3.0146 lr=1.00e-02 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 20/100 train=2.0258 val=3.1476 lr=1.00e-03 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 21/100 train=2.0014 val=2.8655 lr=1.00e-03 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 22/100 train=1.9984 val=2.8680 lr=1.00e-03 sec=210.9
+dcrnn METR-LA forecast_only seed=1 epoch 23/100 train=1.9982 val=2.8660 lr=1.00e-03 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 24/100 train=2.0007 val=2.8662 lr=1.00e-03 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 25/100 train=2.0021 val=2.8701 lr=1.00e-03 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 26/100 train=2.0061 val=2.8620 lr=1.00e-03 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 27/100 train=2.0085 val=2.8661 lr=1.00e-03 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 28/100 train=2.0104 val=2.8639 lr=1.00e-03 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 29/100 train=2.0184 val=2.8969 lr=1.00e-03 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 30/100 train=2.0238 val=2.8819 lr=1.00e-04 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 31/100 train=2.0246 val=2.8523 lr=1.00e-04 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 32/100 train=2.0319 val=2.8518 lr=1.00e-04 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 33/100 train=2.0425 val=2.8494 lr=1.00e-04 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 34/100 train=2.0568 val=2.8513 lr=1.00e-04 sec=211.4
+dcrnn METR-LA forecast_only seed=1 epoch 35/100 train=2.0724 val=2.8488 lr=1.00e-04 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 36/100 train=2.0770 val=2.8470 lr=1.00e-04 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 37/100 train=2.0984 val=2.8423 lr=1.00e-04 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 38/100 train=2.1186 val=2.8442 lr=1.00e-04 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 39/100 train=2.1421 val=2.8377 lr=1.00e-04 sec=210.9
+dcrnn METR-LA forecast_only seed=1 epoch 40/100 train=2.1673 val=2.8307 lr=1.00e-05 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 41/100 train=2.1863 val=2.8312 lr=1.00e-05 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 42/100 train=2.2207 val=2.8309 lr=1.00e-05 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 43/100 train=2.2413 val=2.8298 lr=1.00e-05 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 44/100 train=2.2851 val=2.8269 lr=1.00e-05 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 45/100 train=2.3197 val=2.8245 lr=1.00e-05 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 46/100 train=2.3513 val=2.8249 lr=1.00e-05 sec=211.3
+dcrnn METR-LA forecast_only seed=1 epoch 47/100 train=2.3947 val=2.8211 lr=1.00e-05 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 48/100 train=2.4063 val=2.8189 lr=1.00e-05 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 49/100 train=2.4407 val=2.8137 lr=1.00e-05 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 50/100 train=2.4809 val=2.8151 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 51/100 train=2.5213 val=2.8147 lr=1.00e-06 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 52/100 train=2.5415 val=2.8131 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 53/100 train=2.5565 val=2.8132 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 54/100 train=2.5824 val=2.8129 lr=1.00e-06 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 55/100 train=2.6012 val=2.8123 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 56/100 train=2.6157 val=2.8116 lr=1.00e-06 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 57/100 train=2.6281 val=2.8116 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 58/100 train=2.6490 val=2.8113 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 59/100 train=2.6563 val=2.8113 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 60/100 train=2.6692 val=2.8109 lr=1.00e-06 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 61/100 train=2.6791 val=2.8109 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 62/100 train=2.6792 val=2.8109 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 63/100 train=2.6852 val=2.8105 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 64/100 train=2.6910 val=2.8105 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 65/100 train=2.6934 val=2.8103 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 66/100 train=2.6933 val=2.8109 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 67/100 train=2.7032 val=2.8109 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 68/100 train=2.7027 val=2.8103 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 69/100 train=2.7088 val=2.8099 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 70/100 train=2.7062 val=2.8099 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 71/100 train=2.7130 val=2.8102 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 72/100 train=2.7088 val=2.8102 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 73/100 train=2.7113 val=2.8102 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 74/100 train=2.7124 val=2.8094 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 75/100 train=2.7139 val=2.8094 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 76/100 train=2.7127 val=2.8094 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 77/100 train=2.7119 val=2.8094 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 78/100 train=2.7111 val=2.8099 lr=1.00e-06 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 79/100 train=2.7116 val=2.8096 lr=1.00e-06 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 80/100 train=2.7128 val=2.8088 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 81/100 train=2.7135 val=2.8092 lr=1.00e-06 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 82/100 train=2.7119 val=2.8090 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 83/100 train=2.7111 val=2.8091 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 84/100 train=2.7115 val=2.8095 lr=1.00e-06 sec=211.3
+dcrnn METR-LA forecast_only seed=1 epoch 85/100 train=2.7109 val=2.8094 lr=1.00e-06 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 86/100 train=2.7107 val=2.8092 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 87/100 train=2.7107 val=2.8093 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 88/100 train=2.7107 val=2.8090 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 89/100 train=2.7099 val=2.8091 lr=1.00e-06 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 90/100 train=2.7103 val=2.8093 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 91/100 train=2.7095 val=2.8090 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 92/100 train=2.7102 val=2.8088 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 93/100 train=2.7094 val=2.8095 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 94/100 train=2.7096 val=2.8094 lr=1.00e-06 sec=211.2
+dcrnn METR-LA forecast_only seed=1 epoch 95/100 train=2.7095 val=2.8092 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 96/100 train=2.7089 val=2.8089 lr=1.00e-06 sec=211.0
+dcrnn METR-LA forecast_only seed=1 epoch 97/100 train=2.7085 val=2.8091 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 98/100 train=2.7081 val=2.8089 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 99/100 train=2.7084 val=2.8090 lr=1.00e-06 sec=211.1
+dcrnn METR-LA forecast_only seed=1 epoch 100/100 train=2.7078 val=2.8090 lr=1.00e-06 sec=211.1
+{
+  "model": "dcrnn",
+  "code_commit": "d92490b808ba5c5be2f23d427d96e9a56b066d7f",
+  "best_epoch": 92,
+  "best_validation_MAE": 2.8087573681237563,
+  "epochs_run": 100,
+  "stopped_early": false,
+  "test_origins": 6843,
+  "smoke": false,
+  "added_arcs": 25,
+  "parameters": 372353,
+  "mae60": 3.5234831028276883,
+  "band1_mae60": 7.7288095320365935,
+  "band1_n60": 333768,
+  "express_target_mae60": 3.0608647375586777,
+  "target_low_mae60": 7.919211774672423,
+  "target_low_n60": 30331,
+  "target_sensor_n": 25,
+  "low_speed_cutoff": 57.22222137451172,
+  "evaluation_sha256": "f48157ee238663f838dad34d396bfafb0d6116c42da43e559d0ae1aacb87f7c3",
+  "mae15": 2.688815314033619,
+  "mae30": 3.0764980481445563,
+  "rmse60": 7.430693102980711,
+  "mape60_pct": 10.293790750768617,
+  "mae_mean_12": 3.034515675838904,
+  "median_train_epoch_seconds": 211.09029679450396
+}
+== METR-LA:express_links:2: starting Sun Nov 22 12:11:48 UTC 2026
+2026-11-22 12:11:52.642703: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+DCRNN d92490b (dcrnn_la.yaml): 372353 parameters, 207 nodes, 23967 training windows
+Total trainable parameters 372353
+dcrnn METR-LA express_links seed=2 epoch 1/100 train=2.5898 val=3.3544 lr=1.00e-02 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 2/100 train=2.2806 val=3.3057 lr=1.00e-02 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 3/100 train=2.2274 val=3.1285 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 4/100 train=2.1901 val=3.0356 lr=1.00e-02 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 5/100 train=2.1657 val=3.3650 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 6/100 train=2.1438 val=2.9922 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 7/100 train=2.1263 val=2.9739 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 8/100 train=2.1130 val=2.9652 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 9/100 train=2.0985 val=2.9528 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 10/100 train=2.0882 val=2.9357 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 11/100 train=2.0782 val=3.0620 lr=1.00e-02 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 12/100 train=2.0692 val=2.9572 lr=1.00e-02 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 13/100 train=2.0613 val=2.9543 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 14/100 train=2.0525 val=3.0092 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 15/100 train=2.0460 val=2.9189 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 16/100 train=2.0407 val=2.9342 lr=1.00e-02 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 17/100 train=2.0348 val=3.0941 lr=1.00e-02 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 18/100 train=2.0309 val=2.9635 lr=1.00e-02 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 19/100 train=2.0311 val=2.9272 lr=1.00e-02 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 20/100 train=2.0231 val=2.9541 lr=1.00e-03 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 21/100 train=1.9980 val=2.8767 lr=1.00e-03 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 22/100 train=1.9969 val=2.8703 lr=1.00e-03 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 23/100 train=1.9977 val=2.8592 lr=1.00e-03 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 24/100 train=1.9991 val=2.8714 lr=1.00e-03 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 25/100 train=2.0004 val=2.8659 lr=1.00e-03 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 26/100 train=2.0028 val=2.8722 lr=1.00e-03 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 27/100 train=2.0072 val=2.8641 lr=1.00e-03 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 28/100 train=2.0076 val=2.8646 lr=1.00e-03 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 29/100 train=2.0170 val=2.8627 lr=1.00e-03 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 30/100 train=2.0179 val=2.8684 lr=1.00e-04 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 31/100 train=2.0244 val=2.8484 lr=1.00e-04 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 32/100 train=2.0290 val=2.8449 lr=1.00e-04 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 33/100 train=2.0409 val=2.8461 lr=1.00e-04 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 34/100 train=2.0513 val=2.8417 lr=1.00e-04 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 35/100 train=2.0703 val=2.8411 lr=1.00e-04 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 36/100 train=2.0839 val=2.8391 lr=1.00e-04 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 37/100 train=2.1001 val=2.8352 lr=1.00e-04 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 38/100 train=2.1197 val=2.8321 lr=1.00e-04 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 39/100 train=2.1451 val=2.8247 lr=1.00e-04 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 40/100 train=2.1723 val=2.8251 lr=1.00e-05 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 41/100 train=2.1946 val=2.8229 lr=1.00e-05 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 42/100 train=2.2179 val=2.8224 lr=1.00e-05 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 43/100 train=2.2476 val=2.8236 lr=1.00e-05 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 44/100 train=2.2739 val=2.8197 lr=1.00e-05 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 45/100 train=2.3024 val=2.8178 lr=1.00e-05 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 46/100 train=2.3503 val=2.8147 lr=1.00e-05 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 47/100 train=2.3763 val=2.8143 lr=1.00e-05 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 48/100 train=2.4216 val=2.8107 lr=1.00e-05 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 49/100 train=2.4568 val=2.8121 lr=1.00e-05 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 50/100 train=2.4888 val=2.8102 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 51/100 train=2.5017 val=2.8088 lr=1.00e-06 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 52/100 train=2.5383 val=2.8081 lr=1.00e-06 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 53/100 train=2.5631 val=2.8082 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 54/100 train=2.5768 val=2.8071 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 55/100 train=2.6080 val=2.8075 lr=1.00e-06 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 56/100 train=2.6072 val=2.8067 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 57/100 train=2.6370 val=2.8070 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 58/100 train=2.6524 val=2.8061 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 59/100 train=2.6551 val=2.8063 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 60/100 train=2.6631 val=2.8065 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 61/100 train=2.6725 val=2.8052 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 62/100 train=2.6893 val=2.8055 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 63/100 train=2.6851 val=2.8048 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 64/100 train=2.6982 val=2.8051 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 65/100 train=2.6982 val=2.8048 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 66/100 train=2.7007 val=2.8044 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 67/100 train=2.7034 val=2.8042 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 68/100 train=2.7052 val=2.8042 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 69/100 train=2.7088 val=2.8041 lr=1.00e-06 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 70/100 train=2.7106 val=2.8040 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 71/100 train=2.7083 val=2.8037 lr=1.00e-06 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 72/100 train=2.7109 val=2.8036 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 73/100 train=2.7092 val=2.8034 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 74/100 train=2.7120 val=2.8031 lr=1.00e-06 sec=211.6
+dcrnn METR-LA express_links seed=2 epoch 75/100 train=2.7118 val=2.8031 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 76/100 train=2.7123 val=2.8031 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 77/100 train=2.7124 val=2.8028 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 78/100 train=2.7135 val=2.8036 lr=1.00e-06 sec=211.5
+dcrnn METR-LA express_links seed=2 epoch 79/100 train=2.7129 val=2.8034 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 80/100 train=2.7128 val=2.8032 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 81/100 train=2.7121 val=2.8032 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 82/100 train=2.7108 val=2.8030 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 83/100 train=2.7121 val=2.8036 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 84/100 train=2.7123 val=2.8029 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 85/100 train=2.7122 val=2.8032 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 86/100 train=2.7121 val=2.8029 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 87/100 train=2.7109 val=2.8027 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 88/100 train=2.7113 val=2.8028 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 89/100 train=2.7110 val=2.8026 lr=1.00e-06 sec=211.3
+dcrnn METR-LA express_links seed=2 epoch 90/100 train=2.7107 val=2.8027 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 91/100 train=2.7105 val=2.8028 lr=1.00e-06 sec=211.3
+dcrnn METR-LA express_links seed=2 epoch 92/100 train=2.7106 val=2.8029 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 93/100 train=2.7104 val=2.8030 lr=1.00e-06 sec=211.3
+dcrnn METR-LA express_links seed=2 epoch 94/100 train=2.7102 val=2.8028 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 95/100 train=2.7101 val=2.8028 lr=1.00e-06 sec=211.3
+dcrnn METR-LA express_links seed=2 epoch 96/100 train=2.7097 val=2.8025 lr=1.00e-06 sec=211.4
+dcrnn METR-LA express_links seed=2 epoch 97/100 train=2.7091 val=2.8025 lr=1.00e-06 sec=211.3
+dcrnn METR-LA express_links seed=2 epoch 98/100 train=2.7094 val=2.8027 lr=1.00e-06 sec=211.3
+dcrnn METR-LA express_links seed=2 epoch 99/100 train=2.7088 val=2.8025 lr=1.00e-06 sec=211.3
+dcrnn METR-LA express_links seed=2 epoch 100/100 train=2.7088 val=2.8026 lr=1.00e-06 sec=211.3
+{
+  "model": "dcrnn",
+  "code_commit": "d92490b808ba5c5be2f23d427d96e9a56b066d7f",
+  "best_epoch": 97,
+  "best_validation_MAE": 2.8024597482861213,
+  "epochs_run": 100,
+  "stopped_early": false,
+  "test_origins": 6843,
+  "smoke": false,
+  "added_arcs": 25,
+  "parameters": 372353,
+  "mae60": 3.5241150747714283,
+  "band1_mae60": 7.789178189744462,
+  "band1_n60": 333768,
+  "express_target_mae60": 3.1423032467705236,
+  "target_low_mae60": 8.544610497505893,
+  "target_low_n60": 30331,
+  "target_sensor_n": 25,
+  "low_speed_cutoff": 57.22222137451172,
+  "evaluation_sha256": "f48157ee238663f838dad34d396bfafb0d6116c42da43e559d0ae1aacb87f7c3",
+  "mae15": 2.6848460377248258,
+  "mae30": 3.0743842380555235,
+  "rmse60": 7.453554444303429,
+  "mape60_pct": 10.356378915156114,
+  "mae_mean_12": 3.0324169952451783,
+  "median_train_epoch_seconds": 211.4859630874962
+}
+Worker finished Sun Nov 22 18:05:16 UTC 2026. Failed tasks: none

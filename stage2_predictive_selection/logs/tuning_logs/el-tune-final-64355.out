@@ -1,0 +1,138 @@
+el-tune final  on gpu-dy-g5-0-2, Tue Nov 24 09:04:22 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+Test plan locked before scoring: /shared/g00112835/express_links_replication/tuning_output/METR-LA/decisions/final_lock.json
+Resuming METR-LA/original from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.708694 5.148495  7.134124
+              30             1244816 3.099993 6.213794  8.684560
+              60             1244780 3.552730 7.347431 10.256787
+Resuming METR-LA/original from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.703055 5.162936  6.948970
+              30             1244816 3.083071 6.170107  8.375151
+              60             1244780 3.562662 7.329209 10.098162
+Resuming METR-LA/original from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.713459 5.180055  6.938927
+              30             1244816 3.105776 6.240821  8.451764
+              60             1244780 3.546724 7.315515 10.208260
+Resuming METR-LA/original from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.697045 5.143338  6.961376
+              30             1244816 3.077221 6.178079  8.539306
+              60             1244780 3.547251 7.337635 10.300108
+Resuming METR-LA/original from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.707824 5.180781  6.942290
+              30             1244816 3.091675 6.204885  8.480963
+              60             1244780 3.544869 7.314475 10.283371
+Resuming METR-LA/fo_h3_b25_w1 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.703160 5.148568  6.917426
+              30             1244816 3.093459 6.193207  8.228693
+              60             1244780 3.566483 7.339052  9.894635
+Resuming METR-LA/fo_h3_b25_w1 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.706663 5.184588  6.932502
+              30             1244816 3.089481 6.208399  8.389705
+              60             1244780 3.579826 7.392801 10.033606
+Resuming METR-LA/fo_h3_b25_w1 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.697868 5.132295  6.942446
+              30             1244816 3.078493 6.151897  8.421432
+              60             1244780 3.545216 7.283647 10.096067
+Resuming METR-LA/fo_h3_b25_w1 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.700470 5.138844  6.992789
+              30             1244816 3.075216 6.157369  8.337661
+              60             1244780 3.547852 7.301187 10.017259
+Resuming METR-LA/fo_h3_b25_w1 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.706676 5.193159  6.940692
+              30             1244816 3.091952 6.222615  8.483316
+              60             1244780 3.548056 7.339766 10.248233
+Resuming METR-LA/fo_h1_b25_w0.5 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.692629 5.141262  6.858875
+              30             1244816 3.074934 6.178685  8.256129
+              60             1244780 3.555049 7.333247  9.895519
+Resuming METR-LA/fo_h1_b25_w0.5 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.707936 5.174960  6.897933
+              30             1244816 3.093946 6.188578  8.311527
+              60             1244780 3.566150 7.338998  9.972268
+Resuming METR-LA/fo_h1_b25_w0.5 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.711538 5.177540  6.923507
+              30             1244816 3.091058 6.174185  8.457094
+              60             1244780 3.528601 7.219648 10.264661
+Resuming METR-LA/fo_h1_b25_w0.5 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.693845 5.143276  6.971899
+              30             1244816 3.075675 6.175660  8.547264
+              60             1244780 3.539678 7.308746 10.409864
+Resuming METR-LA/fo_h1_b25_w0.5 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.702967 5.173188  6.898160
+              30             1244816 3.085746 6.190381  8.391751
+              60             1244780 3.545511 7.301536 10.170941
+Resuming METR-LA/random_fo_h1_b25_w0.5 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.705285 5.166158  7.081814
+              30             1244816 3.093813 6.224222  8.676660
+              60             1244780 3.545199 7.349643 10.377266
+Resuming METR-LA/random_fo_h1_b25_w0.5 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.694780 5.180158  6.863668
+              30             1244816 3.077528 6.195249  8.247114
+              60             1244780 3.552564 7.352671  9.980157
+Resuming METR-LA/random_fo_h1_b25_w0.5 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.702142 5.181714  7.004975
+              30             1244816 3.087822 6.216224  8.502178
+              60             1244780 3.552228 7.349909 10.276634
+Resuming METR-LA/random_fo_h1_b25_w0.5 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.692238 5.116860  6.887161
+              30             1244816 3.073188 6.142444  8.288378
+              60             1244780 3.556953 7.350370 10.012202
+Resuming METR-LA/random_fo_h1_b25_w0.5 from epoch 100
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15             1244834 2.701442 5.172986  6.935987
+              30             1244816 3.082093 6.188934  8.464171
+              60             1244780 3.536662 7.305802 10.324673
+
+=== METR-LA TEST, seeds 0-4, final set-up = fo_h1_b25_w0.5
+                       band1  overall  roads25
+label                                         
+original              7.6094   3.5508   7.9911
+fo_h3_b25_w1          7.4854   3.5575   7.8757
+fo_h1_b25_w0.5        7.5285   3.5470   7.8612
+random_fo_h1_b25_w0.5 7.6300   3.5487   8.1391
+
+fo_h1_b25_w0.5 minus original:
+  band1 per seed: -0.244, -0.107, -0.025, +0.061, -0.089  (better on 4/5)
+  band1 (all roads, low speed): -0.0809 mph, 95% day-bootstrap [-0.1112, -0.0526] over 24 days
+  overall (all roads): -0.0038 mph, 95% day-bootstrap [-0.0144, +0.0071] over 24 days
+  25 roads, low speed: -0.1300 mph, 95% day-bootstrap [-0.1895, -0.0799] over 24 days
+
+fo_h1_b25_w0.5 minus fo_h3_b25_w1:
+  band1 per seed: +0.030, -0.093, +0.124, +0.228, -0.075  (better on 2/5)
+  band1 (all roads, low speed): +0.0431 mph, 95% day-bootstrap [+0.0211, +0.0681] over 24 days
+  overall (all roads): -0.0105 mph, 95% day-bootstrap [-0.0205, +0.0006] over 24 days
+  25 roads, low speed: -0.0145 mph, 95% day-bootstrap [-0.0853, +0.0529] over 24 days
+
+fo_h1_b25_w0.5 minus random_fo_h1_b25_w0.5:
+  band1 per seed: -0.414, -0.089, -0.081, +0.232, -0.155  (better on 4/5)
+  band1 (all roads, low speed): -0.1014 mph, 95% day-bootstrap [-0.1293, -0.0746] over 24 days
+  overall (all roads): -0.0017 mph, 95% day-bootstrap [-0.0128, +0.0094] over 24 days
+  25 roads, low speed: -0.2779 mph, 95% day-bootstrap [-0.3809, -0.1821] over 24 days
+
+RESULT: FAIL  tuned_improvement=True, beats_current_forecast_only=False, beats_matched_random=True, overall_gap_mph=-0.010488621842502877, overall_within_limit=True
+Saved: /shared/g00112835/express_links_replication/tuning_output/METR-LA/decisions/final_result.json

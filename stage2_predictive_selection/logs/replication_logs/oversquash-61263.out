@@ -1,0 +1,106 @@
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+Ridge gain for 34836 eligible pairs in 10s
+Swap offsets: median 4 weeks; 0.01% of swaps had no fully observed week and use the nearest training week
+Matched pairs: 9626 (same target: 2261)
+  original seed 0: source 1/207 (3s)
+  original seed 0: source 51/207 (135s)
+  original seed 0: source 101/207 (267s)
+  original seed 0: source 151/207 (399s)
+  original seed 0: source 201/207 (531s)
+original seed 0 done in 690s
+  express_links seed 0: source 1/207 (3s)
+  express_links seed 0: source 51/207 (134s)
+  express_links seed 0: source 101/207 (266s)
+  express_links seed 0: source 151/207 (398s)
+  express_links seed 0: source 201/207 (530s)
+express_links seed 0 done in 684s
+  random_matched seed 0: source 1/207 (3s)
+  random_matched seed 0: source 51/207 (134s)
+  random_matched seed 0: source 101/207 (266s)
+  random_matched seed 0: source 151/207 (398s)
+  random_matched seed 0: source 201/207 (530s)
+random_matched seed 0 done in 684s
+  original seed 1: source 1/207 (3s)
+  original seed 1: source 51/207 (135s)
+  original seed 1: source 101/207 (266s)
+  original seed 1: source 151/207 (398s)
+  original seed 1: source 201/207 (530s)
+original seed 1 done in 683s
+  express_links seed 1: source 1/207 (3s)
+  express_links seed 1: source 51/207 (135s)
+  express_links seed 1: source 101/207 (266s)
+  express_links seed 1: source 151/207 (398s)
+  express_links seed 1: source 201/207 (530s)
+express_links seed 1 done in 684s
+  random_matched seed 1: source 1/207 (3s)
+  random_matched seed 1: source 51/207 (135s)
+  random_matched seed 1: source 101/207 (267s)
+  random_matched seed 1: source 151/207 (398s)
+  random_matched seed 1: source 201/207 (530s)
+random_matched seed 1 done in 684s
+  original seed 2: source 1/207 (3s)
+  original seed 2: source 51/207 (135s)
+  original seed 2: source 101/207 (266s)
+  original seed 2: source 151/207 (398s)
+  original seed 2: source 201/207 (530s)
+original seed 2 done in 683s
+  express_links seed 2: source 1/207 (3s)
+  express_links seed 2: source 51/207 (135s)
+  express_links seed 2: source 101/207 (266s)
+  express_links seed 2: source 151/207 (398s)
+  express_links seed 2: source 201/207 (530s)
+express_links seed 2 done in 684s
+  random_matched seed 2: source 1/207 (3s)
+  random_matched seed 2: source 51/207 (135s)
+  random_matched seed 2: source 101/207 (266s)
+  random_matched seed 2: source 151/207 (398s)
+  random_matched seed 2: source 201/207 (530s)
+random_matched seed 2 done in 684s
+
+ seed                            test                 measure  pairs    value   ci_low  ci_high excludes_zero
+    0             secondary_C_matched                     use   9626 -0.00009 -0.00026  0.00006         False
+    0             secondary_C_matched                use_slow   9626 -0.00029 -0.00083  0.00013         False
+    0             secondary_C_matched gradient_low_minus_high   9626 -0.00168      NaN      NaN           NaN
+    0 secondary_C_matched_same_target                     use   2261 -0.00014 -0.00038  0.00008         False
+    0 secondary_C_matched_same_target                use_slow   2261 -0.00060 -0.00120 -0.00015          True
+    0 secondary_C_matched_same_target gradient_low_minus_high   2261  0.00224      NaN      NaN           NaN
+    0     original_model_use_EL_pairs                     use     25  0.00003 -0.00012  0.00016         False
+    0   original_model_use_RAND_pairs                     use     25 -0.00099 -0.00271  0.00065         False
+    0                       primary_A                     use     25  0.00569 -0.00093  0.01183         False
+    0                       primary_B                     use     25  0.00023 -0.00156  0.00213         False
+    0               primary_A_minus_B                     use     25  0.00545 -0.00132  0.01196         False
+    1             secondary_C_matched                     use   9626 -0.00014 -0.00029  0.00001         False
+    1             secondary_C_matched                use_slow   9626 -0.00014 -0.00079  0.00033         False
+    1             secondary_C_matched gradient_low_minus_high   9626 -0.00196      NaN      NaN           NaN
+    1 secondary_C_matched_same_target                     use   2261 -0.00008 -0.00025  0.00009         False
+    1 secondary_C_matched_same_target                use_slow   2261 -0.00026 -0.00104  0.00044         False
+    1 secondary_C_matched_same_target gradient_low_minus_high   2261  0.00403      NaN      NaN           NaN
+    1     original_model_use_EL_pairs                     use     25  0.00005 -0.00003  0.00012         False
+    1   original_model_use_RAND_pairs                     use     25 -0.00131 -0.00339  0.00044         False
+    1                       primary_A                     use     25  0.00533  0.00111  0.00953          True
+    1                       primary_B                     use     25 -0.00220 -0.00547  0.00080         False
+    1               primary_A_minus_B                     use     25  0.00753  0.00196  0.01334          True
+    2             secondary_C_matched                     use   9626  0.00003 -0.00012  0.00019         False
+    2             secondary_C_matched                use_slow   9626 -0.00030 -0.00068  0.00007         False
+    2             secondary_C_matched gradient_low_minus_high   9626 -0.00219      NaN      NaN           NaN
+    2 secondary_C_matched_same_target                     use   2261 -0.00003 -0.00027  0.00021         False
+    2 secondary_C_matched_same_target                use_slow   2261 -0.00110 -0.00167 -0.00068          True
+    2 secondary_C_matched_same_target gradient_low_minus_high   2261  0.00380      NaN      NaN           NaN
+    2     original_model_use_EL_pairs                     use     25  0.00005 -0.00008  0.00023         False
+    2   original_model_use_RAND_pairs                     use     25 -0.00095 -0.00224  0.00026         False
+    2                       primary_A                     use     25  0.00526 -0.00482  0.01552         False
+    2                       primary_B                     use     25  0.00046 -0.00242  0.00285         False
+    2               primary_A_minus_B                     use     25  0.00480 -0.00537  0.01518         False
+
+=== Pre-registered decisions ===
+Secondary rule (over-squashing in the original graph), 9626 matched pairs: NOT SUPPORTED (0 of 3 seeds: >0 with interval excluding 0)
+  robustness, same-target matching: NOT SUPPORTED (0 of 3 seeds: >0 with interval excluding 0)
+  slow readings only: NOT SUPPORTED (0 of 3 seeds: >0 with interval excluding 0)
+Primary rule (targeted shortcuts add useful use beyond random): NOT SUPPORTED (1 of 3 seeds: >0 with interval excluding 0)
+Saved to /shared/g00112835/express_links_replication/diagnostic_output/oversquash

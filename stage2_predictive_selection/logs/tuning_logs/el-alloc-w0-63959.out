@@ -1,0 +1,226 @@
+el-tune worker alloc 0 3 on gpu-dy-g5-0-24, Mon Nov 23 23:31:22 UTC 2026
+== std3_h1_b25_w0.5 seed 0: Mon Nov 23 23:31:22 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 1/100 train=3.7900 val=3.3650 sec=26.7
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 2/100 train=3.5135 val=3.4480 sec=26.1
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 3/100 train=3.4273 val=3.4048 sec=26.1
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 4/100 train=3.3813 val=3.2137 sec=26.1
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 5/100 train=3.3437 val=3.1456 sec=26.1
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 6/100 train=3.3081 val=3.0867 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 7/100 train=3.2728 val=3.0616 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 8/100 train=3.2393 val=3.0279 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 9/100 train=3.2154 val=3.0869 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 10/100 train=3.1854 val=3.0034 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 11/100 train=3.1686 val=3.0028 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 12/100 train=3.1511 val=2.9663 sec=26.0
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 13/100 train=3.1302 val=2.9867 sec=26.0
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 14/100 train=3.1102 val=2.9523 sec=26.0
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 15/100 train=3.0949 val=2.9257 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 16/100 train=3.0855 val=2.9328 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 17/100 train=3.0637 val=2.9409 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 18/100 train=3.0567 val=2.9634 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 19/100 train=3.0444 val=2.9382 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 20/100 train=3.0370 val=2.9098 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 21/100 train=3.0197 val=2.9186 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 22/100 train=3.0150 val=2.9447 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 23/100 train=3.0124 val=2.8985 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 24/100 train=3.0041 val=2.8928 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 25/100 train=2.9933 val=2.8792 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 26/100 train=2.9878 val=2.8730 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 27/100 train=2.9808 val=2.9222 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 28/100 train=2.9772 val=2.9141 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 29/100 train=2.9710 val=2.8612 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 30/100 train=2.9616 val=2.8870 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 31/100 train=2.9603 val=2.8553 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 32/100 train=2.9517 val=2.8401 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 33/100 train=2.9497 val=2.8676 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 34/100 train=2.9471 val=2.8512 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 35/100 train=2.9337 val=2.8459 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 36/100 train=2.9388 val=2.8714 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 37/100 train=2.9336 val=2.8522 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 38/100 train=2.9328 val=2.8586 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 39/100 train=2.9261 val=2.8764 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 40/100 train=2.9249 val=2.8735 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 41/100 train=2.9186 val=2.8390 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 42/100 train=2.9192 val=2.8520 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 43/100 train=2.9109 val=2.8648 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 44/100 train=2.9119 val=2.8467 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 45/100 train=2.9059 val=2.8584 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 46/100 train=2.9017 val=2.8244 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 47/100 train=2.9044 val=2.8490 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 48/100 train=2.9002 val=2.8320 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 49/100 train=2.8991 val=2.8629 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 50/100 train=2.8965 val=2.8279 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 51/100 train=2.8915 val=2.8450 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 52/100 train=2.8889 val=2.8571 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 53/100 train=2.8924 val=2.8510 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 54/100 train=2.8863 val=2.8380 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 55/100 train=2.8842 val=2.8603 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 56/100 train=2.8808 val=2.8416 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 57/100 train=2.8809 val=2.8390 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 58/100 train=2.8789 val=2.8683 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 59/100 train=2.8748 val=2.8557 sec=26.0
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 60/100 train=2.8783 val=2.8199 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 61/100 train=2.8719 val=2.8278 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 62/100 train=2.8683 val=2.8380 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 63/100 train=2.8761 val=2.8323 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 64/100 train=2.8645 val=2.8156 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 65/100 train=2.8664 val=2.8385 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 66/100 train=2.8660 val=2.8130 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 67/100 train=2.8639 val=2.8528 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 68/100 train=2.8596 val=2.8337 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 69/100 train=2.8560 val=2.8327 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 70/100 train=2.8593 val=2.8284 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 71/100 train=2.8538 val=2.8393 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 72/100 train=2.8565 val=2.8174 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 73/100 train=2.8518 val=2.8374 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 74/100 train=2.8542 val=2.8662 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 75/100 train=2.8471 val=2.8373 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 76/100 train=2.8521 val=2.8243 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 77/100 train=2.8447 val=2.8323 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 78/100 train=2.8467 val=2.8277 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 79/100 train=2.8477 val=2.8202 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 80/100 train=2.8415 val=2.8157 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 81/100 train=2.8412 val=2.8294 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 82/100 train=2.8434 val=2.8261 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 83/100 train=2.8413 val=2.8364 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 84/100 train=2.8388 val=2.8457 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 85/100 train=2.8358 val=2.8296 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 86/100 train=2.8421 val=2.8206 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 87/100 train=2.8366 val=2.8383 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 88/100 train=2.8319 val=2.8410 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 89/100 train=2.8364 val=2.8359 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 90/100 train=2.8331 val=2.8056 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 91/100 train=2.8289 val=2.8105 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 92/100 train=2.8338 val=2.8300 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 93/100 train=2.8326 val=2.8481 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 94/100 train=2.8285 val=2.8395 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 95/100 train=2.8287 val=2.8232 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 96/100 train=2.8253 val=2.8305 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 97/100 train=2.8249 val=2.8610 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 98/100 train=2.8221 val=2.8163 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 99/100 train=2.8207 val=2.8252 sec=25.9
+METR-LA std3_h1_b25_w0.5 seed=0 epoch 100/100 train=2.8223 val=2.8472 sec=25.9
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15              657954 2.484700 4.811157  6.361439
+              30              657946 2.828400 5.803206  7.808122
+              60              657957 3.236538 6.863802  9.488857
+== err3_h1_b25_w0.5 seed 1: Tue Nov 24 00:15:08 UTC 2026
+Device: cuda NVIDIA A10G
+Author files ready.
+METR-LA strict missing zeros 8.109 %
+split  windows        first_target         last_target  missing_target_fraction
+train    23967 2012-03-01 01:00:00 2012-05-23 07:05:00                 0.071270
+  val     3417 2012-05-23 07:10:00 2012-06-04 04:45:00                 0.069603
+ test     6843 2012-06-04 04:50:00 2012-06-27 23:55:00                 0.121042
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 1/100 train=3.7677 val=3.5470 sec=26.5
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 2/100 train=3.5227 val=3.3056 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 3/100 train=3.4539 val=3.3928 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 4/100 train=3.3890 val=3.1928 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 5/100 train=3.3483 val=3.2139 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 6/100 train=3.3163 val=3.2713 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 7/100 train=3.2751 val=3.0601 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 8/100 train=3.2523 val=3.0430 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 9/100 train=3.2165 val=3.1039 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 10/100 train=3.1987 val=3.0155 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 11/100 train=3.1711 val=3.0083 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 12/100 train=3.1567 val=2.9996 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 13/100 train=3.1322 val=3.0313 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 14/100 train=3.1179 val=2.9678 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 15/100 train=3.0999 val=2.9850 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 16/100 train=3.0811 val=2.9678 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 17/100 train=3.0753 val=2.9996 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 18/100 train=3.0614 val=2.9525 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 19/100 train=3.0541 val=2.9309 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 20/100 train=3.0451 val=2.9575 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 21/100 train=3.0368 val=2.8822 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 22/100 train=3.0227 val=2.9198 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 23/100 train=3.0157 val=2.9240 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 24/100 train=3.0090 val=2.9060 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 25/100 train=3.0015 val=2.8918 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 26/100 train=2.9952 val=2.8685 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 27/100 train=2.9849 val=2.8951 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 28/100 train=2.9826 val=2.8892 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 29/100 train=2.9749 val=2.8762 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 30/100 train=2.9656 val=2.8581 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 31/100 train=2.9675 val=2.8834 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 32/100 train=2.9591 val=2.8850 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 33/100 train=2.9534 val=2.8729 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 34/100 train=2.9546 val=2.8611 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 35/100 train=2.9453 val=2.8749 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 36/100 train=2.9423 val=2.8532 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 37/100 train=2.9403 val=2.8977 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 38/100 train=2.9380 val=2.8806 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 39/100 train=2.9325 val=2.8693 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 40/100 train=2.9333 val=2.8519 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 41/100 train=2.9271 val=2.8969 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 42/100 train=2.9262 val=2.8628 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 43/100 train=2.9203 val=2.8553 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 44/100 train=2.9138 val=2.8544 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 45/100 train=2.9137 val=2.8696 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 46/100 train=2.9084 val=2.8609 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 47/100 train=2.9141 val=2.8518 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 48/100 train=2.9081 val=2.8571 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 49/100 train=2.9084 val=2.8713 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 50/100 train=2.8993 val=2.8406 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 51/100 train=2.8958 val=2.8559 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 52/100 train=2.8971 val=2.8412 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 53/100 train=2.8947 val=2.8766 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 54/100 train=2.8951 val=2.8625 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 55/100 train=2.8874 val=2.8407 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 56/100 train=2.8883 val=2.8283 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 57/100 train=2.8855 val=2.8316 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 58/100 train=2.8826 val=2.8270 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 59/100 train=2.8840 val=2.8736 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 60/100 train=2.8793 val=2.8136 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 61/100 train=2.8799 val=2.8448 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 62/100 train=2.8766 val=2.8244 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 63/100 train=2.8787 val=2.8492 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 64/100 train=2.8732 val=2.8504 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 65/100 train=2.8737 val=2.8962 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 66/100 train=2.8726 val=2.8749 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 67/100 train=2.8731 val=2.8536 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 68/100 train=2.8703 val=2.8552 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 69/100 train=2.8647 val=2.8462 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 70/100 train=2.8679 val=2.8595 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 71/100 train=2.8639 val=2.8483 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 72/100 train=2.8662 val=2.8662 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 73/100 train=2.8645 val=2.8416 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 74/100 train=2.8560 val=2.8417 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 75/100 train=2.8558 val=2.8223 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 76/100 train=2.8605 val=2.8910 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 77/100 train=2.8647 val=2.8587 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 78/100 train=2.8622 val=2.8203 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 79/100 train=2.8514 val=2.8195 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 80/100 train=2.8541 val=2.8195 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 81/100 train=2.8488 val=2.8306 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 82/100 train=2.8565 val=2.8288 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 83/100 train=2.8492 val=2.8473 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 84/100 train=2.8481 val=2.8260 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 85/100 train=2.8520 val=2.8612 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 86/100 train=2.8475 val=2.8444 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 87/100 train=2.8450 val=2.8387 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 88/100 train=2.8411 val=2.8381 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 89/100 train=2.8451 val=2.8087 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 90/100 train=2.8420 val=2.8496 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 91/100 train=2.8424 val=2.8944 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 92/100 train=2.8442 val=2.8185 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 93/100 train=2.8386 val=2.8354 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 94/100 train=2.8401 val=2.8327 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 95/100 train=2.8388 val=2.8306 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 96/100 train=2.8382 val=2.8348 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 97/100 train=2.8414 val=2.8340 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 98/100 train=2.8344 val=2.8445 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 99/100 train=2.8362 val=2.8231 sec=25.9
+METR-LA err3_h1_b25_w0.5 seed=1 epoch 100/100 train=2.8354 val=2.8213 sec=25.9
+ horizon_minutes  valid_target_count      MAE     RMSE  MAPE_pct
+              15              657954 2.497517 4.849857  6.450355
+              30              657946 2.836749 5.828046  7.813574
+              60              657957 3.224728 6.841458  9.333627
+Worker 0 finished Tue Nov 24 00:58:50 UTC 2026
